@@ -1,3 +1,52 @@
-baseURL = "http://example.org/"
+baseURL = "https://kernelci.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "KernelCI"
+description = "The upstream Linux kernel test project"
+theme = "docsy"
+
+# -- global site parameters --
+
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsUseClassic = false
+pygmentsStyle = "tango"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+      style = "tango"
+
+[params]
+copyright = "KernelCI"
+github_repo = "https://github.com/kernelci/kernelci-project"
+
+# -- docsy parameters --
+
+[params.ui]
+sidebar_menu_compact = false
+breadcrumb_disable = false
+sidebar_search_disable = false
+navbar_logo = true
+footer_about_disable = false
+
+[params.links]
+
+[[params.links.user]]
+  name ="Twitter"
+  url = "https://twitter.com/kernelci"
+  icon = "fab fa-twitter"
+  desc = "Follow us on Twitter to get the latest news"
+
+[[params.links.developer]]
+  name = "GitHub"
+  url = "https://github.com/kernelci"
+  icon = "fab fa-github"
+  desc = "Development takes place here!"
+
+[[params.links.developer]]
+  name = "Slack"
+  url = "http://kernelci.slack.com/"
+  icon = "fab fa-slack"
+  desc = "Chat with other project developers"

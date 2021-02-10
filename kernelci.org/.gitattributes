@@ -1,1 +1,12 @@
 content/background.jpeg filter=lfs diff=lfs merge=lfs -text
+static/favicons/favicon.ico filter=lfs diff=lfs merge=lfs -text
+static/favicons/android-144x144.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/android-36x36.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/android-72x72.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/android-96x96.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/favicon-16x16.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/favicon-256.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/favicon-32x32.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/android-192x192.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/android-48x48.png filter=lfs diff=lfs merge=lfs -text
+static/favicons/favicon-1024.png filter=lfs diff=lfs merge=lfs -text

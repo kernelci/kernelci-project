@@ -50,3 +50,21 @@ footer_about_disable = false
   url = "http://kernelci.slack.com/"
   icon = "fab fa-slack"
   desc = "Chat with other project developers"
+
+# -- custom main menu --
+
+[menu]
+  [[menu.main]]
+    identifier = "dashboard"
+    name = "Dashboard"
+    url = "https://kernelci.org/job/"
+
+  [[menu.main]]
+    identifier = "lf"
+    name = "LF"
+    url = "https://foundation.kernelci.org"
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "https://foundation.kernelci.org/blog/"

@@ -1,8 +1,25 @@
 baseURL = "https://kernelci.org/"
-languageCode = "en-us"
+theme = "docsy"
+
+# -- languages --
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+contentDir = "content/en"
+enableMissingTranslationPlaceholders = true # Useful when translating.
+
+[languages]
+
+[languages.en]
+languageName ="English"
 title = "KernelCI"
 description = "The upstream Linux kernel test project"
-theme = "docsy"
+
+# Sample additional language
+#[languages.fr]
+#languageName ="Français"
+#title = "KernelCI"
+#description = "Le projet upstream de test du noyau Linux"
 
 # -- global site parameters --
 

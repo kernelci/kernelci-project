@@ -21,6 +21,8 @@ pygmentsStyle = "tango"
 [params]
 copyright = "KernelCI"
 github_repo = "https://github.com/kernelci/kernelci-project"
+github_branch = "main"
+github_subdir = "kernelci.org"
 
 # -- docsy parameters --
 

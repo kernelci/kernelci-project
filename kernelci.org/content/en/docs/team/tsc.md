@@ -76,7 +76,7 @@ generates email reports, tracks regressions and triggers automated bisections.
 ### Frontend
 
 The KernelCI frontend provides a dynamic [web
-dashboard](https://kernelci.org/job/) showing the data available from the
+dashboard](https://linux.kernelci.org/job/) showing the data available from the
 backend.
 
 * Main repository: [`kernelci-frontend`](https://github.com/kernelci/kernelci-frontend)

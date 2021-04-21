@@ -9,8 +9,12 @@ import toml
 def main(args):
     with open('passwords.toml') as f:
         data = toml.load(f)
-    print("Keys: {}".format(list(data.keys())))
-    print("All good.")
+    for section, params in data.items():
+        print(section)
+        for field in ['user', 'password', 'url']:
+            value = params.get(field)
+            if value:
+                print("* {}: {}".format(field, value))
 
 
 if __name__ == '__main__':

@@ -14,6 +14,7 @@ a common place where to share passwords in a secure way.  Derivative projects
 based on KernelCI such as private instances may reuse some of the tools and
 documentation provided here.
 
+
 ## Creating a GPG key
 
 If the user doen't already have a GPG key, they will need to create one.  It
@@ -63,6 +64,20 @@ git-crypt add-gpg-user 7802ED21096B2ED7B1D4D838E7B3A05C40D8EDC3
 This will create a git commit with the public GPG key of that user.  It can
 then be pushed as-is, or the commit message may be edited to add the name of
 the user to the subject and make the history easier to read.
+
+If the key is not trusted, you can manually override this with the following
+command:
+
+```
+gpg --edit-key <key-id>
+> trust
+> 5
+> y
+> q
+```
+
+Then run the `git-crypt add-gpg-user` again and it should work this time.
+
 
 ## Reading the encrypted files
 

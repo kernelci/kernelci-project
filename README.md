@@ -32,3 +32,11 @@ $ docker run -v $PWD:/src -p 1313:1313 klakegg/hugo:0.80.0-ext-debian server -D
 ```
 
 Then open http://localhost:1313 in your browser.
+
+Secrets and git-crypt
+=====================
+
+The [`secrets`](https://github.com/kernelci/kernelci-project/tree/main/secrets)
+directory contains encrypted files with credentials used by the KernelCI
+project.  See the [Secrets](https://kernelci.org/docs/admin/secrets/) page for
+more details about how it is used.

@@ -48,11 +48,11 @@ This page contains details about how to add a test suite to KernelCI and how it 
    `extra_packages_remove` as its name suggests will remove the listed packages from the final rootfs image. In this case,
     packages like `bash`, `e2fslibs` and `e2fsprogs` are deleted from the image.
 
-4. Understand that `script` path is relative to the `kci_rootfs build --data-path` value. By default this is `jenkins/debian/debos/script`
+4. Understand that `script` path is relative to the `kci_rootfs build --data-path` value. By default this is `config/rootfs/debos/script`
    Lets have quick look at its current contents:
 
 ```
-$ ls -1 jenkins/debian/debos/scripts/
+$ ls -1 config/rootfs/debos/scripts/
 
 buster-cros-ec-tests.sh
 buster-igt.sh
@@ -75,8 +75,8 @@ strip.sh
 5. The `test_overlay` option is used to create a specific directory layout inside the rootfs image. In our case:
 
 ```
-$ tree jenkins/debian/debos/overlays/v4l2/
-jenkins/debian/debos/overlays/v4l2/
+$ tree config/rootfs/debos/overlays/v4l2/
+config/rootfs/debos/overlays/v4l2/
 └── usr
     └── bin
         └── v4l2-parser.sh
@@ -111,11 +111,11 @@ We will now look into some config entries, namely: `extra_packages`, `script` an
 
 3. `script` is the path to an arbitrary script to run in the root file system.  This is typically used to build some test
     suites from source.  Remember that its path is relative to the `kci_rootfs build --data-path` value, which by default is
-   `jenkins/debian/debos/script`. In this example, we need to add new script named `buster-btrfs.sh`. It's a simple script
+   `config/rootfs/debos/script`. In this example, we need to add new script named `buster-btrfs.sh`. It's a simple script
     to clone the repository, then build and install.
 
 ```
-$ cat jenkins/debian/debos/script/buster-btrfs.sh
+$ cat config/rootfs/debos/script/buster-btrfs.sh
 
 #!/bin/bash
 set -e
@@ -138,8 +138,8 @@ apt-get purge -y $BUILD_DEPS && apt-get autoremove -y
 4. The `test_overlay` option is used to create specific directory layout inside the rootfs image. In our case:
 
 ```
-$ tree jenkins/debian/debos/overlays/btrfs/
-jenkins/debian/debos/overlays/btrfs/
+$ tree config/rootfs/debos/overlays/btrfs/
+config/rootfs/debos/overlays/btrfs/
 └── usr
     └── bin
         └── btrfs-verify-cli.sh
@@ -148,7 +148,7 @@ jenkins/debian/debos/overlays/btrfs/
    `/usr/bin/btrfs-verify-cli.sh` will be available in the `buster-btrfs` rootfs image. These overlay scripts are normally ran from a LAVA job.
 
 ```
-$ cat jenkins/debian/debos/overlays/btrfs/btrfs-verify-cli.sh
+$ cat config/rootfs/debos/overlays/btrfs/btrfs-verify-cli.sh
 
 cd  /btrfs-progs && TEST=001\* ./tests/cli-tests.sh
 ```
@@ -156,14 +156,14 @@ cd  /btrfs-progs && TEST=001\* ./tests/cli-tests.sh
 5. Make sure execute permission is applied on the scripts.
 
 ```
-chmod +x jenkins/debian/debos/overlays/btrfs/usr/bin/btrfs-verify-cli.sh
-chmod +x jenkins/debian/debos/scripts/buster-btrfs.sh
+chmod +x config/rootfs/debos/overlays/btrfs/usr/bin/btrfs-verify-cli.sh
+chmod +x config/rootfs/debos/scripts/buster-btrfs.sh
 ```
 
 6. Now build `buster-btrfs` rootfs image using kci_rootfs like:
 
 ```
-./kci_rootfs build --rootfs-config buster-btrfs --data-path jenkins/debian/debos --arch amd64
+./kci_rootfs build --rootfs-config buster-btrfs --data-path config/rootfs/debos --arch amd64
 ```
 
 If you would like to read more about `kci_rootfs`, please check the `kci_rootfs` [documentation](https://github.com/kernelci/kernelci-core/blob/master/doc/kci_rootfs.md)

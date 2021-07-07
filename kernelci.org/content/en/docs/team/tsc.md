@@ -82,7 +82,7 @@ backend.
 
 * Main repository: [`kernelci-frontend`](https://github.com/kernelci/kernelci-frontend)
 * Ansible config repository: [`kernelci-frontend-config`](https://github.com/kernelci/kernelci-frontend-config)
-* Maintainer: Alexandra
+* Maintainer: `apereira`
 * Deputy: `gtucker`
 
 ### KCIDB
@@ -96,7 +96,7 @@ KCIDB provices a set of tools to submit kernel test data to a common database.
 
 ## Service maintainers
 
-Services hosted by KerneLCI all need someone to look after them and ensure they
+Services hosted by KernelCI all need someone to look after them and ensure they
 stay online and available.
 
 ### Pipeline / Jenkins
@@ -150,7 +150,7 @@ All the Docker images used by KernelCI are pushed to the [Docker
 Hub](https://hub.docker.com/).  This requires some maintenance in particular to
 keep an eye on resource usage and adjust permissions.
 
-* Maintainers: `gtucker`, `mgalka`, Alexandra
+* Maintainers: `gtucker`, `mgalka`, `apereira`
 
 ## Feature maintainers
 
@@ -165,7 +165,7 @@ unlike tests running in external CI systems.  This covers integration with test
 labs, rootfs images, pipeline configuration... anything related to running
 those tests and getting their results into the database.
 
-* Maintainers: Alexandra, Lakshmipathi
+* Maintainers: `apereira`, Lakshmipathi
 * Components: [`test-definitions`](https://github.com/kernelci/test-definitions), [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config)
 * Services: Jenkins
 
@@ -189,7 +189,7 @@ and checking their results in a coordinated way.
   [`bisect.jpl`](https://github.com/kernelci/kernelci-jenkins/blob/main/jobs/bisect.jpl)
 * Services: Pipeline / Jenkins
 
-### Staging workflow
+### [Staging instance](https://staging.kernelci.org)
 
 All the incoming pull requests are merged into temporary integration branches
 and deployed on [staging.kernelci.org](https://staging.kernelci.org] for
@@ -199,20 +199,32 @@ testing.  This is explained in greater detail in the
 * Maintainers: `gtucker`, `broonie`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-### Production Deployment
+### [Production instance](https://linux.kernelci.org)
 
-The KernelCI components and services need to be regularly updated, with code
-and configuration changes.  This includes typically building new kenel branches
-or running new tests, as well as updating rootfs and Docker images with the
-latest versions of all the packages being used.
+The KernelCI components and services need to be regularly updated on the
+production instance with the latest code and configuration changes.  This
+includes typically enabling coverage for new kernel branches or running new
+tests, as well as updating rootfs and Docker images with the latest versions of
+all the packages being used.
 
-It is currently done one a week on average, although it may become more
-continuous as more services start to get hosted in the Cloud and run in Docker
-containers.
+It is currently done once a week on average, although deployment may become
+gradually more continuous as services start to get hosted in the Cloud and run
+in Docker containers.
 
 * Maintainers: `gtucker`, `mgalka`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
+### [Chrome OS instance](https://chromeos.kernelci.org)
+
+The Chrome OS KernelCI instance is dedicated to building specific kernels and
+running Chrome OS tests on Chromebooks.  This is very close to the code used in
+production but has continuous deployment like the staging one, including open
+pull requests for the `chromeos` branches.  These branches need to be regularly
+rebased with any extra patches that are not merged upstream, typically after
+each production update.
+
+* Maintainers: `gtucker`, `mgalka`
+* Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
 ## Channel Maintainers
 

@@ -188,7 +188,9 @@ and checking their results in a coordinated way.
   [`bisect.jpl`](https://github.com/kernelci/kernelci-jenkins/blob/main/jobs/bisect.jpl)
 * Services: Pipeline / Jenkins
 
-### Staging workflow
+### Staging instance
+
+Dashboard: [staging.kernelci.org](https://staging.kernelci.org)
 
 All the incoming pull requests are merged into temporary integration branches
 and deployed on [staging.kernelci.org](https://staging.kernelci.org] for
@@ -198,20 +200,36 @@ testing.  This is explained in greater detail in the
 * Maintainers: `gtucker`, `broonie`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-### Production Deployment
+### Production instance
 
-The KernelCI components and services need to be regularly updated, with code
-and configuration changes.  This includes typically building new kenel branches
-or running new tests, as well as updating rootfs and Docker images with the
-latest versions of all the packages being used.
+Dashboard: [linux.kernelci.org](https://linux.kernelci.org)
 
-It is currently done one a week on average, although it may become more
-continuous as more services start to get hosted in the Cloud and run in Docker
-containers.
+The KernelCI components and services need to be regularly updated on the
+production instance with the latest code and configuration changes.  This
+includes typically enabling coverage for new kernel branches or running new
+tests, as well as updating rootfs and Docker images with the latest versions of
+all the packages being used.
+
+It is currently done once a week on average, although deployment may become
+gradually more continuous as services start to get hosted in the Cloud and run
+in Docker containers.
 
 * Maintainers: `gtucker`, `mgalka`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
+### Chrome OS instance
+
+Dashboard: [chromeos.kernelci.org](https://chromeos.kernelci.org)
+
+The Chrome OS KernelCI instance is dedicated to building specific kernels and
+running Chrome OS tests on Chromebooks.  This is very close to the code used in
+production but has continuous deployment like the staging one, including open
+pull requests for the `chromeos` branches.  These branches need to be regularly
+rebased with any extra patches that are not merged upstream, typically after
+each production update.
+
+* Maintainers: `gtucker`, `mgalka`
+* Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
 ## Channel Maintainers
 

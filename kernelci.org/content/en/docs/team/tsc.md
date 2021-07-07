@@ -81,7 +81,7 @@ backend.
 
 * Main repository: [`kernelci-frontend`](https://github.com/kernelci/kernelci-frontend)
 * Ansible config repository: [`kernelci-frontend-config`](https://github.com/kernelci/kernelci-frontend-config)
-* Maintainer: Alexandra
+* Maintainer: `apereira`
 * Deputy: `gtucker`
 
 ### KCIDB
@@ -95,7 +95,7 @@ KCIDB provices a set of tools to submit kernel test data to a common database.
 
 ## Service maintainers
 
-Services hosted by KerneLCI all need someone to look after them and ensure they
+Services hosted by KernelCI all need someone to look after them and ensure they
 stay online and available.
 
 ### Pipeline / Jenkins
@@ -149,7 +149,7 @@ All the Docker images used by KernelCI are pushed to the [Docker
 Hub](https://hub.docker.com/).  This requires some maintenance in particular to
 keep an eye on resource usage and adjust permissions.
 
-* Maintainers: `gtucker`, `mgalka`, Alexandra
+* Maintainers: `gtucker`, `mgalka`, `apereira`
 
 ## Feature maintainers
 
@@ -164,7 +164,7 @@ unlike tests running in external CI systems.  This covers integration with test
 labs, rootfs images, pipeline configuration... anything related to running
 those tests and getting their results into the database.
 
-* Maintainers: Alexandra, Lakshmipathi
+* Maintainers: `apereira`, Lakshmipathi
 * Components: [`test-definitions`](https://github.com/kernelci/test-definitions), [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config)
 * Services: Jenkins
 

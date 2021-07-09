@@ -213,6 +213,16 @@ containers.
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
 
+### CIP instance
+
+Dashboard: TBD
+
+The CIP instance is dedicated to building CIP specific kernels with CIP 
+configurations. Currently the CIP KernelCI code is in production.
+
+* Maintainers: `alicef`
+* Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
+
 ## Channel Maintainers
 
 ### IRC

@@ -93,6 +93,12 @@ KCIDB provices a set of tools to submit kernel test data to a common database.
 * Grafana dashboard: [`kcidb-grafana`](https://github.com/kernelci/kcidb-grafana)
 * Maintainer: `spbnick`
 
+### lava-docker
+
+Simplify the install and maintenance of a LAVA lab using docker container.
+
+* Repository: [`lava-docker`](https://github.com/kernelci/lava-docker)
+* Maintainers: `alicef`, `montjoie`
 
 ## Service maintainers
 

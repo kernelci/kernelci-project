@@ -60,7 +60,7 @@ The [core tools](/docs/core) provide the command line utilities and the
 `kernelci` Python package used to implement a KerneLCI pipeline.
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainer: `gtucker`
+* Maintainers: `gtucker`, `alicef`
 * Deputy: `mgalka`
 
 ### Backend

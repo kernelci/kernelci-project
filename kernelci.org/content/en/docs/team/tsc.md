@@ -24,6 +24,7 @@ respective email address and IRC nicknames:
 * [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
 * [Alexandra Pereira](mailto:<alexandra.pereira@collabora.com>) - `apereira`
 * [Lakshmipathi Ganapathi](mailto:<lakshmipathi.ganapathi@collabora.com>)
+* [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
 
 For general discussions, the regular
 [`kernelci@groups.io`](mailto:<kernelci@groups.io>) mailing list can be used.
@@ -59,7 +60,7 @@ The [core tools](/docs/core) provide the command line utilities and the
 `kernelci` Python package used to implement a KerneLCI pipeline.
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainer: `gtucker`
+* Maintainers: `gtucker`, `alicef`
 * Deputy: `mgalka`
 
 ### Backend

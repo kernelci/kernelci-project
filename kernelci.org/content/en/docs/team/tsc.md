@@ -152,6 +152,13 @@ keep an eye on resource usage and adjust permissions.
 
 * Maintainers: `gtucker`, `mgalka`, `apereira`
 
+### lava-docker
+
+Simplify the install and maintenance of a LAVA lab using docker container.
+
+* Repository: [`kernelci-core`](https://github.com/kernelci/lava-docker)
+* Maintainer: `alicef`, `montjoie`
+
 ## Feature maintainers
 
 Some advanced KernelCI features involve coordination between multiple software

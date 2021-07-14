@@ -31,7 +31,6 @@ job, with some functionality in Python.
 The current status of automated bisection is as follows:
 
 - Triggered for each regression found
-- Only runs with plain ramdisk boot tests for now
 - Run on mainline, stable, next and several maintainer trees
 - Several checks are in place to avoid false positives due to board issues:
   - Check the initial good and bad revisions coming from the found regression

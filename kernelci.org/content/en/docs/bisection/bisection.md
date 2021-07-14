@@ -35,7 +35,7 @@ The current status of automated bisection is as follows:
 - Several checks are in place to avoid false positives due to board issues:
   - Check the initial good and bad revisions coming from the found regression
   - When the bisection finds a commit, check that it does fail 3 times
-  - Revert the found commit in-place and check that it does boot 3 times
+  - Revert the found commit in-place and check that it does pass 3 times
   - When started manually, it's also possible to test each kernel
     iteration several times send an email report to a set of recipients
 - Semd an email report to a set of recipients determined from the

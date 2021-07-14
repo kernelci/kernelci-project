@@ -38,7 +38,7 @@ The current status of automated bisection is as follows:
   - Revert the found commit in-place and check that it does pass 3 times
   - When started manually, it's also possible to test each kernel
     iteration several times send an email report to a set of recipients
-- Semd an email report to a set of recipients determined from the
+- Send an email report to a set of recipients determined from the
   breaking commit found
 
 ### Where are the results?

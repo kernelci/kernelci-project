@@ -33,15 +33,14 @@ each CPU architecture.  All these tests are typically run on every kernel
 revision built by KernelCI, except for those that aren't present in older
 kernel revisions.
 
-| Platform                  | arch    | filesystems | futex | lib | lkdtm | seccomp |
-|---------------------------|---------|-------------|-------|-----|-------|---------|
-| asus-C433TA-AJ0005-rammus | x86\_64 |             |       |     | ✔     | ✔       |
-| asus-C523NA-A20057-coral  | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
-| asus-C436FA-Flip-hatch    | x86\_64 | ✔           | ✔     |     |       |         |
-| hp-11A-G6-EE-grunt        | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
-| hp-x360-12b-n4000-octopus | x86\_64 | ✔           | ✔     | ✔   |       |         |
-| mt8173-elm-hana           | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
-| mt8183-kukui-jacuzzi-juniper-sku16 | arm64  | ✔   | ✔     | ✔   | ✔     | ✔       |
-| rk3288-rock2-square       | arm     |             | ✔     |     |       |         |
-| rk3288-veyron-jaq         | arm     |             |       | ✔   |       |         |
-| sun50i-h6-pine-h64        | arm64   | ✔           |       |     |       | ✔       |
+| Platform                           | arch    | filesystems | futex | lib | lkdtm | seccomp |
+|------------------------------------|---------|-------------|-------|-----|-------|---------|
+| asus-C433TA-AJ0005-rammus          | x86\_64 |             |       |     | ✔     | ✔       |
+| asus-C523NA-A20057-coral           | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
+| asus-C436FA-Flip-hatch             | x86\_64 | ✔           | ✔     |     |       |         |
+| hp-11A-G6-EE-grunt                 | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
+| hp-x360-12b-n4000-octopus          | x86\_64 | ✔           | ✔     | ✔   |       |         |
+| mt8173-elm-hana                    | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
+| mt8183-kukui-jacuzzi-juniper-sku16 | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
+| rk3288-veyron-jaq                  | arm     |             |       | ✔   |       |         |
+| sun50i-h6-pine-h64                 | arm64   | ✔           |       |     |       | ✔       |

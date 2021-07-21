@@ -35,6 +35,7 @@ kernel revisions.
 
 | Platform                  | arch    | filesystems | futex | lib | lkdtm | seccomp |
 |---------------------------|---------|-------------|-------|-----|-------|---------|
+| asus-C433TA-AJ0005-rammus | x86\_64 |             |       |     | ✔     | ✔       |
 | asus-C523NA-A20057-coral  | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
 | asus-C436FA-Flip-hatch    | x86\_64 | ✔           | ✔     |     |       |         |
 | hp-11A-G6-EE-grunt        | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |

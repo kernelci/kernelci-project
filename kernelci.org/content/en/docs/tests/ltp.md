@@ -34,6 +34,7 @@ to support the platform.
 
 | Platform                  | arch    | crypto | ima | ipc | locktests | mm | pty | timers |
 |---------------------------|---------|--------|-----|-----|-----------|----|-----|--------|
+| asus-C433TA-AJ0005-rammus | x86\_64 |        |     |     | ✔         |    | ✔   | ✔      |
 | asus-C523NA-A20057-coral  | x86\_64 | ✔      | ✔   | ✔   | ✔         | ✔  | ✔   | ✔      |
 | asus-C436FA-Flip-hatch    | x86\_64 |        |     | ✔   |           | ✔  |     | ✔      |
 | bcm2836-rpi-2-b           | arm     | ✔      |     |     |           |    |     |        |

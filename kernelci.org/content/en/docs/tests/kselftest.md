@@ -40,6 +40,7 @@ kernel revisions.
 | hp-11A-G6-EE-grunt        | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
 | hp-x360-12b-n4000-octopus | x86\_64 | ✔           | ✔     | ✔   |       |         |
 | mt8173-elm-hana           | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
+| mt8183-kukui-jacuzzi-juniper-sku16 | arm64  | ✔   | ✔     | ✔   | ✔     | ✔       |
 | rk3288-rock2-square       | arm     |             | ✔     |     |       |         |
 | rk3288-veyron-jaq         | arm     |             |       | ✔   |       |         |
 | sun50i-h6-pine-h64        | arm64   | ✔           |       |     |       | ✔       |

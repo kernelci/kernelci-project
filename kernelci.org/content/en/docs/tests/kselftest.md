@@ -36,6 +36,7 @@ kernel revisions.
 | Platform                  | arch    | filesystems | futex | lib | lkdtm | seccomp |
 |---------------------------|---------|-------------|-------|-----|-------|---------|
 | asus-C523NA-A20057-coral  | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
+| asus-C436FA-Flip-hatch    | x86\_64 | ✔           | ✔     |     |       |         |
 | hp-11A-G6-EE-grunt        | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
 | hp-x360-12b-n4000-octopus | x86\_64 | ✔           | ✔     | ✔   |       |         |
 | mt8173-elm-hana           | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |

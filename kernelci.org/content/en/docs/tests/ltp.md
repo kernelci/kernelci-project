@@ -35,6 +35,7 @@ to support the platform.
 | Platform                  | arch    | crypto | ima | ipc | locktests | mm | pty | timers |
 |---------------------------|---------|--------|-----|-----|-----------|----|-----|--------|
 | asus-C523NA-A20057-coral  | x86\_64 | ✔      | ✔   | ✔   | ✔         | ✔  | ✔   | ✔      |
+| asus-C436FA-Flip-hatch    | x86\_64 |        |     | ✔   |           | ✔  |     | ✔      |
 | bcm2836-rpi-2-b           | arm     | ✔      |     |     |           |    |     |        |
 | beaglebone-black          | arm     |        |     | ✔   |           |    |     |        |
 | hp-11A-G6-EE-grunt        | x86\_64 | ✔      |     | ✔   | ✔         | ✔  | ✔   | ✔      |

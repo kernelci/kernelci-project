@@ -202,7 +202,7 @@ Dashboard: [staging.kernelci.org](https://staging.kernelci.org)
 All the incoming pull requests are merged into temporary integration branches
 and deployed on [staging.kernelci.org](https://staging.kernelci.org] for
 testing.  This is explained in greater detail in the
-[Staging](/docs/workflow/staging) section.
+[Staging](/docs/instances/staging) section.
 
 * Maintainers: `gtucker`, `broonie`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
@@ -242,7 +242,7 @@ each production update.
 
 Dashboard: TBD
 
-The CIP instance is dedicated to building CIP specific kernels with CIP 
+The CIP instance is dedicated to building CIP specific kernels with CIP
 configurations. Currently the CIP KernelCI code is in production.
 
 * Maintainers: `alicef`

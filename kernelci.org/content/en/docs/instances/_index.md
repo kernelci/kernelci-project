@@ -1,7 +1,7 @@
 ---
 title: "Instances"
 date: 2021-07-21T21:00:00Z
-draft: true
+draft: false
 description: "KernelCI public instances"
 ---
 

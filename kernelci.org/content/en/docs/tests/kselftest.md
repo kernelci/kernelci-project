@@ -43,4 +43,3 @@ kernel revisions.
 | mt8173-elm-hana                    | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
 | mt8183-kukui-jacuzzi-juniper-sku16 | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
 | rk3288-veyron-jaq                  | arm     |             |       | ✔   |       |         |
-| sun50i-h6-pine-h64                 | arm64   | ✔           |       |     |       | ✔       |

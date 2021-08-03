@@ -23,8 +23,9 @@ works.
 
 ## How does it work?
 
-The KernelCI automated bisection is implemented as a Jenkins Pipeline job, with
-some functionality in Python.
+The KernelCI automated bisection is implemented as a [Jenkins Pipeline
+job](https://github.com/kernelci/kernelci-jenkins/blob/main/jobs/bisect.jpl),
+with some functionality in Python.
 
 The current status of automated bisection is as follows:
 

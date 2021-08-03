@@ -33,7 +33,7 @@ the main kernelci.org server.
    They should also look if there are any PRs ready to be merged before
    creating the new version.
 
-1. Flush kernel builds
+1. Update the kernelci-deploy checkout
 
    The production update uses tools in `kernelci-deploy`.  The first step is to
    update it to the latest version, which can be done with this command:
@@ -42,11 +42,39 @@ the main kernelci.org server.
    ./kernelci.org checkout
    ```
 
-   The next step is to abort any pending kernel revision to be built in
-   Jenkins, and wait for all the ones currently in the pipeline to complete.
-   The production update needs to be done while the pieline is empty to avoid
-   glitches while multiple components are being updated.  The `kernelci.org`
-   script in `kernelci-deploy` has a command to automate this part:
+1. Build new rootfs images
+
+   Root file system (rootfs) images should be built ahead of the production
+   update, so they can be tested on staging.  It can take several hours to
+   build all of them, so ideally this should be a couple of days before the
+   production update.  For example, with production updates usually occurring
+   every Monday, the root file system images can be built every Friday to get
+   tested on staging over the weekend.
+
+   To build a new set of rootfs images:
+
+   ```sh
+   ./kernelci.org rootfs
+   ```
+
+   This will first rebuild the Docker images used to build the rootfs images,
+   then trigger the rootfs image builds, and wait for them to complete.  You
+   may abort while waiting for the builds to complete and resume later with
+   this command:
+
+   ```sh
+   ./kernelci.org rootfs_flush
+   ```
+
+1. Flush kernel builds
+
+   Once rootfs images have been tested and the new URLs have been merged in
+   `test-configs.yaml`, the next step is to abort any pending kernel revision
+   to be built in Jenkins and wait for all the ones currently in the pipeline
+   to complete.  The production update needs to be done while the pipeline is
+   empty to avoid glitches while multiple components are being updated.  The
+   `kernelci.org` script in `kernelci-deploy` has a command to automate this
+   part:
 
     ```sh
     ./kernelci.org pause
@@ -90,44 +118,29 @@ the main kernelci.org server.
    * Checkout the `kernelci-core` repository locally with the head of the
      `kernelci.org` branch
    * Run the Jenkins DSL job to recreate all the job definitions
-   * Rebuild the Docker images used for creating rootfs images (debos,
-     buildroot) and push them to the Docker hub
-   * Trigger a build for all the rootfs images in Jenkins
    * Redeploy the backend using Ansible
    * Redeploy the frontend using Ansible
    * Update the static website on kernelci.org
-   * Rebuild all the other Docker images (toolchains, device tree validation,
-     QEMU...) and push them to the Docker hub
    * Update the [KernelCI LAVA test-definitions
      fork](https://github.com/kernelci/test-definitions) with a rebase on top
      of upstream
+   * Rebuild all the kernel Docker images (toolchains, device tree validation,
+     QEMU...) and push them to the Docker hub
    * Push a test revision to the [KernelCI linux
      tree](https://github.com/kernelci/linux) to run a "pipe cleaner" build
-   * Wait for rootfs builds to complete (can take a while, like 2 or 3h)
+   * Start a "pipe cleaner" build trigger job in Jenkins to build the test
+     kernel revision
 
-1. Run a "pipe cleaner" build
-
-   Once this is done, the URLs for the new rootfs images need to be updated in
-   [`test-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/main/config/core/test-configs.yaml).
-   Then a build trigger should be run to build the test branch pushed to the
-   KernelCI kernel tree:
-
-   ```sh
-   ./kernelci.org trigger
-   ```
-
-   It should take around 30min for the builds to complete, and then a while
-   longer for any tests to complete in all the labs.  The results should be
-   checked manually, by comparing with previous revisions on the web frontend.
-   The number of builds and test results as well as their pass rates should be
-   similar.  These builds can be seen here:
+   It should take around 30min for the test kernel builds to complete, and then
+   a while longer for any tests to complete in all the labs.  The results
+   should be checked manually, by comparing with previous revisions on the web
+   frontend.  The number of builds and test results as well as their pass rates
+   should be similar.  These builds can be seen here:
 
      https://linux.kernelci.org/job/kernelci/branch/kernelci.org/
 
-1. Enable regular builds again
-
-   Once the "pipe cleaner" job has completed and things look OK, the monitor
-   job can be enabled again in Jenkins.  It will run every hour and start
-   builds for any branch that has a different revision than the last one tested
-   by KernelCI.  To avoid waiting for the next timer event, the first monitor
-   after a production update may be started by hand.
+   If there appear to be some issues with the results, the monitor job should
+   be stopped so no new revisions will be automatically built.  Some changes
+   may be reverted or a fix applied depending on the root cause of the issues.
+   If the results look fine, then the monitor job will start discovering new
+   kernel revisions periodically and the production update is complete.

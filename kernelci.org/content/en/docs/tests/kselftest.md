@@ -27,7 +27,7 @@ getting prepared for gradually expanding coverage to the full set.
 The table below shows a summary of the current KernelCI kselftest coverage per
 CPU architecture and platform for each collection.  Until a more dynamic
 orchestration becomes available, this is all defined in
-[`test-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/master/test-configs.yaml).
+[`test-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/master/config/core/test-configs.yaml).
 The goal is to have each kselftest collection run on at least 2 platforms of
 each CPU architecture.  All these tests are typically run on every kernel
 revision built by KernelCI, except for those that aren't present in older

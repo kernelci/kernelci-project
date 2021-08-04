@@ -25,7 +25,7 @@ Initial GitHub issue: [#506](https://github.com/kernelci/kernelci-core/issues/50
 The table below shows a summary of the current KernelCI LTP coverage per CPU
 architecture and platform for each subset.  Until a more dynamic orchestration
 becomes available, this is all defined in
-[`test-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/master/test-configs.yaml).
+[`test-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/master/config/core/test-configs.yaml).
 The goal is to have each LTP subset run on at least 2 platforms of each CPU
 architecture.  All these tests are typically run on every kernel revision built
 by KernelCI, except for trees filtered out by labs or if the kernel is too old

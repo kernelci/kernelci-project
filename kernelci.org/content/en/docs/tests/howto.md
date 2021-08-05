@@ -1,32 +1,273 @@
 ---
 title: "How-To"
-date: 2021-02-10T11:48:13Z
-draft: true
+date: 2021-08-05
+draft: false
 description: "How to add a new native test suite"
+weight: 1
 ---
 
-This page contains details about how to add a test suite to KernelCI and how it can be used in a LAVA environment.
+This guide contains all the steps needed to add a native test suite to
+KernelCI.  It will cover the [LAVA](../../labs/lava) use-case in particular as
+it is currently the most popular framework to run tests for KernelCI.
 
-### Verify your requirements:
+## Background
 
--  First validate whether you really need to create a new rootfs images. You can find existing rootfs variants using
-  `kci_rootfs list_variants`. If any of those matches your requirements, please make use of it.
+KernelCI is still very much about running tests on hardware platforms.  More
+abstract tests such as static analysis and KUnit are on the horizon but they
+are not quite supported yet.  So this guide will only cover functional testing
+on "real" hardware.
 
--  If you want to make some minor modification, then check the options below:
-     - If you need to install some Debian packages, have look at `extra_packages` option in `rootfs-configs.yaml` file.
-     - To install a specific test suite built from source or any arbitrary commands, have a look at the `script` option in `rootfs-configs.yml` file. It allows to you
-        run prepare rootfs image in a desired manner.
-     - To install arbitrary files such as helper scripts or test input data in some specific locations, have a look at the `overlay` option in `rootfs-configs.yml`.
+The only moving part is the kernel, which will get built in many flavours for
+every revision covered by KernelCI.  All the tests are part of fixed root file
+systems (rootfs), which get updated typically once a week.  Adding a test
+therefore involves either reusing an existing rootfs or creating a new one.
 
+A good way to start prototyping things is to use the plain [Debian Buster NFS
+rootfs](https://storage.kernelci.org/images/rootfs/debian/buster/) and install
+or compile anything at runtime on the target platform itself.  This is of
+course slower and less reliable than using a tailored rootfs with everything
+already set up, but it allows a lot more flexibility.  It is the approach
+followed in this guide: first using a generic rootfs and then creating a
+dedicated one.
 
-### How to add test suite to a rootfs image
+## A simple test
 
-1. Let's understand how a test suite can be added to a rootfs image. For this, we will explore the `buster-v4l2` rootfs image.
-
-2. Take a look at `rootfs-configs.yaml` for `buster-v4l2`. It should display the following config entries:
-
+For the sake of this guide, here's a very simple test to check the current OS
+is Linux:
 
 ```
+[ $(uname -o) = "GNU/Linux" ]
+```
+
+Let's test this locally first, just to prove it works:
+
+```
+$ [ $(uname -o) = "GNU/Linux" ]
+$ echo $?
+0
+```
+
+and to prove it would return an error if the test failed:
+
+```
+$ [ $(uname -o) = "OpenBSD" ]
+$ echo $?
+1
+```
+
+All the steps required to enable this test to run in KernelCI are detailed
+below.  There is also a sample Git branch with the changes:
+
+  https://github.com/kernelci/kernelci-core/commits/how-to
+
+## Step 1: Enable basic test plan
+
+The first step is to make the minimal changes required to run the command
+mentioned above.
+
+### LAVA job template
+
+See commit on the [how-to
+branch](https://github.com/kernelci/kernelci-core/commits/how-to): `config/lava:
+add uname test plan for the How-To guide`
+
+KernelCI LAVA templates use [Jinja](https://jinja.palletsprojects.com/).  To
+add this `uname` test plan, create a template file
+`config/lava/uname/uname.jinja2`:
+
+```yaml
+- test:
+    timeout:
+      minutes: 1
+    definitions:
+    - repository:
+        metadata:
+          format: Lava-Test Test Definition 1.0
+          name: {{ plan }}
+          description: "uname"
+          os:
+          - oe
+          scope:
+          - functional
+        run:
+          steps:
+          - lava-test-case uname-os --shell '[ $(uname -o) = "GNU/Linux" ]'
+      from: inline
+      name: {{ plan }}
+      path: inline/{{ plan }}.yaml
+      lava-signal: kmsg
+```
+
+This is pretty much all boiler plate, except for the `lava-test-case` line
+which runs the test and uses the exit code to set the result (0 is pass, 1 is
+fail).  Some extra templates need to be added for each boot method, such as
+GRUB, U-Boot and Depthcharge.  For example, here's the Depthcharge one to use
+on Chromebooks `generic-depthcharge-tftp-nfs-uname-template.jinja2`:
+
+```yaml
+{% extends 'boot-nfs/generic-depthcharge-tftp-nfs-template.jinja2' %}
+{% block actions %}
+{{ super () }}
+
+{% include 'uname/uname.jinja2' %}
+
+{% endblock %}
+```
+
+The name of the template follows a convention to automatically generate the
+variant required for a particular platform.  This one is for the `uname` test
+plan on a platform using `depthcharge`, with the kernel downloaded over `tftp`
+and the rootfs available over `nfs`.
+
+### KernelCI YAML configuration
+
+See commit on the [how-to
+branch](https://github.com/kernelci/kernelci-core/commits/how-to): `config/core:
+enable uname test plan using Buster NFS`
+
+Once the LAVA templates have been created, the next step is to enable the test
+plan in the [KernelCI YAML configuration](../../core/config).
+
+First add the `uname` test plan with the chosen rootfs (Debian Buster NFS in
+this case) in `test-configs.yaml`:
+
+```yaml
+test_plans:
+
+  uname:
+    rootfs: debian_buster_nfs
+```
+
+Then define which platforms should run this test plan, still in
+`test-configs.yaml`:
+
+```yaml
+test_configs:
+
+  - device_type: hp-11A-G6-EE-grunt
+    test_plans:
+      - uname
+
+  - device_type: minnowboard-max-E3825
+    test_plans:
+      - uname
+```
+
+Each test plan also needs to be enabled to run in particular test labs in
+`lab-configs.yaml`.  Some labs such as the Collabora one allow all tests to be
+run, and it contains the platforms listed above so no extra changes are
+required at this point.
+
+
+These changes are enough to make an intial pull request in
+[`kernelci-core`](https://github.com/kernelci/kernelci-core), and the test will
+automatically get run on [staging](../../instances/staging).  Then the results
+will appear on the web dashboard, for example:
+
+[Results for uname: «staging-next-20210805.0» on «minnowboard-max-E3825»
+(kernelci / staging-next)](https://staging.kernelci.org/test/plan/id/610ba7049064c472532a361e/)
+
+## Step 2: Modify the file system at runtime
+
+Most tests will require more than what is already available in a plain Buster
+rootfs.  Let's see how this can be done in a simple way.
+
+### Add a C file: uname-os.c
+
+See commit on the [how-to
+branch](https://github.com/kernelci/kernelci-core/commits/how-to):
+`config/lava: add uname-os.c`
+
+For example, we could have the test implemented as a C program rather than a
+shell script.  See the
+[`uname-os.c`](https://github.com/kernelci/kernelci-core/blob/how-to/config/lava/uname/uname-os.c)
+file.
+
+To test it locally:
+
+```
+$ gcc -o uname-os uname-os.c
+$ ./uname-os
+System: 'Linux', expected: 'Linux', result: PASS
+$ echo $?
+0
+```
+
+and to test it would fail if the OS name was not the expected one:
+
+```
+$ ./uname-os OpenBSD
+System: 'Linux', expected: 'OpenBSD', result: FAIL
+$ echo $?
+1
+```
+
+Now, let's see how this can be used with KernelCI.
+
+### Build it and run the C implementation
+
+See commit on the [how-to
+branch](https://github.com/kernelci/kernelci-core/commits/how-to):
+`config/lava: download and build uname-os.c and use it`
+
+Any arbitrary commands can be added to the `uname.jinja2` template before
+running the actual test cases.  In this example, we can install Debian packages
+then download the `uname-os.c` file and compile it to be able to finally run it
+as a test case:
+
+```yaml
+          steps:
+          - apt update
+          - apt install -y wget gcc
+          - wget https://raw.githubusercontent.com/kernelci/kernelci-core/how-to/config/lava/uname/uname-os.c
+          - gcc -o uname-os uname-os.c
+          - lava-test-case uname-os-shell --shell '[ $(uname -o) = "GNU/Linux" ]'
+          - lava-test-case uname-os-c --shell './uname-os'
+```
+
+Please note that if one of the steps fails, the job will abort.  So if `apt
+install` or `wget` fails, the tests won't be run and the LAVA job status will
+show an error.
+
+We now have 2 test cases, one with the shell version and one with the C
+version.  After updating the pull request on GitHub, this will also get tested
+automatically on staging.  Here's some sample results:
+
+[Results for uname: «staging-mainline-20210805.0» on «minnowboard-max-E3825» (kernelci / staging-mainline)](https://staging.kernelci.org/test/plan/id/610bc171b2d76ba86d2a361e/)
+
+## Step 3: Going further
+
+With Step 2, pretty much anything can already be run within the limitations of
+the CPU and network bandwidth on the target platform.  Even if this doesn't
+take too long to run, there are many reasons why it's not really suitable to
+enable in production.  There's no point installing the same packages and
+building the same source code over and over again, it will add up as
+significant wasted resources and extra causes for test job failures.  Once the
+steps required to run a test suite are well defined, having a rootfs image with
+everything pre-installed solves these issues.
+
+Then for more complex tests, results may be produced in other forms than an
+exit code from a command.  Some file may need to be parsed, or any extra logic
+may need to be added.  For example, the
+[`v4l2-parser.sh`](https://github.com/kernelci/kernelci-core/blob/main/config/rootfs/debos/overlays/v4l2/usr/bin/v4l2-parser.sh)
+script will run `v4l2-compliance` and parse the output to then call
+`lava-test-case` for each result found.  It also uses [LAVA test
+sets](https://docs.lavasoftware.org/lava/actions-test.html#testsets), which is
+a more advanced feature for grouping test results together inside a test suite.
+
+### Adding a rootfs variant
+
+Root file systems are built using the [`kci_rootfs`](../../core/kci_rootfs)
+command.  All the variants are defined in the
+[`config/core/rootfs-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/main/config/core/rootfs-configs.yaml)
+file with some parameters.  There are also extra dedicated files in
+[`config/rootfs`](https://github.com/kernelci/kernelci-core/tree/main/config/rootfs/)
+such as additional build scripts.
+
+Let's take a look at the `buster-v4l2` rootfs for example:
+
+```yaml
+rootfs_configs:
   buster-v4l2:
     rootfs_type: debos
     debian_release: buster
@@ -34,6 +275,11 @@ This page contains details about how to add a test suite to KernelCI and how it 
       - amd64
       - arm64
       - armhf
+    extra_packages:
+      - libasound2
+      - libelf1
+      - libjpeg62-turbo
+      - libudev1
     extra_packages_remove:
       - bash
       - e2fslibs
@@ -42,293 +288,50 @@ This page contains details about how to add a test suite to KernelCI and how it 
     test_overlay: "overlays/v4l2"
 ```
 
+* `arch_list` is to define for which architectures the rootfs should be built.
+* `extra_packages` is a list passed to the package manager to install them.
+* `extra_packages_remove` is a list passed to the package manager to remove
+  them.
+* `script` is an arbitrary script to be run after packages have been installed.
+  In this case, it will build and install the `v4l2` tools to be able to run
+  `v4l2-compliance`.
+* `test_overlay` is the path to a directory with extra files to be copied on
+  top of the file system.  In this case, it will install the `v4l2-parser.sh`
+  script to parse the output of the test suite and report test case results to
+  LAVA:
 
-3. We will look into last three config entries, namely: `extra_packages_remove`, `script` and `test_overlay`.
+  ```
+  $ tree config/rootfs/debos/overlays/v4l2/
+  config/rootfs/debos/overlays/v4l2/
+  └── usr
+      └── bin
+          └── v4l2-parser.sh
+  ```
 
-   `extra_packages_remove` as its name suggests will remove the listed packages from the final rootfs image. In this case,
-    packages like `bash`, `e2fslibs` and `e2fsprogs` are deleted from the image.
-
-4. Understand that `script` path is relative to the `kci_rootfs build --data-path` value. By default this is `config/rootfs/debos/script`
-   Lets have quick look at its current contents:
-
-```
-$ ls -1 config/rootfs/debos/scripts/
-
-buster-cros-ec-tests.sh
-buster-igt.sh
-buster-v4l2.sh
-create_initrd_ramdisk.sh
-create_manifest.py
-crush.sh
-nothing.sh
-setup-networking.sh
-stretch-ltp.sh
-strip.sh
-```
-
-   Let's focus on `buster-v4l2.sh` for this example. If you peek into the script you will find that it performs actions like installing packages via apt-get, setting
-   up v4l2 build directories and building and installing the v4l2 binaries. It's just a normal bash script not tied to debos or KernelCI.
-
-
-   If you would like to run the `buster-v4l2.sh` script and verify manually, simply copy the script to `debian:buster` docker image and execute it.
-
-5. The `test_overlay` option is used to create a specific directory layout inside the rootfs image. In our case:
+Here's a sample command using `kci_rootfs` to build the `buster-v4l2` root file
+system for `amd64`:
 
 ```
-$ tree config/rootfs/debos/overlays/v4l2/
-config/rootfs/debos/overlays/v4l2/
-└── usr
-    └── bin
-        └── v4l2-parser.sh
-
-```
-   `/usr/bin/v4l2-parser.sh` will be available in the `buster-v4l2` rootfs image. These overlay scripts are normally run from LAVA job to execute some tests and parse the results.
-    This sample [LAVA job definition](https://lava.collabora.co.uk/scheduler/job/2446126/definition#defline120) shows how `v4l2-parser.sh` can be used.
-
-
-6. Hopefully now you should have some basic idea about how to add a test suite to a rootfs and how it can be used in LAVA environment.
-
-### How to add a new test suite to a buster rootfs image
-
-For this example, we will be using the `btrfs-progs` test-suite.
-
-1. Let's first modify `rootfs-configs.yaml` to add `buster-btrfs` with appropriate entries.
-
-```
-  buster-btrfs:
-    rootfs_type: debos
-    debian_release: buster
-    arch_list:
-      - amd64
-    script: "scripts/buster-btrfs.sh"
-    test_overlay: "overlays/btrfs"
-    extra_files_remove: *extra_files_remove_buster
+$ docker run -it \
+  -v $PWD:/tmp/kernelci-core \
+  --privileged \
+  --device /dev/kvm \
+  kernelci/debos
+root@759fc147da29:/# cd /tmp/kernelci-core
+root@759fc147da29:~/kernelci-core# ./kci_rootfs build \
+  --rootfs-config=buster-v4l2 \
+   --arch=amd64
 ```
 
-
-We will now look into some config entries, namely: `extra_packages`, `script` and `test_overlay`.
-2. `extra_packages` as its name suggests will add the listed packages to the final rootfs image. As we don't need any additional packages this option can be ommited in our config.
-
-3. `script` is the path to an arbitrary script to run in the root file system.  This is typically used to build some test
-    suites from source.  Remember that its path is relative to the `kci_rootfs build --data-path` value, which by default is
-   `config/rootfs/debos/script`. In this example, we need to add new script named `buster-btrfs.sh`. It's a simple script
-    to clone the repository, then build and install.
-
-```
-$ cat config/rootfs/debos/script/buster-btrfs.sh
-
-#!/bin/bash
-set -e
-
-BUILD_DEPS="pkg-config git make autoconf automake gcc \
-make libblkid-dev zlib1g-dev liblzo2-dev libzstd-dev e2fslibs-dev python3-setuptools python3.7-dev"
-
-apt-get update && apt-get install -y $BUILD_DEPS
-GIT_SSL_NO_VERIFY=1 git clone --depth=1 https://github.com/kdave/btrfs-progs.git /btrfs-progs
-cd /btrfs-progs
-./autogen.sh
-./configure --disable-documentation
-make
-make install
-apt-get purge -y $BUILD_DEPS && apt-get autoremove -y
-
-```
-
-
-4. The `test_overlay` option is used to create specific directory layout inside the rootfs image. In our case:
-
-```
-$ tree config/rootfs/debos/overlays/btrfs/
-config/rootfs/debos/overlays/btrfs/
-└── usr
-    └── bin
-        └── btrfs-verify-cli.sh
-```
-
-   `/usr/bin/btrfs-verify-cli.sh` will be available in the `buster-btrfs` rootfs image. These overlay scripts are normally ran from a LAVA job.
-
-```
-$ cat config/rootfs/debos/overlays/btrfs/btrfs-verify-cli.sh
-
-cd  /btrfs-progs && TEST=001\* ./tests/cli-tests.sh
-```
-
-5. Make sure execute permission is applied on the scripts.
-
-```
-chmod +x config/rootfs/debos/overlays/btrfs/usr/bin/btrfs-verify-cli.sh
-chmod +x config/rootfs/debos/scripts/buster-btrfs.sh
-```
-
-6. Now build `buster-btrfs` rootfs image using kci_rootfs like:
-
-```
-./kci_rootfs build --rootfs-config buster-btrfs --data-path config/rootfs/debos --arch amd64
-```
-
-If you would like to read more about `kci_rootfs`, please check the `kci_rootfs` [documentation](https://github.com/kernelci/kernelci-core/blob/master/doc/kci_rootfs.md)
-
-7. Once the rootfs image is created, you can use it with an appropriate kernel image and on a compatible target architecture (`amd64` for `x86_64` in this case). Make sure that the kernel config has
-   appropriate btrfs configs and other file system specific entries enabled.
-
-8. Add appropriate test entry to the LAVA job definition in order to run `btrfs-verify-cli.sh`. For example,
-
-```
-run:
-    steps:
-        - lava-test-case test-btrfs-cli-001 --shell ls /usr/bin/btrfs-verify-cli.sh
-
-```
-
-If you would like to read more about LAVA job definitions, please check the LAVA documentation part about [writing tests](https://docs.lavasoftware.org/lava/writing-tests.html)
-
-How to add tests to LAVA
-========================
-
-Prerequisites
--------------
-
-- Rootfs image is built
-- Rootfs image boots on a platform
-- Tests can be run
-
-If you're facing issues with tha above you may want to go through the section "How to add test suite to a rootfs image"
-
-Adding new test plan to LAVA
-------------------------------
-
-1. Use the rootfs image to boot the device and produce a LAVA job definition for the tests.
-Upload rootfs image to kernelci-backend (storage)
-
-```
-kci_rootfs upload --rootfs-dir /path/to/rootf/image/ --upload-path server/path --api http://api.kernelci --db-token KCI_API_TOKEN
-```
-
-Add rootfs definition to `test-configs.yaml`
-
-```yaml
-  debian_buster_btrfs_ramdisk:
-    type: debian
-    ramdisk: 'buster-btrfs/{arch}/rootfs.cpio.gz'
-```
-
-**Note**
-`ramdisk` path must be relative to storage server URL as defined in a `file_system_types` section of `test-configs.yaml`
-
-If you need to define a filesystem type you may want to have a look at `file_system_types` section of `test-configs.yaml`
-
-e.g.
-
-```yaml
-debian:
-    url: 'http://yourstorage/path/to/images/debian/'
-    arch_map:
-      armhf: [{arch: arm}]
-      amd64: [{arch: x86_64}]
-```
-
-Detailed description of the test configuration can be found [here](https://github.com/kernelci/kernelci-doc/wiki/Test-configurations)
-
-2. Add LAVA job definition template
-
-Create appropriate directory structure under `templates` directory.
-
-```
-mkdir templates/btrfs/
-```
-
-Create test plan definition
-
-```
-cat templates/btrfs/btrfs.jinja2
-```
-
-```yaml
-- test:
-    timeout:
-      minutes: 10
-    definitions:
-    - repository:
-        metadata:
-          format: Lava-Test Test Definition 1.0
-          name: {{ plan }}
-          description: "btrfs test plan"
-          os:
-          - debian
-          scope:
-          - functional
-        run:
-          steps:
-          - lava-test-case test-btrfs-cli-001 --shell ls /usr/bin/btrfs-verify-cli.sh
-      from: inline
-      name: {{ plan }}
-      path: inline/{{ plan }}.yaml
-```
-
-
-```
-cat templates/btrfs/generic-qemu-btrfs-template.jinja2
-```
-
-```
-{% extends 'boot/generic-qemu-boot-template.jinja2' %}
-{% block actions %}
-{{ super () }}
-
-{% include 'btrfs/btrfs.jinja2' %}
-
-{% endblock %}
-
-{%- block image_arg %}
-        image_arg: '-kernel {kernel} -append "console={{ console_dev }},115200 root=/dev/ram0 debug verbose {{ extra_kernel_args }}"'
-{%- endblock %}
-```
-
-3. Update `test-plans` section of `test-configs.yaml` with new test definition
-
-
-```yaml
-  btrfs:
-    rootfs: debian_buster_btrfs_ramdisk
-    pattern: 'btrfs/generic-qemu-btrfs-template.jinja2'
-```
-
-4. Use `kci_build` to build the kernel and `kci_test` to run the tests in a LAVA lab.
-
-Build the Kernel
-
-```
-kci_build build_kernel --kdir /path/to/linux --arch x86_64 --build-env gcc-8 --verbose -j 4
-```
-
-Genrate test job definitions
-
-```
-kci_test generate --bmeta-json /path/to/bmeta.json --dtbs-json /path/to/artifacts/dtbs.json --lab-json /path/to/mgalka-lava-local.json --storage http://storage.kernelci --lab-config your-lab-name --user lava_user --lab-token LAVA_API_TOKEN --output /output/path --callback-id your-lava-callback-name --callback-url http://api.kernelci
-```
-
-**Note**
-
-Make sure that there is that the lab you chose to supports the type of tests which you've just defined. You may need to modify `lab-configs.yaml` accordingly.
-
-e.g.
-
-```yaml
-  your-local-lab:
-    lab_type: lava
-    url: 'http://kernelci-lava/RPC2/'
-    filters:
-      - passlist:
-          plan:
-            - baseline
-            - btrfs
-```
-
-
-Submit test jobs
-
-```
-kci_test submit --lab-config your-lab-name --user lava_user --lab-token LAVA_API_TOKEN --jobs /path/to/generated/test/job/definitions
-```
-
-5. Create PR to add the test plan
+### Writing more advanced test definitions
+
+Running fully featured test suites can involve more than just invoking a few
+commands with the `lave-test-case` helper.  This very much depends on the test
+itself.  Existing KernelCI native tests such as `v4l2-compliance`, `ltp`,
+`kselftest`, `igt` and others provide good examples for how to do this.  The
+[`test-definitions`](https://github.com/kernelci/test-definitions) repository
+(forked from Linaro for KernelCI) can also be used as a reference, and new
+tests may even be added there to be able to use them in LAVA outside of
+KernelCI.  Finally, the LAVA documentation about [writing
+tests](https://docs.lavasoftware.org/lava/writing-tests.html) describes all the
+available features in detail.

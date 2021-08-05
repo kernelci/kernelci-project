@@ -1,16 +1,16 @@
 ---
 title: "LAVA"
-date: 2021-02-10T11:48:13Z
-draft: true
+date: 2021-08-04
+draft: false
 description: "Using LAVA with KernelCI"
 ---
 
 ## How to use LAVA with KernelCI
 
-Any LAVA lab with a publicly available API can be added to kernelci.org.  Or,
-if you have a private instance of KernelCI, you can set it up locally too.  The
-KernelCI core tool [`kci_test`](kci_test.md) can be used to generate test job
-definitions and submit them.  Then the
+Any [LAVA](https://www.lavasoftware.org/) lab with a publicly available API can
+be added to kernelci.org.  Or, if you have a private instance of KernelCI, you
+can set it up locally too.  The KernelCI core tool [`kci_test`](kci_test.md)
+can be used to generate test job definitions and submit them.  Then the
 [kernelci-backend](https://github.com/kernelci/kernelci-backend) can receive
 callback notification HTTP requests directly from LAVA and add the test results
 to the database.

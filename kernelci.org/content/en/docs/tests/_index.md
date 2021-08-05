@@ -3,6 +3,7 @@ title: "Tests"
 date: 2021-08-04
 draft: false
 description: KernelCI Tests
+weight: 3
 ---
 
 ## Native tests

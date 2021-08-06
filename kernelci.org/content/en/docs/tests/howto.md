@@ -1,6 +1,6 @@
 ---
 title: "How-To"
-date: 2021-08-05
+date: 2021-08-06
 draft: false
 description: "How to add a new native test suite"
 weight: 1
@@ -167,6 +167,11 @@ will appear on the web dashboard, for example:
 [Results for uname: «staging-next-20210805.0» on «minnowboard-max-E3825»
 (kernelci / staging-next)](https://staging.kernelci.org/test/plan/id/610ba7049064c472532a361e/)
 
+> **Note** First-time contributors needed to be added to the [list of trusted
+GitHub
+users](https://github.com/kernelci/kernelci-deploy/blob/main/data/staging.ini#L4)
+by a maintainer before their pull requests get merged and deployed on staging.
+
 ## Step 2: Modify the file system at runtime
 
 Most tests will require more than what is already available in a plain Buster
@@ -225,15 +230,21 @@ as a test case:
           - lava-test-case uname-os-c --shell './uname-os'
 ```
 
-Please note that if one of the steps fails, the job will abort.  So if `apt
-install` or `wget` fails, the tests won't be run and the LAVA job status will
-show an error.
-
 We now have 2 test cases, one with the shell version and one with the C
 version.  After updating the pull request on GitHub, this will also get tested
 automatically on staging.  Here's some sample results:
 
 [Results for uname: «staging-mainline-20210805.0» on «minnowboard-max-E3825» (kernelci / staging-mainline)](https://staging.kernelci.org/test/plan/id/610bc171b2d76ba86d2a361e/)
+
+> **Note** If one of the steps fails, the job will abort.  So if `apt install`
+or `wget` fails, the tests won't be run and the LAVA job status will show an
+error.
+
+> **Note** Some test labs don't enable a route to the Internet from their
+hardware platforms so installing things at runtime may not always work.  This
+would typically be discussed as part of the pull request review, depending on
+what the jobs are trying to do and which device types have been enabled to run
+them.
 
 ## Step 3: Going further
 

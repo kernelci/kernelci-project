@@ -3,7 +3,7 @@ title: "Instances"
 date: 2021-07-21T21:00:00Z
 draft: false
 description: "KernelCI public instances"
-weight: 1
+weight: 2
 ---
 
 There are a number of KernelCI instances for various purposes.  The main

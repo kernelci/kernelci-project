@@ -41,6 +41,9 @@ github_repo = "https://github.com/kernelci/kernelci-project"
 github_branch = "main"
 github_subdir = "kernelci.org"
 
+[params.mermaid]
+enable = true
+
 # -- docsy parameters --
 
 [params.ui]

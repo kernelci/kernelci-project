@@ -45,9 +45,9 @@ either manually or automatically via Jenkins.
    the description set to `kernel-ci-bisection-webhook` for automated
    bisection via Jenkins.
 1. Create a GitHub pull request to add your lab definition to
-   [`lab-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/master/lab-configs.yaml).
+   [`lab-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/main/config/core/lab-configs.yaml).
 1. Optionally, create another GitHub pull request to add device definitions in
-   [`test-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/master/test-configs.yaml)
+   [`test-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/main/config/core/test-configs.yaml)
    if your lab has new device types not already covered by kernelci.org.
 1. A maintainer will get in touch with you to provide the LAVA API tokens and
    give you some KernelCI backend API tokens for your lab.  They will be used

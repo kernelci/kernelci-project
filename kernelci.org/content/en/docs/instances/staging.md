@@ -82,7 +82,7 @@ There is a timer on the staging.kernelci.org server which starts a job every
 1. update the `kernelci-frontend` service using Ansible from [`kernelci-frontend-config`](https://github.com/kernelci/kernelci-frontend-config) with the staging branch
 1. create and push a `staging.kernelci.org` branch with a tag to the [KernelCI
    kernel repo](https://github.com/kernelci/linux)
-1. trigger a monitor job in Jenkins with the [`kernelci_staging`](https://github.com/kernelci/kernelci-core/blob/staging.kernelci.org/build-configs.yaml#L612) config
+1. trigger a monitor job in Jenkins with the [`kernelci_staging`](https://github.com/kernelci/kernelci-core/blob/staging.kernelci.org/config/core/build-configs.yaml#L836) config
 
 The last step should cause the monitor job to detect that the staging kernel
 branch has been updated, and run a kernel build trigger job which in turn will

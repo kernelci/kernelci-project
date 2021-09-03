@@ -281,8 +281,8 @@ to facilitate communication when IRC is not practical.
 ### kernelci.org update emails
 
 Emails are sent regularly with a summary of the changes going into production
-and minutes from the various [TSC](/docs/team/tsc) and
-[board](/docs/team/board) meetings.
+and minutes from the various [TSC](/docs/org/tsc) and
+[board](/docs/org/board) meetings.
 
 * Maintainers: `gtucker`
 

@@ -1,7 +1,7 @@
 ---
 title: "Secrets"
-date: 2021-04-22T08:45:01Z
-draft: true
+date: 2021-09-03
+draft: false
 description: "KernelCI project encrypted files"
 ---
 
@@ -9,10 +9,10 @@ The [`secrets`](https://github.com/kernelci/kernelci-project/tree/main/secrets)
 directory contains encrypted files using
 [`git-crypt`](https://www.agwa.name/projects/git-crypt/) with credentials used
 by the KernelCI project.  It is mostly useful to project administrators such as
-members of the [TSC](https://kernelci.org/docs/team/tsc/), for example to have
-a common place where to share passwords in a secure way.  Derivative projects
-based on KernelCI such as private instances may reuse some of the tools and
-documentation provided here.
+members of the [TSC](/docs/org/tsc), for example to have a common place where
+to share passwords in a secure way.  Derivative projects based on KernelCI such
+as private instances may reuse some of the tools and documentation provided
+here.
 
 
 ## Creating a GPG key

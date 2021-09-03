@@ -1,8 +1,11 @@
 ---
 title: "Advisory Board"
-date: 2021-02-10T11:41:21Z
-draft: true
+date: 2021-09-03
+draft: false
 description: "Representatives from each member organization"
+weight: 1
+aliases:
+  - "/docs/team/board"
 ---
 
 The Advisory Board (AB) is composed of one representative from each premium

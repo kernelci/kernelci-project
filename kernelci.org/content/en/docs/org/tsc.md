@@ -243,7 +243,7 @@ each production update.
 
 ### CIP instance
 
-Dashboard: TBD
+Dashboard: [cip.kernelci.org](https://cip.kernelci.org)
 
 The CIP instance is dedicated to building CIP specific kernels with CIP
 configurations. Currently the CIP KernelCI code is in production.

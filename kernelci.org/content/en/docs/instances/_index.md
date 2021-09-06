@@ -14,5 +14,5 @@ and continuously builds and tests all the trees listed in
 The "staging" instance on [staging.kernelci.org](https://staging.kernelci.org)
 is used to test changes made to KernelCI itself before they get deployed in
 production.  Then there are specific instances such as the Chrome OS one on
-[chromeos.kernelci.org](https://chromeos.kernelci.org) and a new one being
-added for CPI on [cip.kernelci.org](https://cpi.kernelci.org) (coming soon).
+[chromeos.kernelci.org](https://chromeos.kernelci.org) and
+for CIP on [cip.kernelci.org](https://cip.kernelci.org).

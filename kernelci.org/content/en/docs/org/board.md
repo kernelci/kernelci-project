@@ -33,5 +33,5 @@ their respective roles, email address and IRC nicknames:
 * [Veronika Kabatov](mailto:<vkabatov@redhat.com>) (Redhat) - `vkabatova`
 
 
-Learn more about the current members or how to join on the [KernelCI Linux
-Foundation](https://foundation.kernelci.org/) website.
+Learn more about the [current members](/docs/org/members) or how to join on the
+[KernelCI Linux Foundation](https://foundation.kernelci.org/) website.

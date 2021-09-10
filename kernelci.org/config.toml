@@ -89,4 +89,4 @@ footer_about_disable = false
   [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "https://foundation.kernelci.org/blog/"
+    url = "/blog/"

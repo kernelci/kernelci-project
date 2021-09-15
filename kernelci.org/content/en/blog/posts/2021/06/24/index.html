@@ -1,0 +1,83 @@
+---
+date: 2021-06-24
+title: "The first ever KernelCI hackfest"
+linkTitle: "The first ever KernelCI hackfest"
+author: KernelCI
+---
+
+<p>The first KernelCI test development and coverage hackfest took place from
+27th May to 4th June 2021. For a total of seven days, developers from the
+KernelCI team, Google, and Collabora worked to improve many different aspects of
+KernelCI testing capabilities.</p>
+
+<p>The hackfest was a community event promoted by the KernelCI team. It aimed at
+bringing developers and companies together to improve testing for areas of the
+Linux kernel they care about. Through this effort, the KernelCI team also
+expects to increase awareness for continuous kernel testing and validation –
+more hackfests will happen in the future, so stay tuned if you want to join.</p>
+
+<p>The first-ever KernelCI hackfest was a success. It kicked off the work to
+enable kernel testing through Chromium OS, a product-specific userspace.
+Enabling full userspace images and real-world tests like video call simulations
+adds a lot of complexity to the testing process. However, the benefits are a
+clear win for the community. They allow a more thorough kernel testing and
+validation through real application use cases, which can exercise several
+different kernel areas at the same time in an organized manner. Generally, it is
+not simple for lower-level kernel test suites like kselftests or LTP to
+orchestrate a similar use case.
+
+<p>Consider video call simulation for example. Once the user starts a video
+call, the test can begin by measuring the time needed to set up the video feed
+and show it in the browser rendered with the rest of the video call website.
+Then, as soon as the video call is up, many other measurements can be made:
+camera capture latency, camera stream to network latency, memory consumption,
+power consumption, GPU performance, background tasks latency, and user
+interaction latency. These types of tests stress the kernel in unique ways,
+exposing problems that might otherwise go unnoticed from release to release.</p>
+
+<p>The support for the Chromium OS userspace is the start of full-stack tests in
+KernelCI. It is still quite experimental, but the support will evolve over the
+next few months, opening the path for other product-specific userspaces.
+Increased kernel testing diversity will definitely result in catching more
+regressions earlier. "Keeping upstream healthy is really important to us in the
+Chrome OS team (and Google broadly!) since we constantly pull in stable fixes
+and regularly push out major kernel version upgrades to our users." said
+Jesse Barnes who leads the Base OS team of Chrome OS at Google.</p>
+
+<p>On another
+<a href="https://www.collabora.com/news-and-blog/news-and-events/successful-first-kernelci-hackfest.html">front</a>,
+there was progress enabling more testing for different kernel areas as well as
+improvements to the rootfs testing images used by KernelCI:</p>
+
+<ul>
+  <li>kselftests received new tests for the futex() system call, basic semantics
+    validation, and soft-dirty page table entry mechanism corner cases;</li>
+  <li>improved LTP crypto tests by enabling missing kernel configs needed;</li>
+  <li><a href="https://www.collabora.com/news-and-blog/blog/2021/06/15/testing-cameras-with-lc-compliance-on-kernelci/">libcamera now has its first few tests running on KernelCI</a>;</li>
+  <li>fs/unicode tests converted to the new Kunit mechanism;</li>
+  <li>bootr test to check if all CPUs went online successfully;</li>
+  <li>experimental support for including firmware files in the rootfs.</li>
+</ul>
+
+<p>The overall results were significant for only a few days of work. Kernel
+testing through product-specific userspace opens a whole new avenue of
+possibilities for KernelCI. On top of that, there was an accomplishment for many
+test cases and test suites, as detailed above. "It has been an amazing week and
+a half. We’ve achieved a lot in such a short time, in spite of a few workflow
+weaknesses which we’re now addressing to help further grow the KernelCI
+community with new developers." said Guillaume Tucker, KernelCI project lead and
+Senior Software Engineer at Collabora.</p>
+
+<p>More hackfests will come in the future - this was only the first one. Dates
+are being discussed for the next hackfest to happen around the end of August, a
+few weeks before the Linux Plumbers Conference. The KernelCI team invites
+developers and companies to participate. Joining a hackfest is a great way to
+quickly evolve the kernel testing knowledge of your team, leading to products
+and services that work better with easier maintenance over time. So make sure to
+raise your hand and join the next time a KernelCI hackfest happens.</p>
+
+<hr />
+
+<p>KernelCI is a Linux Foundation project. If you are interested in learning
+more or becoming a member
+<a href="https://foundation.kernelci.org/#message">contact us</a>.</p>

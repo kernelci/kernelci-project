@@ -9,3 +9,7 @@ kernelci.org/content/en/blog/posts/2020/07/09/reporting-1024px.png filter=lfs di
 kernelci.org/content/en/blog/posts/2020/07/09/response-time-1024px.png filter=lfs diff=lfs merge=lfs -text
 kernelci.org/content/en/blog/posts/2020/07/09/roles-distribution-1024px.png filter=lfs diff=lfs merge=lfs -text
 kernelci.org/content/en/blog/posts/2020/07/09/upstream-contributions-1024px.png filter=lfs diff=lfs merge=lfs -text
+kernelci.org/content/en/blog/posts/2020/08/21/patched_revision2.png filter=lfs diff=lfs merge=lfs -text
+kernelci.org/content/en/blog/posts/2020/08/21/revision1.png filter=lfs diff=lfs merge=lfs -text
+kernelci.org/content/en/blog/posts/2020/08/21/kcidb_object_relations.svg filter=lfs diff=lfs merge=lfs -text
+kernelci.org/content/en/blog/posts/2020/08/21/kcidb_object_submitting.gif filter=lfs diff=lfs merge=lfs -text

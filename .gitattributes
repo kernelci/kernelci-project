@@ -2,3 +2,4 @@
 secrets/** filter=git-crypt diff=git-crypt
 secrets/dump.py !filter !diff
 kernelci.org/content/en/blog/news/2020/08/19/kernelci-blog.png filter=lfs diff=lfs merge=lfs -text
+kernelci.org/content/en/blog/posts/2020/05/11/featured-image-blog2.png filter=lfs diff=lfs merge=lfs -text

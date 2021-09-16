@@ -7,6 +7,8 @@ description: >
   Lessons learned from the first two hackfests
 ---
 
+<img src="hackfest-2-screenshot-2021-09-08-cropped.png" alt="screenshot" width="300px" style="float: left; padding: 0 20px 20px 0" />
+
 KernelCI hackfests span over a few days during which a number of contributors
 get together to focus on upstream Linux kernel testing.  So far, mainly kernel
 and automated test system developers have been taking part in the hackfests but

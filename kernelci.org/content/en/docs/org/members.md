@@ -10,9 +10,10 @@ The success of the KernelCI project will be driven by contributions from our
 developer community and organizations joining as members.
 
 Learn how your organization can contribute to the project now by [sending us an
-email](mailto:kernelci-members@groups.io?subject=KernelCI%20membership%20information%20request).
+email](mailto:kernelci-members@groups.io?subject=KernelCI%20membership%20information%20request),
+or join the project directly through the [Linux Foundation LFX website](http://joinnow.platform.linuxfoundation.org/?project=kernelci).
 
-Below is a list of the current members of the project.
+Below are the current members of the project.
 
 ## Premium Members
 <div class="container">

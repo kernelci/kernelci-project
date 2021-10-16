@@ -4,3 +4,6 @@
 [submodule "kernelci.org/external/kernelci-core"]
 	path = kernelci.org/external/kernelci-core
 	url = https://github.com/kernelci/kernelci-core.git
+[submodule "kernelci.org/external/kernelci-api"]
+	path = kernelci.org/external/kernelci-api
+	url = https://github.com/kernelci/kernelci-api.git

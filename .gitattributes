@@ -14,3 +14,4 @@ kernelci.org/content/en/blog/posts/2020/08/21/revision1.png filter=lfs diff=lfs 
 kernelci.org/content/en/blog/posts/2020/08/21/kcidb_object_relations.svg filter=lfs diff=lfs merge=lfs -text
 kernelci.org/content/en/blog/posts/2020/08/21/kcidb_object_submitting.gif filter=lfs diff=lfs merge=lfs -text
 kernelci.org/content/en/blog/posts/2021/03/16/looking-back-looking-forward.png filter=lfs diff=lfs merge=lfs -text
+kernelci.org/static/image/kernelci-horizontal-color.png filter=lfs diff=lfs merge=lfs -text

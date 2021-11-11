@@ -276,7 +276,7 @@ The [KernelCI Slack channel](https://kernelci.slack.com) may be used as an
 alternative to IRC.  However, more people are using IRC so Slack is only there
 to facilitate communication when IRC is not practical.
 
-* Maintainers: `khilman`
+* Maintainers: `khilman`, `spbnick`, `gtucker`
 
 ### kernelci.org update emails
 

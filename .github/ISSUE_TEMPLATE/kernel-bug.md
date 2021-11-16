@@ -2,7 +2,6 @@
 name: Kernel Bug
 about: Any kernel issue discovered by KernelCI
 title: "`short git sha1` short description"
-labels: kernel
 assignees: ''
 
 ---

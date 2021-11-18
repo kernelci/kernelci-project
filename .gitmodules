@@ -7,3 +7,6 @@
 [submodule "kernelci.org/external/kernelci-api"]
 	path = kernelci.org/external/kernelci-api
 	url = https://github.com/kernelci/kernelci-api.git
+[submodule "kernelci.org/external/kcidb"]
+	path = kernelci.org/external/kcidb
+	url = https://github.com/kernelci/kcidb.git

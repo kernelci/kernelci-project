@@ -144,3 +144,23 @@ the main kernelci.org server.
    may be reverted or a fix applied depending on the root cause of the issues.
    If the results look fine, then the monitor job will start discovering new
    kernel revisions periodically and the production update is complete.
+
+## Known issues
+
+1. Scheduler settings of the `kernel-tree-monitor` job are not restored
+   after Jenkins restart.
+
+   Once Jenkins is restarted with latest changes from `kernelci-jenkins`, the
+   scheduler settings are never set up. This is known issue and the only
+   solution is to set the scheduler manually.
+
+     * Log in to Jenkins on https://bot.kernelci.org
+     * Go to `kernel-tree-monitor` job configuration page at https://bot.kernelci.org/job/kernel-tree-monitor/configure
+     * In __Build Triggers__ section choose __Build periodically__
+     * Paste the following settings to the __Schedule__ text box
+
+     ```
+     H H/2 * * *
+     ```
+
+     * Save settings by clicking __Save__ button 

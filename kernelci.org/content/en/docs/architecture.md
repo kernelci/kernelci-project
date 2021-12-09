@@ -10,7 +10,7 @@ The "bigger picture" image below, taken from the [LPC 2020
 talk](https://www.youtube.com/watch?v=y9Glc90WUN0&list=PLVsQ_xZBEyN1HgWTOCn2Q96Q-RyfBSdKs&t=10973s),
 shows the overall KernelCI architecture from a user point of view:
 
-![bigger picture](/image/kernelci-bigger-picture.png)
+![bigger picture](/image/kernelci-bigger-picture.jpg)
 
 The first thing worth noting is that there are two main categories of
 [tests](../tests): the "native" ones are orchestrated by KernelCI itself and

@@ -15,3 +15,10 @@ content/en/about/background.jpeg filter=lfs diff=lfs merge=lfs -text
 static/image/kernelci-bigger-picture.png filter=lfs diff=lfs merge=lfs -text
 static/files/KernelCI_Participation_Agreement_and_Funding_Charter_20180913.pdf filter=lfs diff=lfs merge=lfs -text
 static/files/KernelCI_Project_Technical_Charter_20181107.pdf filter=lfs diff=lfs merge=lfs -text
+content/en/logo/files/kernelci-logo-color.png filter=lfs diff=lfs merge=lfs -text
+content/en/logo/files/kernelci-logo-color.svg filter=lfs diff=lfs merge=lfs -text
+content/en/logo/files/kernelci-logo-white.svg filter=lfs diff=lfs merge=lfs -text
+content/en/logo/files/kernelci-logo-black.svg filter=lfs diff=lfs merge=lfs -text
+content/en/logo/background.jpeg filter=lfs diff=lfs merge=lfs -text
+content/en/logo/kernelci_brand.pdf filter=lfs diff=lfs merge=lfs -text
+content/en/logo/kernelci_brand.svg filter=lfs diff=lfs merge=lfs -text

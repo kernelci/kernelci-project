@@ -26,7 +26,6 @@ respective email address and IRC nicknames:
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 * [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
 * [Alexandra Pereira](mailto:<alexandra.pereira@collabora.com>) - `apereira`
-* [Lakshmipathi Ganapathi](mailto:<lakshmipathi.ganapathi@collabora.com>)
 * [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
 
 For general discussions, the regular
@@ -174,7 +173,7 @@ unlike tests running in external CI systems.  This covers integration with test
 labs, rootfs images, pipeline configuration... anything related to running
 those tests and getting their results into the database.
 
-* Maintainers: `apereira`, Lakshmipathi
+* Maintainers: `apereira`
 * Components: [`test-definitions`](https://github.com/kernelci/test-definitions), [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config)
 * Services: Jenkins
 

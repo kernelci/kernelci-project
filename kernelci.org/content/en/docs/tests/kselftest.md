@@ -34,13 +34,19 @@ each CPU architecture.  All these tests are typically run on every kernel
 revision built by KernelCI, except for those that aren't present in older
 kernel revisions.
 
-| Platform                           | arch    | filesystems | futex | lib | lkdtm | seccomp |
-|------------------------------------|---------|-------------|-------|-----|-------|---------|
-| asus-C433TA-AJ0005-rammus          | x86\_64 |             |       |     | ✔     | ✔       |
-| asus-C523NA-A20057-coral           | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
-| asus-C436FA-Flip-hatch             | x86\_64 | ✔           | ✔     |     |       |         |
-| hp-11A-G6-EE-grunt                 | x86\_64 | ✔           | ✔     | ✔   | ✔     | ✔       |
-| hp-x360-12b-n4000-octopus          | x86\_64 | ✔           | ✔     | ✔   |       |         |
-| mt8173-elm-hana                    | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
-| mt8183-kukui-jacuzzi-juniper-sku16 | arm64   | ✔           | ✔     | ✔   | ✔     | ✔       |
-| rk3288-veyron-jaq                  | arm     |             |       | ✔   |       |         |
+|         Platform          |   arch  | cpufreq | filesystems | futex | lib | livepatch | lkdtm | rtc | seccomp | vm |
+|---------------------------|---------|---------|-------------|-------|-----|-----------|-------|-----|---------|----|
+| asus-C433TA-AJ0005-rammus | x86\_64 |         |             |       |     |           |   ✔   |     |    ✔    |    |
+|   asus-C436FA-Flip-hatch  | x86\_64 |         |      ✔      |   ✔   |     |           |       |  ✔  |         |    |
+|  asus-C523NA-A20057-coral | x86\_64 |         |      ✔      |   ✔   |  ✔  |           |   ✔   |     |    ✔    |    |
+|    asus-cx9400-volteer    | x86\_64 |         |             |       |  ✔  |           |       |     |         |  ✔ |
+|         hip07-d05         |  arm64  |         |             |   ✔   |     |           |       |     |         |    |
+|     hp-11A-G6-EE-grunt    | x86\_64 |         |      ✔      |   ✔   |  ✔  |     ✔     |   ✔   |  ✔  |    ✔    |  ✔ |
+| hp-x360-12b-n4000-octopus | x86\_64 |         |      ✔      |   ✔   |  ✔  |           |       |     |         |    |
+|     hp-x360-14-G1-sona    | x86\_64 |    ✔    |             |       |     |           |       |     |         |    |
+|    meson-g12b-odroid-n2   |   arm   |         |             |       |  ✔  |           |       |     |         |    |
+|      mt8173-elm-hana      |  arm64  |    ✔    |      ✔      |   ✔   |  ✔  |           |   ✔   |  ✔  |    ✔    |    |
+|        qcom-qdf2400       |   arm   |         |      ✔      |   ✔   |  ✔  |           |   ✔   |     |    ✔    |    |
+|  r8a774a1-hihope-rzg2m-ex |  arm64  |         |      ✔      |   ✔   |  ✔  |           |   ✔   |     |    ✔    |    |
+|     rk3288-veyron-jaq     |   arm   |         |             |       |  ✔  |           |       |     |         |    |
+|      rk3399-gru-kevin     |   arm   |         |             |       |     |           |       |  ✔  |         |    |

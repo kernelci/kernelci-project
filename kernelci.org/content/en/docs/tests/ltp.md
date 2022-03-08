@@ -32,18 +32,23 @@ architecture.  All these tests are typically run on every kernel revision built
 by KernelCI, except for trees filtered out by labs or if the kernel is too old
 to support the platform.
 
-
-| Platform                  | arch    | crypto | ima | ipc | locktests | mm | pty | timers |
-|---------------------------|---------|--------|-----|-----|-----------|----|-----|--------|
-| asus-C433TA-AJ0005-rammus | x86\_64 |        |     |     | ✔         |    | ✔   | ✔      |
-| asus-C523NA-A20057-coral  | x86\_64 | ✔      | ✔   | ✔   | ✔         | ✔  | ✔   | ✔      |
-| asus-C436FA-Flip-hatch    | x86\_64 |        |     | ✔   |           | ✔  |     | ✔      |
-| bcm2836-rpi-2-b           | arm     | ✔      |     |     |           |    |     |        |
-| beaglebone-black          | arm     |        |     | ✔   |           |    |     |        |
-| hp-11A-G6-EE-grunt        | x86\_64 | ✔      |     | ✔   | ✔         | ✔  | ✔   | ✔      |
-| hp-x360-12b-n4000-octopus | x86\_64 | ✔      |     | ✔   |           | ✔  |     |        |
-| mt8173-elm-hana           | arm64   | ✔      |     | ✔   | ✔         | ✔  | ✔   | ✔      |
-| rk3288-rock2-square       | arm     |        |     |     |           | ✔  |     |        |
-| rk3288-veyron-jaq         | arm     |        |     |     |           |    |     | ✔      |
-| rk3399-gru-kevin          | arm64   |        |     |     | ✔         |    | ✔   | ✔      |
-| sun50i-h6-pine-h64        | arm64   | ✔      |     | ✔   |           | ✔  |     |        |
+|         Platform          |   arch  | crypto | fcntl-locktests | ima | ipc | mm | pty | timers |
+|:-------------------------:|:-------:|:------:|:---------------:|:---:|:---:|:--:|:---:|:------:|
+| asus-C433TA-AJ0005-rammus | x86\_64 |        |        ✔        |     |     |    |  ✔  |    ✔   |
+|   asus-C436FA-Flip-hatch  | x86\_64 |        |                 |     |  ✔  |  ✔ |     |    ✔   |
+|  asus-C523NA-A20057-coral | x86\_64 |    ✔   |        ✔        |  ✔  |  ✔  |  ✔ |  ✔  |    ✔   |
+|    asus-cx9400-volteer    | x86\_64 |        |                 |     |  ✔  |    |     |        |
+|      bcm2836-rpi-2-b      |   arm   |    ✔   |                 |     |     |    |     |        |
+|      beaglebone-black     |   arm   |        |                 |     |  ✔  |    |     |        |
+|         hip07-d05         |  arm64  |        |                 |     |     |    |     |        |
+|     hp-11A-G6-EE-grunt    | x86\_64 |    ✔   |        ✔        |     |  ✔  |  ✔ |  ✔  |    ✔   |
+| hp-x360-12b-n4000-octopus | x86\_64 |    ✔   |                 |     |  ✔  |  ✔ |     |        |
+|     hp-x360-14-G1-sona    | x86\_64 |        |                 |     |     |    |     |        |
+|    meson-g12b-odroid-n2   |   arm   |        |                 |     |     |    |     |        |
+|      mt8173-elm-hana      |  arm64  |    ✔   |        ✔        |     |  ✔  |  ✔ |  ✔  |    ✔   |
+|        qcom-qdf2400       |   arm   |    ✔   |        ✔        |  ✔  |  ✔  |  ✔ |  ✔  |    ✔   |
+|       qemu\_x86\_64       | x86\_64 |        |                 |     |     |    |     |    ✔   |
+|  r8a774a1-hihope-rzg2m-ex |  arm64  |    ✔   |        ✔        |  ✔  |  ✔  |  ✔ |  ✔  |    ✔   |
+|    rk3288-rock2-square    |   arm   |        |                 |     |     |  ✔ |     |        |
+|     rk3288-veyron-jaq     |   arm   |        |                 |     |     |    |     |    ✔   |
+|      rk3399-gru-kevin     |   arm   |        |        ✔        |     |     |    |  ✔  |    ✔   |

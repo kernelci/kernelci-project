@@ -3,7 +3,7 @@ title: "Technical Steering Committee"
 date: 2021-09-03
 draft: false
 description: "Core developers and maintainers"
-weight: 2
+weight: 3
 aliases:
   - "/docs/team/tsc"
 ---

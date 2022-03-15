@@ -3,7 +3,7 @@ title: "Advisory Board"
 date: 2021-09-03
 draft: false
 description: "Representatives from each member organization"
-weight: 1
+weight: 2
 aliases:
   - "/docs/team/board"
 ---

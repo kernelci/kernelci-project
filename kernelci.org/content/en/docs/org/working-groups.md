@@ -32,3 +32,25 @@ potentially a new design from scratch using modern web technology.
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan`
 * [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) - `glunardi`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
+
+## Sysadmin
+
+The KernelCI common infrastructure requires some regular maintenance to keep
+web servers, databases and Cloud services up and running.  This does not
+include any test lab other than some Kubernetes clusters as hardware platforms
+are maintained by separate companies and individuals.  Members of the sysadmin
+working group have admin rights on most of the KernelCI systems, wherever
+applicable.  This group has a large overlap with [service
+maintainers](tsc/#service-maintainers), it's merely a way to facilitate
+operations and ensure maintenance is taking place.
+
+**Workboard:** https://github.com/orgs/kernelci/projects/7
+
+**Team:**
+
+* [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
+* [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
+* [Kevin Hilman](mailto:<khilman@baylibre.com>) - `khilman`
+* [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
+* [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
+* [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`

@@ -10,7 +10,8 @@ aliases:
 
 The KernelCI Linux Foundation project is composed of an [Advisory Board](board)
 with representatives from all the [member organizations](members) as well as a
-[Technical Steering Committee](tsc).
+[Technical Steering Committee](tsc).  A number of [working
+groups](working-groups) are also focusing on particular areas of the project.
 
 ## Mission Statement
 To ensure the quality, stability and long-term maintenance of the Linux kernel

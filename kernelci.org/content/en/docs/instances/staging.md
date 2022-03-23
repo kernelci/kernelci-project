@@ -35,7 +35,7 @@ A special feature of the staging instance is the ability to test code from open
 GitHub pull requests before they get merged.  This is handled by tools in the
 [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy) project, to
 pull all the open pull requests for a given project, apply some arbitrary
-patches and push a resulting `staging-mainline` branch back to the
+patches and push a resulting `staging.kernelci.org` branch back to the
 repository with a tag.  This branch is being replaced (force-pushed) every time
 the tool is run.
 

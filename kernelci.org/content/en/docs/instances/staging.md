@@ -35,7 +35,7 @@ A special feature of the staging instance is the ability to test code from open
 GitHub pull requests before they get merged.  This is handled by tools in the
 [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy) project, to
 pull all the open pull requests for a given project, apply some arbitrary
-patches and push a resulting `staging.kernelci.org` branch back to the
+patches and push a resulting `staging-mainline` branch back to the
 repository with a tag.  This branch is being replaced (force-pushed) every time
 the tool is run.
 
@@ -80,7 +80,7 @@ There is a timer on the staging.kernelci.org server which starts a job every
 1. update the `kernelci-backend` service using Ansible from [`kernelci-backend-config`](https://github.com/kernelci/kernelci-backend-config) with the staging branch
 1. update [staging branch for `kernelci-frontend`](https://github.com/kernelci/kernelci-frontend/tree/staging.kernelci.org)
 1. update the `kernelci-frontend` service using Ansible from [`kernelci-frontend-config`](https://github.com/kernelci/kernelci-frontend-config) with the staging branch
-1. create and push a `staging.kernelci.org` branch with a tag to the [KernelCI
+1. create and push a `staging-mainline` branch with a tag to the [KernelCI
    kernel repo](https://github.com/kernelci/linux)
 1. trigger a monitor job in Jenkins with the `kernelci_staging` build config
 

@@ -155,12 +155,14 @@ the main kernelci.org server.
    solution is to set the scheduler manually.
 
      * Log in to Jenkins on https://bot.kernelci.org
-     * Go to `kernel-tree-monitor` job configuration page at https://bot.kernelci.org/job/kernel-tree-monitor/configure
+     * Go to `kernel-tree-monitor` job configuration page at
+       https://bot.kernelci.org/job/kernel-tree-monitor/configure
      * In __Build Triggers__ section choose __Build periodically__
-     * Paste the following settings to the __Schedule__ text box
+     * Paste the following settings to the __Schedule__ text box to have the
+       monitor job run every hour:
 
      ```
-     H H/2 * * *
+     H * * * *
      ```
 
-     * Save settings by clicking __Save__ button 
+     * Save settings by clicking __Save__ button

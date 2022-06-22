@@ -15,4 +15,3 @@ services:
       - '1313:1313'
     command:
       - 'server'
-      - '-D'

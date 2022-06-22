@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: LGPL-2.1-or-later
+#
+# Copyright (C) 2022 Collabora Limited
+# Author: Guillaume Tucker <guillaume.tucker@collabora.com>
+
+version: '3'
+services:
+
+  kernelci.org:
+    container_name: 'kernelci.org'
+    image: 'klakegg/hugo:0.80.0-ext-debian'
+    volumes:
+      - '.:/src'
+    ports:
+      - '1313:1313'
+    command:
+      - 'server'
+      - '-D'

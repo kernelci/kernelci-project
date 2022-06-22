@@ -33,7 +33,17 @@ $ sudo apt install -y git-lfs
 $ git-lfs fetch
 $ git-lfs checkout
 $ git submodule update --init --recursive
+```
+
+Then to start the server:
+```sh
 $ docker run -v $PWD:/src -p 1313:1313 klakegg/hugo:0.80.0-ext-debian server -D
+```
+
+Alternatively, this can be started with `docker-compose`:
+
+```sh
+docker-compose up
 ```
 
 Then open http://localhost:1313 in your browser.

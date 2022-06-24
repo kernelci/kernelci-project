@@ -1,7 +1,6 @@
 ---
 title: "Architecture"
 date: 2021-08-06
-draft: false
 description: "KernelCI architecture"
 weight: 1
 ---

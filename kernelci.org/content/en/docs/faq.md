@@ -1,7 +1,6 @@
 ---
 title: "FAQ"
 date: 2021-03-30T22:02:52Z
-draft: true
 description: Frequently asked questions
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "How-To"
 date: 2021-08-06
-draft: false
 description: "How to add a new native test suite"
 weight: 1
 ---

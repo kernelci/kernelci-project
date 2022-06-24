@@ -1,7 +1,6 @@
 ---
 title: "Staging"
 date: 2021-07-22T08:30:00Z
-draft: false
 description: "How staging.kernelci.org works"
 ---
 

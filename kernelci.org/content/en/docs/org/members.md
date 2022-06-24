@@ -1,7 +1,6 @@
 ---
 title: "Members"
 date: 2021-09-07
-draft: false
 description: "Member companies who fund the KernelCI project"
 weight: 1
 ---

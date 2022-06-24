@@ -1,7 +1,6 @@
 ---
 title: "Organization"
 date: 2021-09-03
-draft: false
 description: "KernelCI project organization"
 weight: 3
 aliases:

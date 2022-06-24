@@ -1,7 +1,6 @@
 ---
 title: "LTP"
 date: 2021-08-05
-draft: false
 description: "Native tests: LTP"
 weight: 3
 ---

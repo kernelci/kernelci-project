@@ -1,7 +1,6 @@
 ---
 title: "Bisection"
 date: 2021-02-10T11:41:21Z
-draft: true
 description: "KernelCI Automated Bisection support"
 ---
 

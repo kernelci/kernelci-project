@@ -1,7 +1,6 @@
 ---
 title: "Admin"
 date: 2021-04-22T08:41:29Z
-draft: true
 description: "KernelCI Administrator guide"
 ---
 

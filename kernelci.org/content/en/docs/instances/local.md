@@ -1,7 +1,6 @@
 ---
 title: "Local (Dev setup)"
 date: 2021-08-12T10:15:37Z
-draft: true
 description: "How to set up a local KernelCI instance"
 ---
 
@@ -74,7 +73,7 @@ touch host_vars/kci-vm
 - Edit `host_vars/kci-vm` with your favorite text editor and put content there:
 
 ```ini
-hostname: kci-vm 
+hostname: kci-vm
 role: production
 certname: kci-vm
 storage_certname: kci-vm

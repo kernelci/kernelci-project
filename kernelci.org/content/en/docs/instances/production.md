@@ -1,7 +1,6 @@
 ---
 title: "Production"
 date: 2021-07-27T19:30:00Z
-draft: false
 description: "How linux.kernelci.org works"
 ---
 

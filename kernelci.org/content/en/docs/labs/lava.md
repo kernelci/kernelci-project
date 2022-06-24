@@ -1,7 +1,6 @@
 ---
 title: "LAVA"
 date: 2021-08-04
-draft: false
 description: "Using LAVA with KernelCI"
 ---
 

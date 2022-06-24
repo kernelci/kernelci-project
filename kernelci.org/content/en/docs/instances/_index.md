@@ -1,7 +1,6 @@
 ---
 title: "Instances"
 date: 2021-07-21T21:00:00Z
-draft: false
 description: "KernelCI public instances"
 weight: 2
 ---

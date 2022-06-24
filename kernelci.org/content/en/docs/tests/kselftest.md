@@ -1,7 +1,6 @@
 ---
 title: "kselftest"
 date: 2021-08-05
-draft: false
 description: "Native tests: kselftest"
 weight: 2
 ---

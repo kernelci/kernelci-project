@@ -39,13 +39,19 @@ pub   rsa3072 2021-04-22 [SC] [expires: 2023-04-22]
 ```
 
 This can be read again with `gpg -K`.  It's then possible to [send the
-  key](https://www.gnupg.org/gph/en/manual/x457.html) to a keyserver to make it
+key](https://www.gnupg.org/gph/en/manual/x457.html) to a keyserver to make it
 easier for others to find it and import it with just the fingerprint rather
-than the full public key file.  Here's how to do it with a sample keyserver:
+than the full public key file.  Here's how to do it with a sample keyserver and
+the key generated in the previous step:
 
 ```
-gpg --send-keys --keyserver hkps://keyserver.ubuntu.com
+gpg --send-keys \
+  --keyserver hkps://keyserver.ubuntu.com \
+  7802ED21096B2ED7B1D4D838E7B3A05C40D8EDC3
 ```
+
+> **Note** You may use an alternative key server, and your key hash will of
+course be different.
 
 ## Adding a user's GPG key
 

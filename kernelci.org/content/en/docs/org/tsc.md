@@ -26,6 +26,7 @@ respective email address and IRC nicknames:
 * [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
 * [Alexandra Pereira](mailto:<alexandra.pereira@collabora.com>) - `apereira`
 * [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
+* [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 
 For general discussions, the regular
 [`kernelci@groups.io`](mailto:<kernelci@groups.io>) mailing list can be used.

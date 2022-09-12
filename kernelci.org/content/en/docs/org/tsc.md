@@ -179,7 +179,7 @@ those tests and getting their results into the database.
 
 ### Native builds
 
-Just like tests, kernel builds orchestrated on kerlci.org are called the
+Just like tests, kernel builds orchestrated on kernelci.org are called the
 *native* KernelCI builds.
 
 * Maintainer: `broonie`

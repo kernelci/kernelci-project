@@ -1,6 +1,6 @@
 ---
 title: "Technical Steering Committee"
-date: 2021-09-03
+date: 2021-09-23
 description: "Core developers and maintainers"
 weight: 3
 aliases:
@@ -11,9 +11,12 @@ The Technical Steering Committee (TSC) is a team of people who are responsible
 for keeping the KernelCI project in a good shape and driving its development.
 
 The rules for adding or removing members from the TSC are defined in the LF
-project charter.  Typically, major contributors eventually become members and
-those who have stopped contributing for an extended period of time may be
-removed.  This is done in agreement with the TSC and the AB.
+project [charter](/files/KernelCI_Project_Technical_Charter_20181107.pdf).
+Typically, major contributors eventually become members and those who have
+stopped contributing for an extended period of time may be removed.  This is
+done in agreement with the TSC and the AB.
+
+## Members
 
 As of today, the committee is composed of the members listed below with their
 respective email address and IRC nicknames:
@@ -28,13 +31,20 @@ respective email address and IRC nicknames:
 * [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 
-For general discussions, the regular
-[`kernelci@groups.io`](mailto:<kernelci@groups.io>) mailing list can be used.
-To contact only the TSC members directly, the
+## Communication
+
+For general discussions, the usual IRC channel `#kernelci` on libera.chat and
+the [`kernelci@groups.io`](mailto:<kernelci@groups.io>) mailing list can be
+used.  To contact only the TSC members directly, the
 [`kernelci-tsc@groups.io`](mailto:<kernelci-tsc@groups.io>) private list may be
 used instead.
 
-There are essentially three kinds of maintainer roles:
+The TSC also meet monthly online to discuss current topics and make decisions
+including votes when necessary.
+
+## Maintainers
+
+There are several types of maintainer roles with different responsibilities:
 
 [software maintainers](#software-maintainers)
 : in charge of the KernelCI software components
@@ -45,97 +55,141 @@ There are essentially three kinds of maintainer roles:
 [feature maintainers](#feature-maintainers)
 : in charge of features that span across the whole KernelCI stack
 
+[instance maintainers](#instance-maintainers)
+: in charge of a particular KernelCI instance (production, staging...)
+
 [channel maintainers](#channel-maintainers)
 : in charge of the communication channels used by KernelCI
 
+Most maintainers are members of the TSC but additional people can be involved
+too.
 
-## Software Maintainers
+### Software Maintainers
 
 At least one maintainer is assigned to each software component.  The work
-involves reviewing pull requests, triaging and reviving old ones, updating
-GitHub settings and facilitating the development workflow.  Having “deputy”
-maintainers whenever possible also helps with the continuity of the project.
+involves reviewing pull requests on GitHUb, triaging issue, updating GitHub
+settings and facilitating the development workflow.  Having “deputy”
+maintainers whenever possible also helps with the continuity of the project
+when regular maintainers are not available..
 
-### Core tools
+#### Core tools
 
 The [core tools](/docs/core) provide the command line utilities and the
-`kernelci` Python package used to implement a KerneLCI pipeline.
+`kernelci` Python package used to implement a KerneLCI pipeline and run
+individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainers: `gtucker`, `alicef`
-* Deputy: `mgalka`
+* Maintainers: `mgalka`, `nuclearcat`
+* Deputy: `alicef`
 
-### Backend
+#### API
+
+The new [KernelCI API](/docs/api) is a work-in-progress replacement for the
+backend currently used in production.  It also features a Pub/Sub interface to
+coordinate the pipeline services in a modular fashion.
+
+* Repository: [`kernelci-api`](https://github.com/kernelci/kernelci-api)
+* Maintainers: `mgalkga`, `jeny`
+
+#### Pipeline
+
+The [KernelCI pipeline](/docs/api/overview/#pipeline-design) is also a
+work-in-progress based on the new API and its Pub/Sub interface.  This is
+essentially to replace the Jenkins pipeline currently used in production.
+
+* Repository:
+  [`kernelci-pipeline`](https://github.com/kernelci/kernelci-pipeline)
+* Maintainers: `mgalkga`, `jeny`
+
+#### KCIDB
+
+[KCIDB](/docs/kcidb) provides a set of tools to submit kernel test data to a
+common database.
+
+* Main repositories: [`kcidb`](https://github.com/kernelci/kcidb),
+  [`kcidb-io`](https://github.com/kernelci/kcidb-io)
+* Grafana dashboard:
+  [`kcidb-grafana`](https://github.com/kernelci/kcidb-grafana)
+* Maintainer: `spbnick`
+
+#### Backend (deprecated)
 
 The KernelCI backend provides a [web API](https://api.kernelci.org/) to send
 build and test results and let the frontend dashboard retrieve.  It also
 generates email reports, tracks regressions and triggers automated bisections.
+The new API will eventually replace it.
 
-* Main repository: [`kernelci-backend`](https://github.com/kernelci/kernelci-backend)
-* Ansible config repository: [`kernelci-backend-config`](https://github.com/kernelci/kernelci-backend-config)
+* Main repository:
+  [`kernelci-backend`](https://github.com/kernelci/kernelci-backend)
+* Ansible config repository:
+  [`kernelci-backend-config`](https://github.com/kernelci/kernelci-backend-config)
 * Maintainer: `mgalka`
 * Deputy: `gtucker`
 
-### Frontend
+#### Frontend (deprecated)
 
 The KernelCI frontend provides a dynamic [web
 dashboard](https://linux.kernelci.org/job/) showing the data available from the
-backend.
+backend.  A new workboard is currently being developed to replace it and
+include data from KCIDB.
 
-* Main repository: [`kernelci-frontend`](https://github.com/kernelci/kernelci-frontend)
-* Ansible config repository: [`kernelci-frontend-config`](https://github.com/kernelci/kernelci-frontend-config)
-* Maintainer: `apereira`
-* Deputy: `gtucker`
+* Main repository:
+  [`kernelci-frontend`](https://github.com/kernelci/kernelci-frontend)
+* Ansible config repository:
+  [`kernelci-frontend-config`](https://github.com/kernelci/kernelci-frontend-config)
+* Maintainer: `mgalka`
+* Deputy: `apereira`
 
-### KCIDB
+#### lava-docker (interim)
 
-KCIDB provices a set of tools to submit kernel test data to a common database.
+> **Note**: The `lava-docker` repository is about to join the LAVA GitLab
+> organisation.  See the [email
+> discussion](https://groups.io/g/kernelci/topic/moving_lava_docker_out_of_the/93248754)
+> for more details.
 
-* Main repositories: [`kcidb`](https://github.com/kernelci/kcidb), [`kcidb-io`](https://github.com/kernelci/kcidb-io)
-* Grafana dashboard: [`kcidb-grafana`](https://github.com/kernelci/kcidb-grafana)
-* Maintainer: `spbnick`
-
-### lava-docker
-
-Simplify the install and maintenance of a LAVA lab using docker container.
+This project is to Simplify the installation and maintenance of a LAVA lab
+using Docker containers.
 
 * Repository: [`lava-docker`](https://github.com/kernelci/lava-docker)
 * Maintainers: `alicef`, `montjoie`
 
-## Service maintainers
+### Service maintainers
 
 Services hosted by KernelCI all need someone to look after them and ensure they
-stay online and available.
+stay online and available.  This is essentially sysadmin work with some code
+maintannce too depending on the cases.
 
-### Pipeline / Jenkins
+#### Jenkins (deprecated)
 
-The current KernelCI pipeline is using Jenkins.  While this may change with
-Jenkins X, Tekton or some other framework, the service is essentially the same:
-orchestrating the builds and tests on kernelci.org.
+The current KernelCI pipeline is using Jenkins.  While this is about to be
+replaced with the new pipeline and API, the purpose remains essentially the
+same: orchestrating the builds and tests on kernelci.org.
 
-* Maintainers: `broonie`, `gtucker`
-* Components: [`kernelci-jenkins`](https://github.com/kernelci/kernelci-jenkins)
+* Maintainers: `broonie`, `mgalkga`, `nuclearcat`
+* Components:
+  [`kernelci-jenkins`](https://github.com/kernelci/kernelci-jenkins)
 * Resources: Azure, GCE
 
-### Kubernetes
+#### Kubernetes
 
 Several Kubernetes clusters are used by KernelCI, to build kernels and run
-platform-independent tasks or kernel tests in VMs (static analysis, QEMU...).
+platform-independent tasks or kernel tests in containers (static analysis,
+KUnit, QEMU...).
 
-* Maintainers: `khilman`, `montjoie`
+* Maintainers: `khilman`, `broonie`
 * Resources: Azure, GCE
 
-### VM Servers
+#### VM Servers
 
-A number of virtual machine servers are being used, to host the kernelci.org
-and staging.kernelci.org services.  They are currently all managed in MS Azure,
-but this can change over time.  The services remain the same.  They require SSL
-certificates, monitoring tools, backups...
+A number of virtual machine servers are being used to host various services
+such as Jenkins and the web frontend.  They are currently all managed in Azure,
+but this may evolve over time.  They require sysadmin maintenance, monitoring
+tools, backups...
 
-* Maintainers: `montjoie`, `gtucker`, `mgalka`
+* Maintainers: `mgalka`, `nuclearcat`
 * Resources: Azure (VMs, Mongo DB)
 
-### BigQuery
+#### BigQuery
 
 KCIDB uses BigQuery as a database engine.  This requires setting up tokens and
 managing the associated Cloud resources.
@@ -143,73 +197,72 @@ managing the associated Cloud resources.
 * Maintainers: `spbnick`, `khilman`
 * Resources: BigQuery, GCE
 
-### Grafana
+#### Grafana
 
-KCIDB uses a Grafana instance as a prototype dashboard.  Additional instances
-may be set up for other use-cases, such as showing statistics about the
-KernelCI project in general.
+KCIDB uses a [Grafana](https://kcidb.kernelci.org) instance as a prototype web
+dashboard.  Additional instances may be set up for other use-cases, such as
+showing statistics about the KernelCI project in general.
 
 * Maintainers: `spbnick`
 * Resources: VM Servers
 
-### Docker Hub
+#### Docker Hub
 
 All the Docker images used by KernelCI are pushed to the [Docker
 Hub](https://hub.docker.com/).  This requires some maintenance in particular to
-keep an eye on resource usage and adjust permissions.
+keep an eye on resource usage and to adjust permissions.
 
-* Maintainers: `gtucker`, `mgalka`, `apereira`
+* Maintainers: `gtucker`, `mgalka`
 
-## Feature maintainers
+### Feature maintainers
 
 Some advanced KernelCI features involve coordination between multiple software
-components and services, but still require dedicated maintainders to ensure
-they behave as intended.
+components and services.  They also require dedicated maintainers to ensure
+they keep running as intended.
 
-### Native tests
+#### Native tests
 
 Tests orchestrated on kernelci.org are called the *native* KernelCI tests,
-unlike tests running in external CI systems.  This covers integration with test
-labs, rootfs images, pipeline configuration... anything related to running
-those tests and getting their results into the database.
+unlike tests running in independent CI systems which provide results directly
+to KCIDB.  This covers integration with test labs, rootfs images, pipeline
+configuration... anything related to running those tests and getting their
+results into the database.
 
-* Maintainers: `apereira`
-* Components: [`test-definitions`](https://github.com/kernelci/test-definitions), [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config)
+* Maintainers: `mgalka`, `nuclearcat`
+* Components:
+  [`test-definitions`](https://github.com/kernelci/test-definitions),
+  [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config)
 * Services: Jenkins
 
-### Native builds
+#### Native builds
 
 Just like tests, kernel builds orchestrated on kernelci.org are called the
 *native* KernelCI builds.
 
-* Maintainer: `broonie`
-* Components: [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config), [`kernelci-jenkins`](https://github.com/kernelci/kernelci-jenkins)
-* Services: Pipeline / Jenkins
+* Maintainers: `broonie`, `mgalka`, `nuclearcat`
+* Components:
+  [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config),
+  [`kernelci-jenkins`](https://github.com/kernelci/kernelci-jenkins)
+* Services: Pipeline / Jenkins, Kubernetes
 
-### Bisections
+#### Bisections
 
-For every test regression detected, an automated bisection is typically run
-(with supported test lab types).  This involves building kernels, running tests
-and checking their results in a coordinated way.
+For every test regression detected, an automated bisection is run whenever
+possible.  This involves building kernels, running tests and checking their
+results in a coordinated way to then send an email report when the bisection
+succeeds.
 
-* Maintainer: `gtucker`
+* Maintainers: `gtucker`, `mgalka`
 * Components: [`kernelci-core`](https://github.com/kernelci/kernelci-core),
   [`bisect.jpl`](https://github.com/kernelci/kernelci-jenkins/blob/main/jobs/bisect.jpl)
 * Services: Pipeline / Jenkins
 
-### Staging instance
+### Instance maintainers
 
-Dashboard: [staging.kernelci.org](https://staging.kernelci.org)
+As there are several KernelCI instances, it's necessary to have people
+dedicated to each of them.
 
-All the incoming pull requests are merged into temporary integration branches
-and deployed on [staging.kernelci.org](https://staging.kernelci.org] for
-testing.  This is explained in greater detail in the
-[Staging](/docs/instances/staging) section.
-
-* Maintainers: `gtucker`, `broonie`
-* Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
-
-### Production instance
+#### [Production instance](/docs/instances/production)
 
 Dashboard: [linux.kernelci.org](https://linux.kernelci.org)
 
@@ -223,10 +276,22 @@ It is currently done once a week on average, although deployment may become
 gradually more continuous as services start to get hosted in the Cloud and run
 in Docker containers.
 
-* Maintainers: `gtucker`, `mgalka`
+* Maintainers: `mgalka`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-### Chrome OS instance
+#### [Staging instance]((/docs/instances/staging))
+
+Dashboard: [staging.kernelci.org](https://staging.kernelci.org)
+
+All the incoming pull requests are merged into temporary integration branches
+and deployed on [staging.kernelci.org](https://staging.kernelci.org] for
+testing.  This is explained in greater detail in the
+[Staging](/docs/instances/staging) section.
+
+* Maintainers: `gtucker`, `broonie`, `nuclearcat`
+* Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
+
+#### [ChromeOS instance](/docs/instances/chromeos)
 
 Dashboard: [chromeos.kernelci.org](https://chromeos.kernelci.org)
 
@@ -237,10 +302,10 @@ pull requests for the `chromeos` branches.  These branches need to be regularly
 rebased with any extra patches that are not merged upstream, typically after
 each production update.
 
-* Maintainers: `gtucker`, `mgalka`
+* Maintainers: `mgalkga`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-### CIP instance
+#### [CIP instance](/docs/instances/cip)
 
 Dashboard: [cip.kernelci.org](https://cip.kernelci.org)
 
@@ -250,26 +315,30 @@ configurations. Currently the CIP KernelCI code is in production.
 * Maintainers: `alicef`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-## Channel Maintainers
+### Channel Maintainers
 
-### IRC
+As with any open-source project, ensuring communication between all the
+contributors, users and maintainers is essential.  Several channels are
+available for KernelCI and each of them requires some maintenance too.
 
-This is about keeping the `#kernelci` IRC channel updated and managing
-automated notifications sent to it (monitoring services, GitHub and Jenkins
-integration...)
+#### IRC
+
+This is about keeping the `#kernelci` IRC channel on libera.chat updated and
+managing automated notifications sent to it (monitoring services, GitHub and
+Jenkins integration...)
 
 * Maintainers: `montjoie`
 
-### groups.io
+#### groups.io
 
 All the KernelCI mailing lists are managed via [groups.io](https://groups.io).
-This includes moderating incoming messages and new subscriptions, keeping
-settings up to date and dealing with changes to the schemes for each price
-plan.
+Maintaining them includes moderating incoming messages and new subscriptions,
+keeping settings up-to-date and dealing with changes to the schemes for each
+price plan.
 
 * Maintainers: `broonie`, `khilman`
 
-### Slack
+#### Slack
 
 The [KernelCI Slack channel](https://kernelci.slack.com) may be used as an
 alternative to IRC.  However, more people are using IRC so Slack is only there
@@ -277,29 +346,19 @@ to facilitate communication when IRC is not practical.
 
 * Maintainers: `khilman`, `spbnick`, `gtucker`
 
-### kernelci.org update emails
+#### Twitter
+
+The [KernelCI Twitter](https://twitter.com/kernelci) account is used to engage
+with a wider public audience: events, kernel developers, other test systems...
+It is also a way for the project to quickly share updates about the project's
+news and, achievements.
+
+* Maintainers: `gtucker`, `padovan`
+
+#### kernelci.org update emails (paused)
 
 Emails are sent regularly with a summary of the changes going into production
 and minutes from the various [TSC](/docs/org/tsc) and
 [board](/docs/org/board) meetings.
 
 * Maintainers: `gtucker`
-
-### Twitter
-
-The [KernelCI Twitter](https://twitter.com/kernelci) account is used to engage
-with public events, kernel developers and other test systems in particular.  It
-is also a way for the project to quickly share updates about new features or
-events.
-
-* Maintainers: `gtucker`
-
-### Blog
-
-The [KernelCI blog](https://foundation.kernelci.org/blog/) is currently hosted
-on the Linux Foundation project website using Wordpress.  Managing it involves
-communicating with the LF when needed to make certain changes, and either
-giving access to people who have a blog post to publish or publishing it
-directly on their behalf.
-
-* Maintainers: `khilman`

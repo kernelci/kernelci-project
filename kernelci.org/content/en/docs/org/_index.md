@@ -77,6 +77,7 @@ site.
 
 [KernelCI_Participation_Agreement_and_Funding_Charter_20180913.pdf
 ](/files/KernelCI_Participation_Agreement_and_Funding_Charter_20180913.pdf)
+
 ### Technical Charter
 
 > This charter (the “Charter”) sets forth the responsibilities and procedures

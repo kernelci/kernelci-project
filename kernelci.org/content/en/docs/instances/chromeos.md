@@ -2,6 +2,7 @@
 title: "ChromeOS"
 date: 2022-09-23
 description: "The chromeos.kernelci.org instance"
+weight: 3
 ---
 
 The [chromeos.kernelci.org](https://chromeos.kernelci.org) instance is

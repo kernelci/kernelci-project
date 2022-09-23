@@ -225,9 +225,7 @@ succeeds.
 As there are several KernelCI instances, it's necessary to have people
 dedicated to each of them.
 
-### [Production instance](/docs/instances/production)
-
-Dashboard: [linux.kernelci.org](https://linux.kernelci.org)
+### Production instance
 
 The KernelCI components and services need to be regularly updated on the
 production instance with the latest code and configuration changes.  This
@@ -239,24 +237,24 @@ It is currently done once a week on average, although deployment may become
 gradually more continuous as services start to get hosted in the Cloud and run
 in Docker containers.
 
+* Dashboard: [linux.kernelci.org](https://linux.kernelci.org)
+* Description: [Production](/docs/instances/production)
 * Maintainers: `mgalka`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-### [Staging instance]((/docs/instances/staging))
-
-Dashboard: [staging.kernelci.org](https://staging.kernelci.org)
+### Staging instance
 
 All the incoming pull requests are merged into temporary integration branches
 and deployed on [staging.kernelci.org](https://staging.kernelci.org] for
 testing.  This is explained in greater detail in the
 [Staging](/docs/instances/staging) section.
 
+* Dashboard: [staging.kernelci.org](https://staging.kernelci.org)
+* Description: [Staging](/docs/instances/staging)
 * Maintainers: `gtucker`, `broonie`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-### [ChromeOS instance](/docs/instances/chromeos)
-
-Dashboard: [chromeos.kernelci.org](https://chromeos.kernelci.org)
+### ChromeOS instance
 
 The Chrome OS KernelCI instance is dedicated to building specific kernels and
 running Chrome OS tests on Chromebooks.  This is very close to the code used in
@@ -265,16 +263,18 @@ pull requests for the `chromeos` branches.  These branches need to be regularly
 rebased with any extra patches that are not merged upstream, typically after
 each production update.
 
+* Dashboard: [chromeos.kernelci.org](https://chromeos.kernelci.org)
+* Description: [ChromeOS](/docs/instances/chromeos)
 * Maintainers: `mgalkga`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
-### [CIP instance](/docs/instances/cip)
-
-Dashboard: [cip.kernelci.org](https://cip.kernelci.org)
+### CIP instance
 
 The CIP instance is dedicated to building CIP specific kernels with CIP
 configurations. Currently the CIP KernelCI code is in production.
 
+* Dashboard: [cip.kernelci.org](https://cip.kernelci.org)
+* Description: [CIP](/docs/instances/cip)
 * Maintainers: `alicef`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 

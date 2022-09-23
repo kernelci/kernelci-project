@@ -2,6 +2,7 @@
 title: "Staging"
 date: 2021-07-22T08:30:00Z
 description: "How staging.kernelci.org works"
+weight: 2
 ---
 
 While the production instance is hosted on

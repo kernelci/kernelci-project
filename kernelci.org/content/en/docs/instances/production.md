@@ -2,6 +2,7 @@
 title: "Production"
 date: 2021-07-27T19:30:00Z
 description: "How linux.kernelci.org works"
+weight: 1
 ---
 
 The main dashboard on [linux.kernelci.org](https://linux.kernelci.org) shows

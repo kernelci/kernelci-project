@@ -1,8 +1,8 @@
 ---
 title: "CIP"
 date: 2022-09-20T15:16:00Z
-draft: false
 description: "About the cip.kernelci.org instance"
+weight: 4
 ---
 
 The [Civil Infrastructure Platform](https://www.cip-project.org/) project (CIP)

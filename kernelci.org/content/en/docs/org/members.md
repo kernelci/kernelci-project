@@ -1,11 +1,11 @@
 ---
 title: "Members"
-date: 2021-09-07
+date: 2021-09-23
 description: "Member companies who fund the KernelCI project"
 weight: 1
 ---
 
-The success of the KernelCI project will be driven by contributions from our
+The success of the KernelCI project is driven by contributions from our
 developer community and organizations joining as members.
 
 Learn how your organization can contribute to the project now by [sending us an

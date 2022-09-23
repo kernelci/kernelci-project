@@ -33,6 +33,15 @@ settings and facilitating the development workflow.  Having “deputy”
 maintainers whenever possible also helps with the continuity of the project
 when regular maintainers are not available..
 
+In addition to maintainers for each project, some GitHub administrators are
+available to make configuration changes at the organisation level.  This
+includes managing teams, permissions for each project, adding / moving /
+removing projects, configurating workboards and updating any other general
+settings.
+
+* Organisation: https://github.com/kernelci
+* Admins: `broonie`, `khilman`, `gtucker`
+
 ### Core tools
 
 The [core tools](/docs/core) provide the command line utilities and the

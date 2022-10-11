@@ -59,7 +59,7 @@ backend currently used in production.  It also features a Pub/Sub interface to
 coordinate the pipeline services in a modular fashion.
 
 * Repository: [`kernelci-api`](https://github.com/kernelci/kernelci-api)
-* Maintainers: `mgalkga`, `jeny`
+* Maintainers: `mgalka`, `jeny`
 
 ### Pipeline
 
@@ -69,7 +69,7 @@ essentially to replace the Jenkins pipeline currently used in production.
 
 * Repository:
   [`kernelci-pipeline`](https://github.com/kernelci/kernelci-pipeline)
-* Maintainers: `mgalkga`, `jeny`
+* Maintainers: `mgalka`, `jeny`
 
 ### KCIDB
 
@@ -135,7 +135,7 @@ The current KernelCI pipeline is using Jenkins.  While this is about to be
 replaced with the new pipeline and API, the purpose remains essentially the
 same: orchestrating the builds and tests on kernelci.org.
 
-* Maintainers: `broonie`, `mgalkga`, `nuclearcat`
+* Maintainers: `broonie`, `mgalka`, `nuclearcat`
 * Components:
   [`kernelci-jenkins`](https://github.com/kernelci/kernelci-jenkins)
 * Resources: Azure, GCE
@@ -274,7 +274,7 @@ each production update.
 
 * Dashboard: [chromeos.kernelci.org](https://chromeos.kernelci.org)
 * Description: [ChromeOS](/docs/instances/chromeos)
-* Maintainers: `mgalkga`, `nuclearcat`
+* Maintainers: `mgalka`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
 ### CIP instance

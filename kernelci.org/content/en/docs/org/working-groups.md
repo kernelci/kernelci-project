@@ -55,3 +55,4 @@ operations and ensure maintenance is taking place.
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
 * [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
+* [Vince Hillier](mailto:<vince@revenni.com>) - `vince`

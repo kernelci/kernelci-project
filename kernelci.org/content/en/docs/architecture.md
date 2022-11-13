@@ -29,7 +29,7 @@ KernelCI native tests are orchestrated using the following components:
   and triggering automated bisections.
 * [kernelci-frontend](https://github.com/kernelci/kernelci-frontend) which
   provides a web dashboard such as the one hosted on
-  [linux.kernelci.org](linux.kernelci.org).  This makes use of the backend API
+  [linux.kernelci.org](https://linux.kernelci.org).  This makes use of the backend API
   to retrieve results.
 * [kernelci-jenkins](https://github.com/kernelci/kernelci-jenkins) to run a
   [Jenkins](https://www.jenkins.io/) instance and orchestrate all the builds

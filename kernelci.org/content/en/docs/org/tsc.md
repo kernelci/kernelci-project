@@ -12,9 +12,7 @@ for keeping the KernelCI project in a good shape and driving its development.
 The [rules](#rules) are based on the LF [project
 charter](/files/KernelCI_Project_Technical_Charter_20181107.pdf).  Typically,
 major contributors eventually become members and those who have stopped
-contributing for an extended period of time may be removed.  This is done in
-agreement with the TSC and the AB.  The TSC may vote to make decisions when
-there is no consensus or when a formal procedure is required.
+contributing for an extended period of time may be removed.
 
 ## Members
 
@@ -46,34 +44,57 @@ including votes when necessary.
 
 ### Votes
 
-Most decisions are reached by consensus and don't require a vote.  Decisions
-that always require a vote are when adding or removing TSC members and making
-proposals to the board.  The results of the votes should be archived and as
-such they provide a way to keep a formal trace of decisions being made.
+As per paragraph *3.a TSC Voting* of the [project
+charter](/files/KernelCI_Project_Technical_Charter_20181107.pdf):
+
+> While the Project aims to operate as a consensus based community, if any TSC
+> decision requires a vote to move the Project forward, the voting members of
+> the TSC will vote on a one vote per voting member basis.
+
+Decisions that always require a vote are:
+* adding or removing TSC members
+* making changes to the TSC rules
+* granting or removing any kind of admin rights to individuals
+* making proposals to the LF project board
+
+The result of each vote should be shared on the mailing list and kept in an
+archive.  It should also include the date when any related changes were
+enacted.  As such they provide a way to keep a formal trace of decisions being
+made.
 
 > *Note* The archiving process for TSC votes hasn't been formalised yet.  Past
 > votes should be retroactively archived when this has been put in place.  They
 > should appear in a sub-section of this documentation section.
 
-Conditions for making a successful vote and determining its outcome are defined
-in the [project
-charter](/files/KernelCI_Project_Technical_Charter_20181107.pdf) in section
-*3. TSC Voting*.  Votes done in a live meeting require 50% of the TSC to be
-voting and a majority among the members attending.  Votes done by email or
-other deferred channel require a majority among all of the TSC members.
+Votes done during a live meeting require 50% of the TSC members to be voting
+and a majority among these voting members.  Votes done by email or any other
+deferred channel require a majority among all of the TSC members.
 
 ### Members
 
-Current members of the TSC may suggest new people to be added.  This should
-then go through a vote to keep a trace of it and prevent a single organisation
-from taking over the TSC.
+Current members of the TSC may propose to vote for new people to be added or
+removed.  This should prevent a single organisation from taking over the TSC.
+People to be considered as new TSC members should have typically played an
+important role for a significant amount of time in the project.  There is
+however no strict requirement, the only condition is the outcome of the TSC
+vote.
 
-Likewise, members of the TSC may suggest that a member be removed which should
+Likewise, members of the TSC may propose that a member be removed which should
 result in a vote.  Members who have not been active for over a year should be
 notified and considered for removal from TSC in order to keep the list
 up-to-date with the reality of the project.  Active members are typically
 expected to:
 
-* attend meetings (monthly)
+* attend TSC meetings (monthly)
 * participate in votes
-* make some form of positive contribution to the project
+* make sustained contributions to the project, such as:
+  * contributing to the code
+  * doing code reviews
+  * sharing experience and contributing ideas for solving technical issues
+  * helping keep the services working
+  * writing documentation or creating any content that promotes the project
+
+This list is not exhaustive, in the end it's up to the TSC to vote and judge
+whether a member should be removed due to inactivity.  Members who commit acts
+that pose a threat to the stability of the project may also be removed
+following a TSC vote.

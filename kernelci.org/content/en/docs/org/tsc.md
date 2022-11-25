@@ -34,8 +34,8 @@ respective email address and IRC nicknames:
 ## Communication
 
 For general discussions, the usual IRC channel `#kernelci` on libera.chat and
-the [`kernelci@groups.io`](mailto:<kernelci@groups.io>) mailing list can be
-used.  To contact only the TSC members directly, the
+the [`kernelci@lists.linux.dev`](mailto:<kernelci@lists.linux.dev>) mailing
+list can be used.  To contact only the TSC members directly, the
 [`kernelci-tsc@groups.io`](mailto:<kernelci-tsc@groups.io>) private list may be
 used instead.
 

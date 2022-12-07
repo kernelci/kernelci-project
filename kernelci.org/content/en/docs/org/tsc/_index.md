@@ -57,14 +57,10 @@ Decisions that always require a vote are:
 * granting or removing any kind of admin rights to individuals
 * making proposals to the LF project board
 
-The result of each vote should be shared on the mailing list and kept in an
-archive.  It should also include the date when any related changes were
-enacted.  As such they provide a way to keep a formal trace of decisions being
-made.
-
-> *Note* The archiving process for TSC votes hasn't been formalised yet.  Past
-> votes should be retroactively archived when this has been put in place.  They
-> should appear in a sub-section of this documentation section.
+The result of each vote should be shared on the mailing list and added to the
+[voting records](votes).  It should also include the date when any related
+changes were enacted.  As such they provide a way to keep a formal trace of
+decisions being made.
 
 Votes done during a live meeting require 50% of the TSC members to be voting
 and a majority among these voting members.  Votes done by email or any other

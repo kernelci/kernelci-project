@@ -11,9 +11,9 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status   |
 |---------------------------|-----------------------------------------------------------------|----------|
-| [2021-12-08](#2022-12-08) | Adopt the currently documented TSC rules as a starting point    | Approved |
-| [2021-12-08](#2022-12-08) | Add mgalka to the GitHub admins team                            | Approved |
-| [2021-12-08](#2022-12-08) | List of SysAdmin resources                                      | Approved |
+| [2022-12-08](#2022-12-08) | Adopt the currently documented TSC rules as a starting point    | Approved |
+| [2022-12-08](#2022-12-08) | Add mgalka to the GitHub admins team                            | Approved |
+| [2022-12-08](#2022-12-08) | List of SysAdmin resources                                      | Approved |
 | [2022-06-09](#2022-06-09) | Add TSC member: Denys                                           | Approved |
 | [2022-02-10](#2022-02-10) | Remvove TSC member: Lakshmipathi                                | Approved |
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved |

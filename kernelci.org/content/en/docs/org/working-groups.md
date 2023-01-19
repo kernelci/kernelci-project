@@ -33,14 +33,31 @@ potentially a new design from scratch using modern web technology.
 * [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) - `glunardi`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 
-## Sysadmin
+## SysAdmin
 
 The KernelCI common infrastructure requires some regular maintenance to keep
 web servers, databases and Cloud services up and running.  This does not
 include any test lab other than some Kubernetes clusters as hardware platforms
-are maintained by separate companies and individuals.  Members of the sysadmin
-working group have admin rights on most of the KernelCI systems, wherever
-applicable.  This group has a large overlap with [service
+are maintained by separate companies and individuals.  Members of the SysAdmin
+working group have admin rights on all KernelCI systems, wherever applicable.
+As per the [2022-12-08 TSC vote](/docs/org/tsc/votes/#2022-12-08), admin rights
+cover the following items:
+
+* Machines (SSH, sudo):
+  * KernelCI staging VM
+  * KernelCI production VM
+  * Jenkins runner nodes
+  * Kubernetes nodes
+* Web applications:
+  * Staging Jenkins instance (admin access)
+  * Production Jenkins instance (admin access)
+  * SysAdmin GitHub project board
+  * Azure portal (admin access)
+* Encrypted repositories:
+  * kernelci-jenkins-data
+  * builder-config-data
+
+This group has a large overlap with [service
 maintainers](tsc/#service-maintainers), it's merely a way to facilitate
 operations and ensure maintenance is taking place.
 

@@ -36,7 +36,7 @@ outcome and a more detailed section listing each individual vote.
 * Result: approved
 * Effective date: 2022-12-08
 * Voting method: regular TSC meeting/Mail
-* Voting members: mgailka, denis, gtucker, spbnick, broonie, alicef, Khilman
+* Voting members: mgalka, nuclearcat, gtucker, spbnick, broonie, alicef, khilman
 * Vote count: 7/9 voting, 7/7 in favour
 * Links: [Mail 2022-12-08](https://groups.io/g/kernelci-tsc/message/617)
 
@@ -44,7 +44,7 @@ outcome and a more detailed section listing each individual vote.
 * Result: approved
 * Effective date: 2022-12-08
 * Voting method: regular TSC meeting/Mail
-* Voting members: denis, gtucker, spbnick, broonie, alicef, Khilman, (mgalka abstain)
+* Voting members: nuclearcat, gtucker, spbnick, broonie, alicef, khilman, (mgalka abstain)
 * Vote count: 6/9 voting, 6/6 in favour
 * Links: [Mail 2022-12-08](https://groups.io/g/kernelci-tsc/message/617)
 
@@ -52,7 +52,7 @@ outcome and a more detailed section listing each individual vote.
 * Result: approved
 * Effective date: 2022-12-08
 * Voting method: regular TSC meeting/Mail
-* Voting members: mgailka, denis, gtucker, spbnick, broonie, alicef, Khilman
+* Voting members: mgalka, nuclearcat, gtucker, spbnick, broonie, alicef, khilman
 * Vote count: 7/9 voting, 7/7 in favour
 * Links: [Mail 2022-12-08](https://groups.io/g/kernelci-tsc/message/617)
 
@@ -62,7 +62,7 @@ outcome and a more detailed section listing each individual vote.
 * Result: approved
 * Effective date: 2022-06-09
 * Voting method: regular TSC meeting
-* Voting members: gtucker, alex, spbnick, broonie, alicef
+* Voting members: gtucker, apereira, spbnick, broonie, alicef
 * Vote count: 5/8 voting, 5/5 in favour
 * Links: [PR #121](https://github.com/kernelci/kernelci-project/pull/121)
 
@@ -72,7 +72,7 @@ outcome and a more detailed section listing each individual vote.
 * Result: approved
 * Effective date: 2022-02-10
 * Voting method: regular TSC meeting
-* Voting members: alicef, alex, spbnick, broonie, gtucker, laks (deferred)
+* Voting members: alicef, apereira, spbnick, broonie, gtucker, laks (deferred)
 * Vote count: 6/9 voting, 6/6 in favour
 * Links: [PR #100](https://github.com/kernelci/kernelci-project/pull/100)
 
@@ -81,6 +81,6 @@ outcome and a more detailed section listing each individual vote.
 * Result: approved
 * Effective date: 2021-07-13
 * Voting method: regular TSC meeting
-* Voting members: broonie, alex, mgalka, laks, gtucker
+* Voting members: broonie, apereira, mgalka, laks, gtucker
 * Vote count: 5/8 voting, 5/5 in favour
 * Links: [PR #18](https://github.com/kernelci/kernelci-project/pull/18)

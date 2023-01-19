@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status   |
 |---------------------------|-----------------------------------------------------------------|----------|
+| [2023-01-12](#2023-01-12) | Add cros-ec-tests repository to KernelCI GitHub organisation    | Approved |
 | [2022-12-08](#2022-12-08) | Adopt the currently documented TSC rules as a starting point    | Approved |
 | [2022-12-08](#2022-12-08) | Add mgalka to the GitHub admins team                            | Approved |
 | [2022-12-08](#2022-12-08) | List of SysAdmin resources                                      | Approved |
@@ -19,6 +20,15 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved |
 
 ## Votes
+
+### 2023-01-12
+
+**Motion: Add cros-ec-tests repository to KernelCI GitHub organisation**
+* Result: approved
+* Effective date: 2023-01-23
+* Voting method: regular TSC meeting
+* Voting members: mgalka, alicef, broonie, gtucker, nuclearcat, spbnick
+* Vote count: 6/9 voting, 6/6 in favour
 
 ### 2022-12-08
 

@@ -29,6 +29,5 @@ Below are the current members of the project.
 <div class="container">
   <div class="row row-cols-4">
     <div class="col p-3"><a href="https://www.baylibre.com/" target="_blank"><img src="/image/baylibre-horizontal-color.svg" alt="Baylibre" title="Baylibre" /></a></div>
-    <div class="col p-3"><a href="https://www.foundries.io/" target="_blank"><img src="/image/foundries-io-stacked-color.svg" alt="Foundries.IO" title="Foundries.IO" /></a></div>
   </div>
 </div>

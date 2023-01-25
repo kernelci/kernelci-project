@@ -26,10 +26,10 @@ potentially a new design from scratch using modern web technology.
 
 **Team:**
 
+* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan` - Lead
 * [Alexandra Pereira](mailto:<alexandra.pereira@collabora.com>) - `apereira`
 * [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) - `gregkh`
 * [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
-* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan`
 * [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) - `glunardi`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 

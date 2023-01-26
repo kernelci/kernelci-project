@@ -107,3 +107,14 @@ password = "password"
 login_url = "https://something.com/login"
 email = "hello@email.com"
 ```
+
+## Making changes
+
+If you have a GPG key set up, nothing special needs to be done to contribute to
+the encrypted files, Git will handle this seamlessly for you.  The only thing
+to know is that making a pull request on GitHub is not useful as the encrypted
+content can't be reviewed by definition.  So just make a commit the usual way,
+maybe discuss it with others if needed, and then `git push` it.  If you don't
+have have access rights to do so, please email `kernelci-sysadmin@groups.io` or
+send your patch file generated with `git format-patch` to someone who has
+access.

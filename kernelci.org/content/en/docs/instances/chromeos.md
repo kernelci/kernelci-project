@@ -286,3 +286,17 @@ then fragments from it:
 * **base.config**
 * architecture dependent (in our case armel) **armel/common.config**
 * **chromeos/armel/chromiumos-arm.flavour.config** from this archive.
+
+## Prebuilt ChromiumOS images published by KernelCI
+
+KernelCI builds and publishes ChromiumOS images for supported boards at the
+following location:
+
+https://storage.chromeos.kernelci.org/images/rootfs/chromeos/
+
+Please consult the official [ChromiumOS flashing instructions](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/cros_flash.md)
+for examples how to install the images within the published `chromiumos_test_image.bin.gz`.
+
+KernelCI maintains a [Changelog](../chromeos_changelog/) which tracks the evolution
+between published ChromiumOS releases as well as divergences between the KernelCI
+images and ChromiumOS upstream.

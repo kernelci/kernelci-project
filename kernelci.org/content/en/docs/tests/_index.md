@@ -26,3 +26,37 @@ Their results are shared alongside KernelCI native test results via
 
 See the [Tests Catalog](https://github.com/kernelci/kcidb/blob/main/tests.yaml)
 file with the list of test identifiers used by KCIDB.
+
+The fastest way to add the test is to use existing test suites:
+
+## LTP
+
+* LTP Test source lives at the [Linux Test Project](https://linux-test-project.github.io/)
+* Contact: Send questions to the mailing list **ltp@lists.linux.it**. For full [contact information](https://github.com/linux-test-project/ltp/wiki/Contact-Info), including IRC, see the [LTP wiki](https://github.com/linux-test-project/ltp/wiki/Developers)
+* Proposing patches: You can submit Pull Requests to the [LTP project on GitHub](https://github.com/linux-test-project/ltp).
+* Documentation: The [LTP wiki](https://github.com/linux-test-project/ltp/wiki/Developers) has plenty of documentation to get you started.  You have a [step-by-step tutorial](https://github.com/linux-test-project/ltp/blob/master/doc/c-test-tutorial-simple.txt) to create a new C test, [Guidelines](https://github.com/linux-test-project/ltp/blob/master/doc/test-writing-guidelines.txt), and other documentation.
+
+## kselftests
+
+* The kernel contains a set of “self tests” under the tools/testing/selftests/
+directory
+* See [Contributing to kselftests](https://www.kernel.org/doc/html/latest/dev-tools/kselftest.html#contributing-new-tests) for instructions to add tests
+* You can find more details at the [kselftests wiki](https://kselftest.wiki.kernel.org)
+* Contact: Send questions to the mailing list **linux-kselftest@vger.kernel.org** or join **#linux-kselftest** IRC Channel on freenode
+
+## **CI Services contributing to KCIDB**
+
+The are a number of [CI Services in production](https://github.com/orgs/kernelci/projects/16) contributing to [KCIDB](https://kcidb.kernelci.org).
+
+## CKI
+
+This is Red Hat’s kernel CI service.  They run tests on a variety of
+enterprise class machines.  This service is used to test the kernel package
+in the Red Hat Enterprise Linux (RHEL) product.
+
+* See [Contributing to CKI](https://cki-project.org/docs/test-maintainers/onboarding/) for instructions to add tests
+* See [Contributing a submaintainer tree](https://cki-project.org/docs/user_docs/onboarding/) for instructions to test a git branch
+* You can find more details at the [cki-project.org](https://cki-project.org)
+* Contact: Send questions to **cki-project@redhat.com**
+
+

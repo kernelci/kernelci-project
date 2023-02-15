@@ -65,11 +65,11 @@ operations and ensure maintenance is taking place.
 
 **Team:**
 
+* [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka` - Lead
 * [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 * [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) - `khilman`
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
-* [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 * [Vince Hillier](mailto:<vince@revenni.com>) - `vince`

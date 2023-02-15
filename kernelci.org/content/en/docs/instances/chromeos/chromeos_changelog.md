@@ -8,7 +8,31 @@ This file tracks divergences between the KernelCI built ChromiumOS images and up
 
 Divergences can be considered tech-debt and in the long run need to be kept under control and minimized, therefore this chanelog should reflect its evolution from version to version.
 
+### Fetching latest images
+
+It is recommended to use the latest published image versions for each board from [this list](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/).
+
+The latest version can be found either from the directory date name (e.g. `chromiumos-asurada/20230208.0`) or by the `distro_version` field in the `manifest.json` file, where for e.g. R106 is greater than R100.
+
 ## Release 106
+
+### Supported boards
+
+Direct links for each supported board in this release are provided here for convenience:
+- [amd64-generic](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-amd64-generic/20221102.0/arm64)
+- [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20230208.0/arm64)
+- [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20221026.0/amd64)
+- [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20221113.0/amd64/)
+- [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20221028.0/amd64/)
+- [hatch](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-hatch/20221027.0/amd64/)
+- [jacuzzi](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-jacuzzi/20230206.0/arm64/)
+- [nami](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-nami/20221120.0/amd64/)
+- [octopus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-octopus/20221025.0/amd64/)
+- [rammus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-rammus/20221116.0/amd64/)
+- [sarien](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-sarien/20221111.0/amd64/)
+- [trogdor](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-trogdor/20230214.0/arm64/)
+- [volteer](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-volteer/20221115.0/amd64/)
+- [zork](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-zork/20221115.0/amd64/)
 
 ### Changes since previous version (R100)
 	- A custom repo manifest is used to build images which points to forked repositories.

@@ -21,6 +21,7 @@ The latest version can be found either from the directory date name (e.g. `chrom
 Direct links for each supported board in this release are provided here for convenience:
 - [amd64-generic](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-amd64-generic/20221102.0/arm64)
 - [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20230208.0/arm64)
+- [cherry](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-cherry/20230330.0/arm64)
 - [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20221026.0/amd64)
 - [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20221113.0/amd64/)
 - [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20221028.0/amd64/)
@@ -41,8 +42,12 @@ Direct links for each supported board in this release are provided here for conv
 
 ### Known divergences
 
+#### src/third-party/kernel/next
+	- Points to the [Mediatek Integration branch](https://gitlab.collabora.com/google/chromeos-kernel/-/tree/for-kernelci).
+	- Currently only used for cherry board builds because upstream support is still WIP.
+
 #### src/third-party/kernel/upstream
-	- Based on latest v6.2 kernel release.
+	- Based on v6.2.7 stable kernel release.
 	- `arch/arm64/configs/defconfig` was extended with Mediatek specific config fragments. In the future we might find a better way to fetch these for the upstream kernel builds.
 	- Backported and cherry-picked ~ 19 patches to enable Panfrost on mediatek. These will be dropped in future kernel versions.
 
@@ -55,8 +60,13 @@ Direct links for each supported board in this release are provided here for conv
 #### src/platform/minigbm
 	- Add patch to allow minigbm to work with panfrost BO ioctls. This works but needs significant changes before being sent upstream.
 
+#### src/platform/initramfs
+	- Contains a backport of a commit which got upstreamed in [this CL](https://chromium-review.googlesource.com/c/chromiumos/platform/initramfs/+/4262007).
+	- This fork can be removed when upgrading to a newer ChromiumOS version containing the above commit.
+
 #### src/overlays
 	- Added fix for broken upstream chipset-mt8183 virtual/opengles panfrost dependencies.
 	- Panfrost added as a graphics alternative for all Mediatek chipsets.
 	- Removed Mali G-57 empty job workaround firmware which is not required for upstream graphics.
 	- Instructed mt8183/8192 builds to use upstream kernel.
+	- Instructed mt8195 builds to use linux-next kernel / Mediatek Integration branch (see above).

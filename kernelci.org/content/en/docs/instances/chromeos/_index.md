@@ -297,6 +297,6 @@ https://storage.chromeos.kernelci.org/images/rootfs/chromeos/
 Please consult the official [ChromiumOS flashing instructions](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/cros_flash.md)
 for examples how to install the images within the published `chromiumos_test_image.bin.gz`.
 
-KernelCI maintains a [Changelog](../chromeos_changelog/) which tracks the evolution
+KernelCI maintains a [Changelog](../chromeos/chromeos_changelog/) which tracks the evolution
 between published ChromiumOS releases as well as divergences between the KernelCI
 images and ChromiumOS upstream.

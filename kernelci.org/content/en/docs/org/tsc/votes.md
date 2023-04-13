@@ -9,17 +9,41 @@ outcome and a more detailed section listing each individual vote.
 
 ## Summary
 
-| Date                      | Motion                                                          | Status   |
-|---------------------------|-----------------------------------------------------------------|----------|
-| [2023-01-12](#2023-01-12) | Add cros-ec-tests repository to KernelCI GitHub organisation    | Approved |
-| [2022-12-08](#2022-12-08) | Adopt the currently documented TSC rules as a starting point    | Approved |
-| [2022-12-08](#2022-12-08) | Add mgalka to the GitHub admins team                            | Approved |
-| [2022-12-08](#2022-12-08) | List of SysAdmin resources                                      | Approved |
-| [2022-06-09](#2022-06-09) | Add TSC member: Denys                                           | Approved |
-| [2022-02-10](#2022-02-10) | Remvove TSC member: Lakshmipathi                                | Approved |
-| [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved |
+| Date                      | Motion                                                          | Status    |
+|---------------------------|-----------------------------------------------------------------|-----------|
+| [2023-03-09](#2023-03-09) | Add grafana-singlevalue-panel repository                        | Approved  |
+| [2023-03-09](#2023-03-09) | Remove TSC member: Alexandra Pereira                            | Approved  |
+| [2023-03-09](#2023-03-09) | Hold occasional weekly in US Pacific friendly timezone          | Postponed |
+| [2023-01-12](#2023-01-12) | Add cros-ec-tests repository to KernelCI GitHub organisation    | Approved  |
+| [2022-12-08](#2022-12-08) | Adopt the currently documented TSC rules as a starting point    | Approved  |
+| [2022-12-08](#2022-12-08) | Add mgalka to the GitHub admins team                            | Approved  |
+| [2022-12-08](#2022-12-08) | List of SysAdmin resources                                      | Approved  |
+| [2022-06-09](#2022-06-09) | Add TSC member: Denys                                           | Approved  |
+| [2022-02-10](#2022-02-10) | Remvove TSC member: Lakshmipathi                                | Approved  |
+| [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2023-03-09
+
+**Motion: Add grafana-singlevalue-panel repository**
+* Result: approved
+* Effective date: 2023-03-09
+* Voting method: regular TSC meeting
+* Voting members: broonie, spbnick, mgalka, gtucker, nuclearcat
+* Vote count: 5/8, 5/5 in favour
+
+**Motion: Remove TSC member: Alexandra Pereira**
+* Result: approved
+* Effective date: 2023-03-09
+* Voting method: regular TSC meeting
+* Voting members: broonie, spbnick, mgalka, gtucker, nuclearcat
+* Vote count: 5/8, 5/5 in favour
+
+**Motion: Hold occasional weekly in US Pacific friendly timezone**
+* Result: approved
+* The motion wasn't precise enough, followed up by email
+* https://groups.io/g/kernelci-tsc/topic/amer_timezone_tsc_meetings/97493438
 
 ### 2023-01-12
 

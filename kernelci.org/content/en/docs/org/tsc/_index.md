@@ -25,7 +25,6 @@ respective email address and IRC nicknames:
 * [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 * [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
-* [Alexandra Pereira](mailto:<alexandra.pereira@collabora.com>) - `apereira`
 * [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 

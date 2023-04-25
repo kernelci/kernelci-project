@@ -14,7 +14,19 @@ It is recommended to use the latest published image versions for each board from
 
 The latest version can be found either from the directory date name (e.g. `chromiumos-asurada/20230208.0`) or by the `distro_version` field in the `manifest.json` file, where for e.g. R106 is greater than R100.
 
+### ChromiumOS release documentation
+
+[This page](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/releases.md) contains information on how ChromiumOS manages its releases, schedules, support windows and other such useful information.
+
+For an up-to-date overview of current and planned releases, please visit the [schedule dashboard](https://chromiumdash.appspot.com/schedule).
+
 ## Release 106
+
+### Repo manifest
+
+The following images have been built using [this manifest](https://github.com/kernelci/kernelci-core/blob/chromeos/config/rootfs/chromiumos/cros-snapshot-release-R106-15054.B.xml). The [repo tool](https://code.google.com/archive/p/git-repo/) can fetch the sources specified in the manifest file.
+
+Specific instructions on how to fetch and build ChromiumOS from a manifest file can be found in the [developer guide](https://chromium.googlesource.com/chromiumos/docs/+/main/developer_guide.md).
 
 ### Supported boards
 

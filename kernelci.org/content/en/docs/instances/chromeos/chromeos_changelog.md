@@ -20,6 +20,37 @@ The latest version can be found either from the directory date name (e.g. `chrom
 
 For an up-to-date overview of current and planned releases, please visit the [schedule dashboard](https://chromiumdash.appspot.com/schedule).
 
+## R111
+
+### Repo manifest
+
+The following images have been built using [this manifest](https://github.com/kernelci/kernelci-core/blob/chromeos/config/rootfs/chromiumos/cros-snapshot-release-R111-15329.B.xml). The [repo tool](https://code.google.com/archive/p/git-repo/) can fetch the sources specified in the manifest file.
+
+Specific instructions on how to fetch and build ChromiumOS from a manifest file can be found in the [developer guide](https://chromium.googlesource.com/chromiumos/docs/+/main/developer_guide.md).
+
+### Supported boards
+
+Direct links for each supported board in this release are provided below for convenience.
+| Board       | Kernels shipped in image | Kernels tested by KernelCI (replacing image kernels during boot) |
+|-------------|:------------:|:-------:|
+| [amd64-generic](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-amd64-generic/20221102.0/arm64) | chromeos-5_15 | |
+| [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20230208.0/arm64) | v6.2.7<br> + display patches<br> + panfrost | v6.1.x |
+| [cherry](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-cherry/20230330.0/arm64) | linux-next 20230203<br> + mtk HW enablement patches<br> + panfrost | |
+| [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20221026.0/amd64) | chromeos-5_10 | |
+| [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20221113.0/amd64/) | chromeos-5_4 | |
+| [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20221028.0/amd64/) | chromeos-5_10 ||
+| [hatch](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-hatch/20221027.0/amd64/) | chromeos-4_19 | |
+| [jacuzzi](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-jacuzzi/20230206.0/arm64/) | v6.2.7 <br> + panfrost | v6.1.x <br> next-integration-branch (for-kernelci) |
+| [nami](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-nami/20221120.0/amd64/) | chromeos-4_4 | | [octopus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-octopus/20221025.0/amd64/) | chromeos-4_14 | |
+| [rammus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-rammus/20221116.0/amd64/) | chromeos-4_4 | |
+| [sarien](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-sarien/20221111.0/amd64/) | chromeos-4_19 | |
+| [trogdor](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-trogdor/20230214.0/arm64/) | chromeos-5_4 | |
+| [volteer](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-volteer/20221115.0/amd64/) | chromeos-5_4 | |
+| [zork](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-zork/20221115.0/amd64/) | chromeos-5_4 |
+
+### Changes since previous version (R100)
+- TODO
+
 ## R106
 
 ### Repo manifest

@@ -9,6 +9,13 @@ Working groups are small teams of people focusing on a particular aspect of the
 project.  Each group typically relies on a monthly meeting and a GitHub
 workboard to keep track of things.
 
+There should also be a lead to coordinate activities within each group, such
+as:
+
+* updating the workboard
+* preparing regular meeting agendas and keeping minutes
+* sharing regular reports with the TSC, board and public mailing list
+
 ## Web dashboard
 
 **Workboard:** https://github.com/orgs/kernelci/projects/4

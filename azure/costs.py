@@ -122,7 +122,7 @@ def _show_daily_totals(usage, details=True):
         if details:
             print(f"{when.strftime('%Y-%m-%d')} {total:8.2f}")
     delta = max(dates) - min(dates)
-    average = full_total / delta.days
+    average = full_total / (delta.days + 1)
     if details:
         print("-------------------")
     print(f"Total:     {full_total:8.2f}")

@@ -34,3 +34,7 @@ The deadline for responding to this RFP is **10th July 2023**, six weeks after
 it has been made public. Then the KernelCI Advisory Board of Members will vote
 on the **24th July 2023**. Exact dates might be subject to change in case of a
 major practical issue or unavailability of voting members.
+
+> **Edit**: Following a surge in last-minute queries, the timeline has now been
+> extended.  The new deadline for submitting proposals is **24th July 2023**
+> and the advisory board is planning to hold a vote on **9th August 2023**.

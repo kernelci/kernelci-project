@@ -153,7 +153,7 @@ test_configs:
 ```
 
 Each test plan also needs to be enabled to run in particular test labs in
-`lab-configs.yaml`.  Some labs such as the Collabora one allow all tests to be
+`runtime-configs.yaml`.  Some labs such as the Collabora one allow all tests to be
 run, and it contains the platforms listed above so no extra changes are
 required at this point.
 

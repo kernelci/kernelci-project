@@ -100,17 +100,14 @@ def _show_details(usage):
     for when, item in usage.by_date().items():
         date = when.strftime('%Y-%m-%d')
         for entry in item:
-            service, resource, region, guid, cost = (
+            service, resource, region, cost = (
                 entry[key] for key in [
                     'ServiceName',
                     'ServiceResource',
                     'ServiceRegion',
-                    'ResourceGuid',
                     'Cost'
             ])
-            print(f"\
-{date} {service:24s} {cost:8.2f}   \
-{guid}  {region:18s} {resource}")
+            print(f"{date} {service:24s} {cost:8.2f}   {region:24} {resource}")
 
 
 def _show_daily_totals(usage, details=True):

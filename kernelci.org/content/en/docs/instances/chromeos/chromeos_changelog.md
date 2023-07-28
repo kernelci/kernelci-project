@@ -20,6 +20,38 @@ The latest version can be found either from the directory date name (e.g. `chrom
 
 For an up-to-date overview of current and planned releases, please visit the [schedule dashboard](https://chromiumdash.appspot.com/schedule).
 
+## R114
+
+### Repo manifest
+
+The following images have been built using [this manifest](https://github.com/kernelci/kernelci-core/blob/chromeos/config/rootfs/chromiumos/cros-snapshot-release-R114-15437.B.xml). The [repo tool](https://code.google.com/archive/p/git-repo/) can fetch the sources specified in the manifest file.
+
+Specific instructions on how to fetch and build ChromiumOS from a manifest file can be found in the [developer guide](https://chromium.googlesource.com/chromiumos/docs/+/main/developer_guide.md).
+
+### Supported boards
+
+Direct links for each supported board in this release are provided below for convenience.
+| Board       | Kernels shipped in image | Kernels tested by KernelCI (replacing image kernels during boot) |
+|-------------|:------------:|:-------:|
+| [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20230620.0/arm64) | v6.2.7<br> + display patches<br> + panfrost | stable:linux-6.1.y |
+| [cherry](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-cherry/20230620.0/arm64) | linux-next 20230203<br> + mtk HW enablement patches<br> + panfrost | |
+| [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20230620.0/amd64) | default | stable:linux-6.1.y |
+| [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20230620.0/amd64/) | default | stable:linux-6.1.y |
+| [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20230620.0/amd64/) | chromeos-5_10 | stable:linux-6.1.y |
+| [hatch](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-hatch/20230620.0/amd64/) | default | stable:linux-6.1.y |
+| [jacuzzi](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-jacuzzi/20230620.0/arm64/) | v6.2.7 <br> + panfrost | stable:linux-6.1.y <br> next-integration-branch (for-kernelci) |
+| [nami](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-nami/20230620.0/amd64/) | default | stable:linux-6.1.y |
+| [octopus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-octopus/20230620.0/amd64/) | default | stable:linux-6.1.y |
+| [rammus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-rammus/20230620.0/amd64/) | default | stable:linux-6.1.y |
+| [sarien](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-sarien/20230620.0/amd64/) | default | stable:linux-6.1.y |
+| [trogdor](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-trogdor/20230620.0/arm64/) | default | stable:linux-6.1.y |
+| [volteer](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-volteer/20230620.0/amd64/) | default | stable:linux-6.1.y |
+| [zork](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-zork/20230620.0/amd64/) | default | stable:linux-6.1.y |
+
+### Changes since previous version (R111)
+
+* Dropped separate initramfs patches, as it is upstream now, [this CL](https://chromium-review.googlesource.com/c/chromiumos/platform/initramfs/+/4262007)
+
 ## R111
 
 ### Repo manifest

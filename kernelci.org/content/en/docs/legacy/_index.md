@@ -34,12 +34,12 @@ KernelCI native tests are orchestrated using the following components:
   connected to KernelCI services to run tests and send results directly to the
   backend.
 
-There are several [instances](../instances) hosted by the KernelCI project, for
-different needs as explained in the documentation.  Each instance is made up of
-all the components listed above.  It's possible for anyone to set up their own
-private instance too.  However, developers typically don't need to set up a
-full instance but only the components they need to make changes to.  Here's how
-they all relate to each other:
+There are several [instances](/docs/legacy/instances) hosted by the KernelCI
+project, for different needs as explained in the documentation.  Each instance
+is made up of all the components listed above.  It's possible for anyone to set
+up their own private instance too.  However, developers typically don't need to
+set up a full instance but only the components they need to make changes to.
+Here's how they all relate to each other:
 
 ```mermaid
 graph TD

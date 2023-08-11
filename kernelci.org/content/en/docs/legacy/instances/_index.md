@@ -1,8 +1,7 @@
 ---
 title: "Instances"
-date: 2021-07-21T21:00:00Z
+date: 2023-08-11
 description: "KernelCI public instances"
-weight: 2
 ---
 
 There are a number of KernelCI instances for various purposes.  The main

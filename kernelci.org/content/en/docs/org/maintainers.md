@@ -49,7 +49,7 @@ The [core tools](/docs/core) provide the command line utilities and the
 individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainers: `mgalka`, `nuclearcat`
+* Maintainers: `mgalka`, `nuclearcat`, `jeny`
 * Deputy: `alicef`
 
 ### API

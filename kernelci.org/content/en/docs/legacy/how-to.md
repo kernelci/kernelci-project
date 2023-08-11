@@ -1,8 +1,7 @@
 ---
 title: "How-To"
-date: 2021-08-06
+date: 2023-08-11
 description: "How to add a new native test suite"
-weight: 1
 ---
 
 This guide contains all the steps needed to add a native test suite to

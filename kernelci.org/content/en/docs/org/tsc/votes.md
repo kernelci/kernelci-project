@@ -11,9 +11,12 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2023-04-13](#2023-04-13) | Subscribe to Azure Container Registry (Premium)                 | Approved  |
+| [2023-04-13](#2023-04-13) | Set up Harbour as Docker registry / cache                       | Approved  |
+| [2023-04-13](#2023-04-13) | Apply for Docker Hub’s Open Source Program                      | Approved  |
 | [2023-03-09](#2023-03-09) | Add grafana-singlevalue-panel repository                        | Approved  |
 | [2023-03-09](#2023-03-09) | Remove TSC member: Alexandra Pereira                            | Approved  |
-| [2023-03-09](#2023-03-09) | Hold occasional weekly in US Pacific friendly timezone          | Postponed |
+| [2023-03-09](#2023-03-09) | Hold occasional weekly in US Pacific-friendly timezone          | Postponed |
 | [2023-01-12](#2023-01-12) | Add cros-ec-tests repository to KernelCI GitHub organisation    | Approved  |
 | [2022-12-08](#2022-12-08) | Adopt the currently documented TSC rules as a starting point    | Approved  |
 | [2022-12-08](#2022-12-08) | Add mgalka to the GitHub admins team                            | Approved  |
@@ -23,6 +26,47 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2023-04-13
+
+**Motion: Apply for Docker Hub’s Open Source Program**
+* Result: approved
+* Effective date: 2023-04-13
+* Voting method: regular TSC meeting
+* Voting members: broonie, spbnick, mgalka, gtucker, nuclearcat, arisut
+* Vote count: 6/8, 6/6 in favour
+
+**Motion: Set up Harbour as Docker registry / cache**
+* Result: approved
+* Effective date: 2023-04-13
+* Voting method: regular TSC meeting
+* Voting members: broonie, spbnick, mgalka, gtucker, nuclearcat, arisut
+* Vote count: 6/8, 4/6 in favour
+
+> Note: We could try Azure first and consider setting up Harbour later on, or
+> maybe only for caching.
+
+**Motion: Subscribe to Azure Container Registry (Premium)**
+* Result: approved
+* Effective date: 2023-04-13
+* Voting method: regular TSC meeting
+* Voting members: broonie, spbnick, mgalka, gtucker, nuclearcat, arisut
+* Vote count: 6/8, 6/6 in favour
+
+> Note: If we start a subscription, we should have a trial period to verify the
+> limits match the expectations.  Then if there’s a problem we may stop the
+> subscription (e.g. if “500 actions” or other implicit limits are make it
+> unusable for us).
+
+**Motion: Add mgalka to Linux Foundation SysAdmin JIRA**
+* Result: approved
+* Effective date: 2023-04-13
+* Voting method: regular TSC meeting
+* Voting members: broonie, spbnick, mgalka, gtucker, nuclearcat, arisut
+* Vote count: 6/8, 6/6 in favour
+
+> Note: This wasn't necessary, anyone can create a JIRA ticket asking for DNS
+> changes.  It's up to the LF sysadmins to moderate the requests.
 
 ### 2023-03-09
 
@@ -40,7 +84,7 @@ outcome and a more detailed section listing each individual vote.
 * Voting members: broonie, spbnick, mgalka, gtucker, nuclearcat
 * Vote count: 5/8, 5/5 in favour
 
-**Motion: Hold occasional weekly in US Pacific friendly timezone**
+**Motion: Hold occasional weekly in US Pacific-friendly timezone**
 * Result: approved
 * The motion wasn't precise enough, followed up by email
 * https://groups.io/g/kernelci-tsc/topic/amer_timezone_tsc_meetings/97493438

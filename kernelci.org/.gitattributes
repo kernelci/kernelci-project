@@ -22,3 +22,4 @@ content/en/logo/files/kernelci-logo-black.svg filter=lfs diff=lfs merge=lfs -tex
 content/en/logo/background.jpeg filter=lfs diff=lfs merge=lfs -text
 content/en/logo/kernelci_brand.pdf filter=lfs diff=lfs merge=lfs -text
 content/en/logo/kernelci_brand.svg filter=lfs diff=lfs merge=lfs -text
+static/image/kernelci-architecture.png filter=lfs diff=lfs merge=lfs -text

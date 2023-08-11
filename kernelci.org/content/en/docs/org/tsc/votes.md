@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2023-08-10](#2023-08-10) | Add Jeny to kernelci-core maintainers                           | Approved  |
 | [2023-04-13](#2023-04-13) | Subscribe to Azure Container Registry (Premium)                 | Approved  |
 | [2023-04-13](#2023-04-13) | Set up Harbour as Docker registry / cache                       | Approved  |
 | [2023-04-13](#2023-04-13) | Apply for Docker Hub’s Open Source Program                      | Approved  |
@@ -26,6 +27,15 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2023-08-10
+
+**Motion: Add Jeny to kernelci-core maintainers**
+* Result: approved
+* Effective date: 2023-08-10
+* Voting method: regular TSC meeting
+* Voting members: spbnick, broonie, gtucker, nuclearcat, arisut
+* Vote count: 5/8, 4/5 in favour (broonie had to drop out of the meeting)
 
 ### 2023-04-13
 

@@ -2,7 +2,7 @@
 title: "Organization"
 date: 2021-09-03
 description: "KernelCI project organization"
-weight: 3
+weight: 1
 aliases:
   - "/docs/team/"
 ---

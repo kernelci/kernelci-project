@@ -20,6 +20,50 @@ The latest version can be found either from the directory date name (e.g. `chrom
 
 For an up-to-date overview of current and planned releases, please visit the [schedule dashboard](https://chromiumdash.appspot.com/schedule).
 
+## R116
+
+### Repo manifest
+
+The following images have been built using [this manifest](https://raw.githubusercontent.com/kernelci/kernelci-core/chromeos/config/rootfs/chromiumos/cros-snapshot-release-R116-15509.B.xml). The [repo tool](https://code.google.com/archive/p/git-repo/) can fetch the sources specified in the manifest file.
+
+Specific instructions on how to fetch and build ChromiumOS from a manifest file can be found in the [developer guide](https://chromium.googlesource.com/chromiumos/docs/+/main/developer_guide.md).
+
+### Supported boards
+Direct links for each supported board in this release are provided below for convenience.
+| Board       | Kernels shipped in image | Kernels tested by KernelCI (replacing image kernels during boot) |
+|-------------|:------------:|:-------:|
+| [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20230825.0/arm64) | v6.2.7<br> + display patches<br> + panfrost | stable:linux-6.1.y |
+| [brya](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-brya/20230825.0/amd64) | default | stable:linux-6.1.y |
+| [cherry](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-cherry/20230825.0/arm64) | linux-next 20230203<br> + mtk HW enablement patches<br> + panfrost | |
+| [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20230825.0/amd64) | default | stable:linux-6.1.y |
+| [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20230825.0/amd64/) | chromeos-5_10 | stable:linux-6.1.y |
+| [guybrush](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-guybrush/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [hatch](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-hatch/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [jacuzzi](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-jacuzzi/20230825.0/arm64/) | v6.2.7 <br> + panfrost | stable:linux-6.1.y <br> next-integration-branch (for-kernelci) |
+| [nami](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-nami/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [octopus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-octopus/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [puff](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-puff/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [rammus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-rammus/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [sarien](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-sarien/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [trogdor](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-trogdor/20230825.0/arm64/) | default | stable:linux-6.1.y |
+| [volteer](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-volteer/20230825.0/amd64/) | default | stable:linux-6.1.y |
+| [zork](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-zork/20230825.0/amd64/) | default | stable:linux-6.1.y |
+
+
+### New workarounds/patches since previous version (R114)
+
+* Updated minigbm backend for Mediatek
+* Updated separate patches for tpm2 flag where it is necessary
+* Added workaround for b/295364868 (orphan_files feature not supported by old kernels) by updating mke2fs.conf
+* Added workaround for PS1/command prompt
+
+### Removed workarounds since previous version (R114)
+
+* Removed trogdor patch revert for arm64 userspace
+* Removed manual kernel version override for grunt
+* Removed build fixes for coral, sarien
+
 ## R114
 
 ### Repo manifest

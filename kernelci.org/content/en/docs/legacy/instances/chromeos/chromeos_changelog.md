@@ -57,6 +57,7 @@ Direct links for each supported board in this release are provided below for con
 * Updated separate patches for tpm2 flag where it is necessary
 * Added workaround for b/295364868 (orphan_files feature not supported by old kernels) by updating mke2fs.conf
 * Added workaround for PS1/command prompt
+* Backported fix for b/300303585. The fix was upstreamed starting with R119, after which KernelCI should drop it.
 
 ### Removed workarounds since previous version (R114)
 

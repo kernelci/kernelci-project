@@ -56,10 +56,9 @@ user accounts so you can keep your own personal test data there, an abstraction
 for runtime environments so jobs can be run seamlessly in Docker, Kubernetes, a
 local shell, LAVA, [insert your own system here]... a new `kci` command line
 tool to rule them all and a unified Node schema to contain all the test data
-(revision, build, runtime test, regression...) in a tree or
-[DAG](https://en.wikipedia.org/wiki/Directed_acyclic_graph) to be precise.  But
-again, we'll go through all that later in more detail.  It's all based on
-requirements gathered from the community over the past few years.
+(revision, build, runtime test, regression...) in a tree.  But again, we'll go
+through all that later in more detail.  It's all based on requirements gathered
+from the community over the past few years.
 
 ## Timeline
 

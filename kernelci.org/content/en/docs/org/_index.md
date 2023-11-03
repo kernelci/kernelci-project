@@ -89,3 +89,52 @@ of this Charter.
 
 [KernelCI_Project_Technical_Charter_20181107.pdf
 ](/files/KernelCI_Project_Technical_Charter_20181107.pdf)
+
+## Meetings
+
+Several periodic meetings are scheduled for different purposes:
+
+### Community Weekly
+
+* Every Thursday at 11:00 UTC on [Jitsi](https://meet.jit.si/kernelci-dev)
+
+This is a public meeting for general discussions with anyone interested in the
+project.  A shared document is used to keep the minutes and an agenda is
+prepared ahead of the meeting.
+
+### Open Hours
+
+* EMEA/APAC: Every Thursday at 12:00 UTC on
+  [Jitsi](https://meet.jit.si/kernelci-dev)
+
+* EMEA/AMER: Every Wednesday at 18:00 UTC on
+  [Jitsi](https://meet.jit.si/kernelci-dev)
+
+The Open Hours are additional public meetings for informal technical
+discussions: new users who are getting started, kernel maintainers who want to
+have their tests run in KernelCI, kernel bugs reported by KernelCI, pending
+KernelCI code changes on GitHub etc.  They help offload the community weekly to
+keep it more high-level and ensure all the people involved in the project can
+discuss the most important topics then.
+
+The Wednesday Open Hours session is more convenient for people in the AMER
+timezones than the Thursday meetings, and things discussed on Wednesday should
+be shared during the Thursday meeting.
+
+### Advisory Board
+
+* Every other Wednesday at 07:30 PST
+
+The [Advisory Board](/docs/org/board/) of members meet every other week to
+discuss things that matter from the point of view of the KernelCI Linux
+Foundation project: budget, membership, work packages, internships etc.  It's a
+private meeting as only member representatives can attend.
+
+### Technical Steering Committee
+
+* Every second Thursday of the month at 10:00 UTC
+
+The [Technical Steering Committee](/docs/org/tsc/) meet once a month to discuss
+general technical topics that have a significant impact on the project.  This
+is a private meeting as only elected TSC members can attend and they
+occasionally take part in decisions made by the advisory board.

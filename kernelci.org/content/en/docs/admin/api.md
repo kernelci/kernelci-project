@@ -86,9 +86,13 @@ generated password:
 
   PASSWORD
 
-and your personal Azure Files token:
+Your personal Azure Files token is:
 
   ?sv=2022-11-02&ss=bfq&srt=sco&sp=<signature>
+
+and the associated share name is:
+
+  <share name>
 
 Please take a look at the Early Access documentation page to update your API
 account with your own password and get started:

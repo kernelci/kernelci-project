@@ -47,7 +47,7 @@ potentially a new design from scratch using modern web technology.
 **Team:**
 
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat` - Lead
-* [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
+* [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
 * [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
 * [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) - `khilman`

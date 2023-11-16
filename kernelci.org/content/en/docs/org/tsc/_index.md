@@ -24,7 +24,7 @@ respective email address and IRC nicknames:
 * [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
 * [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
-* [Michał Gałka](mailto:<michal.galka@collabora.com>) - `mgalka`
+* [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
 * [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 

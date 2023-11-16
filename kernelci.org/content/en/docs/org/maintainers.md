@@ -49,7 +49,7 @@ The [core tools](/docs/core) provide the command line utilities and the
 individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainers: `mgalka`, `nuclearcat`, `jeny`
+* Maintainers: `nuclearcat`, `jeny`
 * Deputy: `alicef`
 
 ### API
@@ -59,7 +59,7 @@ backend currently used in production.  It also features a Pub/Sub interface to
 coordinate the pipeline services in a modular fashion.
 
 * Repository: [`kernelci-api`](https://github.com/kernelci/kernelci-api)
-* Maintainers: `mgalka`, `jeny`
+* Maintainers: `jeny`
 
 ### Pipeline
 
@@ -69,7 +69,7 @@ essentially to replace the Jenkins pipeline currently used in production.
 
 * Repository:
   [`kernelci-pipeline`](https://github.com/kernelci/kernelci-pipeline)
-* Maintainers: `mgalka`, `jeny`
+* Maintainers: `jeny`
 
 ### KCIDB
 
@@ -117,7 +117,7 @@ such as Jenkins and the web frontend.  They are currently all managed in Azure,
 but this may evolve over time.  They require sysadmin maintenance, monitoring
 tools, backups...
 
-* Maintainers: `mgalka`, `nuclearcat`
+* Maintainers: `nuclearcat`
 * Resources: Azure (VMs, Mongo DB)
 
 ### BigQuery
@@ -159,7 +159,7 @@ to KCIDB.  This covers integration with test labs, rootfs images, pipeline
 configuration... anything related to running those tests and getting their
 results into the database.
 
-* Maintainers: `mgalka`, `nuclearcat`
+* Maintainers: `nuclearcat`
 * Components:
   [`test-definitions`](https://github.com/kernelci/test-definitions),
   [`bootrr`](https://github.com/kernelci/bootrr),
@@ -172,7 +172,7 @@ results into the database.
 Just like tests, kernel builds orchestrated on kernelci.org are called the
 *native* KernelCI builds.
 
-* Maintainers: `broonie`, `mgalka`, `nuclearcat`
+* Maintainers: `broonie`, `nuclearcat`
 * Components:
   [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config),
   [`kernelci-jenkins`](https://github.com/kernelci/kernelci-jenkins)
@@ -185,7 +185,7 @@ possible.  This involves building kernels, running tests and checking their
 results in a coordinated way to then send an email report when the bisection
 succeeds.
 
-* Maintainers: `gtucker`, `mgalka`
+* Maintainers: `gtucker`
 * Components: [`kernelci-core`](https://github.com/kernelci/kernelci-core),
   [`bisect.jpl`](https://github.com/kernelci/kernelci-jenkins/blob/main/jobs/bisect.jpl)
 * Services: Pipeline / Jenkins

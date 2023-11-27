@@ -33,23 +33,23 @@ Specific instructions on how to fetch and build ChromiumOS from a manifest file 
 Direct links for each supported board in this release are provided below for convenience.
 | Board       | Kernels shipped in image | Kernels tested by KernelCI (replacing image kernels during boot) |
 |-------------|:------------:|:-------:|
-| [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20231106.0/arm64) | v6.6.x<br> + panfrost | stable:linux-6.1.y |
-| [brya](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-brya/20231106.0/amd64) | default | stable:linux-6.1.y |
-| [cherry](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-cherry/20231106.0/arm64) | v6.6.x<br> + 3 display patches<br> + panfrost | |
-| [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20231106.0/amd64) | default | stable:linux-6.1.y |
-| [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [guybrush](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-guybrush/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [hatch](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-hatch/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [jacuzzi](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-jacuzzi/20231106.0/arm64/) | v6.6.x + panfrost | stable:linux-6.1.y <br> next-integration-branch (for-kernelci) |
-| [nami](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-nami/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [octopus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-octopus/20231106.0/amd64/) | chromeos-5.15 | stable:linux-6.1.y |
-| [puff](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-puff/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [rammus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-rammus/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [sarien](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-sarien/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [trogdor](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-trogdor/20231106.0/arm64/) | default | stable:linux-6.1.y |
-| [volteer](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-volteer/20231106.0/amd64/) | default | stable:linux-6.1.y |
-| [zork](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-zork/20231106.0/amd64/) | default | stable:linux-6.1.y |
+| [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20231106.0/arm64) | v6.6.x<br> + panfrost | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [brya](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-brya/20231106.0/amd64) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [cherry](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-cherry/20231106.0/arm64) | v6.6.x<br> + 3 display patches<br> + panfrost | stable:linux-6.6.y |
+| [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20231106.0/amd64) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [guybrush](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-guybrush/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [hatch](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-hatch/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [jacuzzi](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-jacuzzi/20231106.0/arm64/) | v6.6.x + panfrost | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [nami](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-nami/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [octopus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-octopus/20231106.0/amd64/) | chromeos-5.15 | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [puff](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-puff/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [rammus](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-rammus/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [sarien](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-sarien/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [trogdor](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-trogdor/20231106.0/arm64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [volteer](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-volteer/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [zork](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-zork/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
 
 
 ### New workarounds/patches since previous version (R116)

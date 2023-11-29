@@ -23,7 +23,6 @@ as:
 **Team:**
 
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan` - Lead
-* [Alexandra Pereira](mailto:<alexandra.pereira@collabora.com>) - `apereira`
 * [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) - `gregkh`
 * [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
 * [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) - `glunardi`

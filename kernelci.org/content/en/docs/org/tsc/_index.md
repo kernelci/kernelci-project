@@ -22,7 +22,6 @@ respective email address and IRC nicknames:
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) - `khilman`
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
 * [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
-* [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 * [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
 * [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`

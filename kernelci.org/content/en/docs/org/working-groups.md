@@ -20,6 +20,8 @@ as:
 
 **Workboard:** https://github.com/orgs/kernelci/projects/4
 
+**Mailing list:** [kernelci-webdashboard@groups.io](mailto:<kernelci-webdashboard@groups.io>)
+
 **Team:**
 
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan` - Lead

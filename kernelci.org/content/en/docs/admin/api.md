@@ -7,39 +7,34 @@ description: "KernelCI API"
 ## Getting an admin token
 
 Some operations such as creating user accounts requires an admin user, so you
-need to be in the `admin` group.  Then you need to get an API token with the
-`admin` scope to perform queries restricted to admins.  Here are some sample
-commands to do that:
+need to be in the `admin` group.  Then you need to get an API token to perform
+queries restricted to admins.  Here are some sample commands to do that:
 
 ```
-$ kci user whoami
+$ kci user whoami --indent=1
 {
-    "id": "64f5ff9e8326c545a780c2a0",
-    "active": true,
-    "profile": {
-        "username": "<your-username>",
-        "hashed_password": "<your-hashed-password>",
-        "groups": [
-            {
-                "id": "6499aa9da02fef8143c1feb0",
-                "name": "admin"
-            }
-        ],
-        "email": "<your-email-address>"
+  "id": "64f5ff9e8326c545a780c2a0",
+  "email": "<your-email-address>",
+  "is_active": true,
+  "is_superuser": true,
+  "is_verified": true,
+  "username": "<your-username>",
+  "groups": [
+    {
+      "id": "6499aa9da02fef8143c1feb0",
+      "name": "admin"
     }
+  ]
 }
-$ kci user get_token --username=<your-username> --scopes=admin
+$ kci user token <your-username>
 Password:
-{
-    "access_token": "<your-admin-token>",
-    "token_type": "bearer"
-}
+"<your-admin-token>"
 ```
 
-Then you can store this token in `kernelci.toml` or pass it by hand with
-`--api-token` when running the commands that require admin permissions.  Please
-don't use your admin token as the default one when using the regular parts of
-the API to avoid breaking things by mistake.
+Then you can store this token in `kernelci.toml` when running the commands
+that require admin permissions.  Please don't use your admin token as the
+default one when using the regular parts of the API to avoid breaking things
+by mistake.
 
 ## Creating user accounts
 

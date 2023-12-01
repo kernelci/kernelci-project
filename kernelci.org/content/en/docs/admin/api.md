@@ -56,15 +56,17 @@ If all goes well there aren't any errors and the user has been created.  To
 double check that is the case, or to see if a user already exists or anything:
 
 ```
-$ kci user find_users profile.username=<username>
+$ kci user find username=<username> --indent=1
 [
-    {
-        "profile": {
-            "username": "<username>",
-            "groups": [],
-            "email": "<email>"
-        }
-    }
+ {
+  "id": "6526448e7d140ee220971a0e",
+  "email": "<email>",
+  "is_active": true,
+  "is_superuser": false,
+  "is_verified": false,
+  "username": "<username>",
+  "groups": []
+ }
 ]
 ```
 

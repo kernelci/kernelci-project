@@ -28,11 +28,12 @@ To set up a local development server with Docker:
 
 ```sh
 $ git clone https://github.com/kernelci/kernelci-project.git
-$ cd kernelci.org
+$ cd kernelci-project
 $ sudo apt install -y git-lfs
 $ git-lfs fetch
 $ git-lfs checkout
 $ git submodule update --init --recursive
+$ cd kernelci.org
 ```
 
 Then to start the server:

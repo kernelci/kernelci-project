@@ -31,7 +31,7 @@ At least one maintainer is assigned to each software component.  The work
 involves reviewing pull requests on GitHUb, triaging issue, updating GitHub
 settings and facilitating the development workflow.  Having “deputy”
 maintainers whenever possible also helps with the continuity of the project
-when regular maintainers are not available..
+when regular maintainers are not available.
 
 In addition to maintainers for each project, some GitHub administrators are
 available to make configuration changes at the organisation level.  This
@@ -41,6 +41,21 @@ settings.
 
 * Organisation: https://github.com/kernelci
 * Admins: `broonie`, `khilman`, `gtucker`
+
+### Project
+
+The project repository contains the source code for the
+[kernelci.org](https://kernelci.org) static website as well as some encrypted
+files and other administrative documents.  Therefore it's not strictly software
+but has the same requirements from a maintainer point of view.
+
+Please note that other people not listed here might also have access to the
+encrypted files for practical resons (shared account passwords, sysadmin
+information etc.).
+
+* Repository: [`kernelci-project`](https://github.com/kernelci/kernelci-project)
+* Maintainers: `gtucker`
+* Deputy: `patersonc`
 
 ### Core tools
 

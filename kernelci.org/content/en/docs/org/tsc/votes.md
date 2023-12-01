@@ -1,6 +1,6 @@
 ---
 title: "TSC Voting Records"
-date: 2022-12-07
+date: 2023-12-01
 description: "History of all KernelCI TSC votes"
 ---
 
@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2023-10-12](#2023-10-12) | Remove TSC member: Corentin Labbe                               | Approved  |
 | [2023-08-10](#2023-08-10) | Add Jeny to kernelci-core maintainers                           | Approved  |
 | [2023-04-13](#2023-04-13) | Subscribe to Azure Container Registry (Premium)                 | Approved  |
 | [2023-04-13](#2023-04-13) | Set up Harbour as Docker registry / cache                       | Approved  |
@@ -27,6 +28,15 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2023-10-12
+
+**Motion: Remove TSC member: Corentin Labbe**
+* Result: approved
+* Effective date: 2023-11-17
+* Voting method: email
+* Voting members: alicef, broonie, gtucker, khilman, nuclearcat
+* Vote count: 5/8, 5/5 in favour
 
 ### 2023-08-10
 

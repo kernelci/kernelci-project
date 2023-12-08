@@ -4,7 +4,7 @@ about: Request to get an early-access account for the new API
 title: Request API account for USER
 labels: ''
 assignees:
-  - gctucker
+  - nuclearcat
   - JenySadadia
 ---
 

@@ -36,7 +36,8 @@ list can be used.  To contact only the TSC members directly, the
 used instead.
 
 The TSC also meet monthly online to discuss current topics and make decisions
-including votes when necessary.
+including votes when necessary.  See the [Meetings
+section](/docs/org/#technical-steering-committee) for more details.
 
 ## Rules
 

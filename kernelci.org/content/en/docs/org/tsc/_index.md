@@ -56,14 +56,25 @@ Decisions that always require a vote are:
 * granting or removing any kind of admin rights to individuals
 * making proposals to the LF project board
 
-The result of each vote should be shared on the mailing list and added to the
-[voting records](votes).  It should also include the date when any related
-changes were enacted.  As such they provide a way to keep a formal trace of
-decisions being made.
+Votes are made on motions with a yes/no choice and have to be proposed by a TSC
+member.  The result of each vote should be shared on the mailing list and added
+to the [voting records](votes).  It should also include the date when any
+related changes are enacted.  As such they provide a way to keep a formal trace
+of decisions being made.
 
-Votes done during a live meeting require 50% of the TSC members to be voting
-and a majority among these voting members.  Votes done by email or any other
-deferred channel require a majority among all of the TSC members.
+**Votes done during a live meeting** require a quorum of 50% of the TSC members
+to be present in the meeting and a majority of "yes" votes among these voting
+members to move the motion.
+
+**Votes done by email** or any other deferred channel require a majority among
+all of the TSC members as everyone is expected to be able to take part.  Votes
+by email expire after a period of two weeks: the motion will be rejected if a
+majority of "yes" votes from the whole TSC hasn't been reached by then.
+
+The preferred approach is to vote during TSC meetings.  This should always be
+considered first to encourage discussion and TSC meeting attendance.  If quorum
+is not met during a meeting then the motion can be adjourned to the next
+meeting or brought up for a vote by email.
 
 ### Members
 

@@ -1,6 +1,6 @@
 ---
 title: "Technical Steering Committee"
-date: 2021-11-10
+date: 2023-12-12
 description: "KernelCI core developers and maintainers"
 weight: 3
 aliases:
@@ -75,10 +75,25 @@ however no strict requirement, the only condition is the outcome of the TSC
 vote.
 
 Likewise, members of the TSC may propose that a member be removed which should
-result in a vote.  Members who have not been active for over a year should be
-notified and considered for removal from TSC in order to keep the list
-up-to-date with the reality of the project.  Active members are typically
-expected to:
+result in a motion and a vote.  Members who have not been active for over a
+year should be notified and considered for removal from TSC in order to keep
+the list up-to-date with the reality of the project.
+
+The criteria for removing a member aren't strictly defined either, in the end
+it's up to the TSC to vote and judge whether a member should be removed due to
+inactivity.  Members who commit acts that pose a threat to the stability of the
+project may also be removed following a TSC vote.
+
+### Duties
+
+Each TSC member is responsible for taking part in making important technical
+decisions.  As members are ideally also maintainers or active developers, it
+makes sense to have a committee to discuss the general roadmap or design
+principles to ensure cohesion within the project.  It should become a natural
+progression when new members join the TSC to facilitate coordination with
+others who have been involved for a long time.
+
+In practice, active members are typically expected to:
 
 * attend TSC meetings (monthly)
 * participate in votes
@@ -88,8 +103,3 @@ expected to:
   * sharing experience and contributing ideas for solving technical issues
   * helping keep the services working
   * writing documentation or creating any content that promotes the project
-
-This list is not exhaustive, in the end it's up to the TSC to vote and judge
-whether a member should be removed due to inactivity.  Members who commit acts
-that pose a threat to the stability of the project may also be removed
-following a TSC vote.

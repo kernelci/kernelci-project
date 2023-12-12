@@ -300,3 +300,17 @@ for examples how to install the images within the published `chromiumos_test_ima
 KernelCI maintains a [Changelog](../chromeos/chromeos_changelog/) which tracks the evolution
 between published ChromiumOS releases as well as divergences between the KernelCI
 images and ChromiumOS upstream.
+
+# Upstreaming ChromiumOS changes
+
+Sometimes we have to fix issues and push changes upstream to ChromiumOS to avoid divergence.
+Please take a look at the [official contributing documentation](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/contributing.md) for more details.
+
+## Some upstreaming tips & tricks
+
+* Ensure a [buganizer](https://issuetracker.google.com) issue is created and [properly linked](https://chromium.googlesource.com/chromiumos/docs/+/HEAD/contributing.md#Link-to-issue-trackers) from Gerrit CLs.
+* Signed-off-by's are not necessary. Some owners might ask to remove them.
+* The purpouse of the Code-Review process is to get CR+2 from code owners. Once a CR+2 has been given, proceed to running Commit-Queue (CQ) to land the change.
+* CR+1 means "LGTM but someone else must approve" and is not enough to land changes. Please ensure you get a CR+2 from owners.
+* CQ+1 is a "dry-run", i.e. run all tests but do not merge the change. CQ+2 means run all tests and if they pass, merge/land the change.
+* The Verified+1 tag is required before running CQ+2 (Gerrit will give an error informing about this).

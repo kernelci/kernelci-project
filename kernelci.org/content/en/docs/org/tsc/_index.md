@@ -77,6 +77,12 @@ considered first to encourage discussion and TSC meeting attendance.  If quorum
 is not met during a meeting then the motion can be adjourned to the next
 meeting or brought up for a vote by email.
 
+Abstensions are not counted as votes.  Effectively, they are the same as not
+attending a meeting or not replying to an email.  For example, with 7 TSC
+members in a meeting, if 3 are abstaining, 3 vote "yes" and 1 votes "no", we
+have quorum as 4/7 are voting and a majority as 3/4 voted "yes" - and the
+motion is moved.
+
 ### Members
 
 Current members of the TSC may propose to vote for new people to be added or

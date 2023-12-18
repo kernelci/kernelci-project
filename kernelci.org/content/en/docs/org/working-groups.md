@@ -26,7 +26,6 @@ as:
 
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan` - Lead
 * [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) - `gregkh`
-* [Guillaume Tucker](mailto:<guillaume.tucker@collabora.com>) - `gtucker`
 * [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) - `glunardi`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 

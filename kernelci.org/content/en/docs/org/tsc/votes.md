@@ -11,6 +11,10 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2023-12-14](#2023-12-14) | Add TSC member: Jeny                                            | Approved  |
+| [2023-12-14](#2023-12-14) | Add Denys as kernelci-project maintainer                        | Approved  |
+| [2023-12-14](#2023-12-14) | Replace Michał with Denys as Docker Hub admin                   | Approved  |
+| [2023-12-14](#2023-12-14) | Add Denys as GitHub KernelCI organisation admin                 | Approved  |
 | [2023-10-12](#2023-10-12) | Remove TSC member: Corentin Labbe                               | Approved  |
 | [2023-08-10](#2023-08-10) | Add Jeny to kernelci-core maintainers                           | Approved  |
 | [2023-04-13](#2023-04-13) | Subscribe to Azure Container Registry (Premium)                 | Approved  |
@@ -28,6 +32,36 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2023-12-14
+
+**Motion: Add TSC member: Jeny Sadadia**
+* Result: approved
+* Effective date: 2023-12-18
+* Voting method: email
+* Voting members: alicef, broonie, gtucker, nuclearcat
+* Vote count: 4/7, 4/4 in favour
+
+**Motion: Add Denys as kernelci-project maintainer**
+* Result: approved
+* Effective date: 2023-12-18
+* Voting method: email
+* Voting members: alicef, broonie, gtucker, nuclearcat
+* Vote count: 4/7, 4/4 in favour
+
+**Motion: Replace Michał with Denys as Docker Hub admin**
+* Result: approved
+* Effective date: 2023-12-18
+* Voting method: email
+* Voting members: alicef, broonie, gtucker, nuclearcat
+* Vote count: 4/7, 4/4 in favour
+
+**Motion: Add Denys as GitHub KernelCI organisation admin**
+* Result: approved
+* Effective date: 2023-12-18
+* Voting method: email
+* Voting members: alicef, broonie, gtucker, nuclearcat
+* Vote count: 4/7, 4/4 in favour
 
 ### 2023-10-12
 

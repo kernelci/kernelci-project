@@ -40,7 +40,7 @@ removing projects, configurating workboards and updating any other general
 settings.
 
 * Organisation: https://github.com/kernelci
-* Admins: `broonie`, `khilman`, `gtucker`
+* Owners: `broonie`, `khilman`, `gtucker`, `nuclearcat`
 
 ### Project
 
@@ -54,7 +54,7 @@ encrypted files for practical resons (shared account passwords, sysadmin
 information etc.).
 
 * Repository: [`kernelci-project`](https://github.com/kernelci/kernelci-project)
-* Maintainers: `gtucker`
+* Maintainers: `gtucker`, `nuclearcat`
 * Deputy: `patersonc`
 
 ### Core tools
@@ -158,7 +158,7 @@ All the Docker images used by KernelCI are pushed to the [Docker
 Hub](https://hub.docker.com/).  This requires some maintenance in particular to
 keep an eye on resource usage and to adjust permissions.
 
-* Maintainers: `gtucker`, `mgalka`
+* Maintainers: `gtucker`, `nuclearcat`
 
 ## Feature maintainers
 

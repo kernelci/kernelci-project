@@ -233,7 +233,7 @@ Maintaining them includes moderating incoming messages and new subscriptions,
 keeping settings up-to-date and dealing with changes to the schemes for each
 price plan.
 
-* Maintainers: `broonie`, `khilman`
+* Maintainers: `broonie`, `khilman`, `padovan`
 
 ### Slack
 

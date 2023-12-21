@@ -178,6 +178,7 @@ results into the database.
 * Components:
   [`test-definitions`](https://github.com/kernelci/test-definitions),
   [`bootrr`](https://github.com/kernelci/bootrr),
+  [`cros-ec-tests`](https://github.com/kernelci/cros-ec-tests),
   [`buildroot`](https://github.com/kernelci/buildroot),
   [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config)
 * Services: Jenkins

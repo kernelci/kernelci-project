@@ -1,6 +1,6 @@
 ---
 title: "How-To"
-date: 2023-08-11
+date: 2024-01-18
 description: "How to add a new native test suite"
 ---
 
@@ -20,8 +20,8 @@ every revision covered by KernelCI.  All the tests are part of fixed root file
 systems (rootfs), which get updated typically once a week.  Adding a test
 therefore involves either reusing an existing rootfs or creating a new one.
 
-A good way to start prototyping things is to use the plain [Debian Buster NFS
-rootfs](https://storage.kernelci.org/images/rootfs/debian/buster/) and install
+A good way to start prototyping things is to use the plain [Debian Bullseye NFS
+rootfs](https://storage.kernelci.org/images/rootfs/debian/bullseye/) and install
 or compile anything at runtime on the target platform itself.  This is of
 course slower and less reliable than using a tailored rootfs with everything
 already set up, but it allows a lot more flexibility.  It is the approach
@@ -126,14 +126,14 @@ enable uname test plan using Buster NFS`
 Once the LAVA templates have been created, the next step is to enable the test
 plan in the [KernelCI YAML configuration](../../core/config).
 
-First add the `uname` test plan with the chosen rootfs (Debian Buster NFS in
+First add the `uname` test plan with the chosen rootfs (Debian Bullseye NFS in
 this case) in `test-configs.yaml`:
 
 ```yaml
 test_plans:
 
   uname:
-    rootfs: debian_buster_nfs
+    rootfs: debian_bullseye_nfs
 ```
 
 Then define which platforms should run this test plan, still in
@@ -273,13 +273,13 @@ file with some parameters.  There are also extra dedicated files in
 [`config/rootfs`](https://github.com/kernelci/kernelci-core/tree/main/config/rootfs/)
 such as additional build scripts.
 
-Let's take a look at the `buster-v4l2` rootfs for example:
+Let's take a look at the `bullseye-v4l2` rootfs for example:
 
 ```yaml
 rootfs_configs:
-  buster-v4l2:
+  bullseye-v4l2:
     rootfs_type: debos
-    debian_release: buster
+    debian_release: bullseye
     arch_list:
       - amd64
       - arm64
@@ -293,7 +293,14 @@ rootfs_configs:
       - bash
       - e2fslibs
       - e2fsprogs
-    script: "scripts/buster-v4l2.sh"
+    extra_firmware:
+        - mediatek/mt8173/vpu_d.bin
+        - mediatek/mt8173/vpu_p.bin
+        - mediatek/mt8183/scp.img
+        - mediatek/mt8186/scp.img
+        - mediatek/mt8192/scp.img
+        - mediatek/mt8195/scp.img
+    script: "scripts/bullseye-v4l2.sh"
     test_overlay: "overlays/v4l2"
 ```
 
@@ -301,6 +308,8 @@ rootfs_configs:
 * `extra_packages` is a list passed to the package manager to install them.
 * `extra_packages_remove` is a list passed to the package manager to remove
   them.
+* `extra_firmware` is a list of Linux kernel firmware blobs to be installed in
+  the rootfs image.
 * `script` is an arbitrary script to be run after packages have been installed.
   In this case, it will build and install the `v4l2` tools to be able to run
   `v4l2-compliance`.
@@ -317,7 +326,7 @@ rootfs_configs:
           └── v4l2-parser.sh
   ```
 
-Here's a sample command using `kci_rootfs` to build the `buster-v4l2` root file
+Here's a sample command using `kci_rootfs` to build the `bullseye-v4l2` root file
 system for `amd64`:
 
 ```
@@ -328,8 +337,8 @@ $ docker run -it \
   kernelci/debos
 root@759fc147da29:/# cd /tmp/kernelci-core
 root@759fc147da29:~/kernelci-core# ./kci_rootfs build \
-  --rootfs-config=buster-v4l2 \
-   --arch=amd64
+  --rootfs-config=bullseye-v4l2 \
+  --arch=amd64
 ```
 
 ### Writing more advanced test definitions

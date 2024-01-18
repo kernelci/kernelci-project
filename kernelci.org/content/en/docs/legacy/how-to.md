@@ -56,7 +56,7 @@ $ echo $?
 All the steps required to enable this test to run in KernelCI are detailed
 below.  There is also a sample Git branch with the changes:
 
-  https://github.com/kernelci/kernelci-core/commits/how-to
+  https://github.com/kernelci/kernelci-core/commits/how-to-bullseye
 
 ## Step 1: Enable basic test plan
 
@@ -65,9 +65,8 @@ mentioned above.
 
 ### LAVA job template
 
-See commit on the [how-to
-branch](https://github.com/kernelci/kernelci-core/commits/how-to): `config/lava:
-add uname test plan for the How-To guide`
+See commit: [`config/lava: add uname test plan for the How-To
+guide`](https://github.com/kernelci/kernelci-core/commit/b1464ff3986ac70513c251f3f1d87f892c556d61)
 
 KernelCI LAVA templates use [Jinja](https://jinja.palletsprojects.com/).  To
 add this `uname` test plan, create a template file
@@ -119,9 +118,8 @@ and the rootfs available over `nfs`.
 
 ### KernelCI YAML configuration
 
-See commit on the [how-to
-branch](https://github.com/kernelci/kernelci-core/commits/how-to): `config/core:
-enable uname test plan using Buster NFS`
+See commit: [`config/core: enable uname test plan using Bullseye
+NFS`](https://github.com/kernelci/kernelci-core/commit/e7c1a1a0277fec215b778da3ada8885581464a16)
 
 Once the LAVA templates have been created, the next step is to enable the test
 plan in the [KernelCI YAML configuration](../../core/config).
@@ -172,18 +170,17 @@ by a maintainer before their pull requests get merged and deployed on staging.
 
 ## Step 2: Modify the file system at runtime
 
-Most tests will require more than what is already available in a plain Buster
+Most tests will require more than what is already available in a plain Bullseye
 rootfs.  Let's see how this can be done in a simple way.
 
 ### Add a C file: uname-os.c
 
-See commit on the [how-to
-branch](https://github.com/kernelci/kernelci-core/commits/how-to):
-`config/lava: add uname-os.c`
+See commit: [`config/lava: add
+uname-os.c`](https://github.com/kernelci/kernelci-core/commit/d31ee9462c0edf680509431f01d7ffce0ef23074)
 
 For example, we could have the test implemented as a C program rather than a
 shell script.  See the
-[`uname-os.c`](https://github.com/kernelci/kernelci-core/blob/how-to/config/lava/uname/uname-os.c)
+[`uname-os.c`](https://github.com/kernelci/kernelci-core/blob/how-to-bullseye/config/lava/uname/uname-os.c)
 file.
 
 To test it locally:
@@ -209,9 +206,8 @@ Now, let's see how this can be used with KernelCI.
 
 ### Build it and run the C implementation
 
-See commit on the [how-to
-branch](https://github.com/kernelci/kernelci-core/commits/how-to):
-`config/lava: download and build uname-os.c and use it`
+See commit: [`config/lava: download and build uname-os.c and use
+it`](https://github.com/kernelci/kernelci-core/commit/66eb1aab440157747d458e088610a1764b983441)
 
 Any arbitrary commands can be added to the `uname.jinja2` template before
 running the actual test cases.  In this example, we can install Debian packages
@@ -222,7 +218,7 @@ as a test case:
           steps:
           - apt update
           - apt install -y wget gcc
-          - wget https://raw.githubusercontent.com/kernelci/kernelci-core/how-to/config/lava/uname/uname-os.c
+          - wget https://raw.githubusercontent.com/kernelci/kernelci-core/how-to-bullseye/config/lava/uname/uname-os.c
           - gcc -o uname-os uname-os.c
           - lava-test-case uname-os-shell --shell '[ $(uname -o) = "GNU/Linux" ]'
           - lava-test-case uname-os-c --shell './uname-os'

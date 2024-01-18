@@ -157,11 +157,8 @@ required at this point.
 
 These changes are enough to make an intial pull request in
 [`kernelci-core`](https://github.com/kernelci/kernelci-core), and the test will
-automatically get run on [staging](../../instances/staging).  Then the results
-will appear on the web dashboard, for example:
-
-[Results for uname: «staging-next-20210805.0» on «minnowboard-max-E3825»
-(kernelci / staging-next)](https://staging.kernelci.org/test/plan/id/610ba7049064c472532a361e/)
+automatically get run on [staging](/docs/legacy/instances/staging/).  Then the
+results will appear on the [web dashboard](https://staging.kernelci.org/job/).
 
 > **Note** First-time contributors needed to be added to the [list of trusted
 GitHub
@@ -226,9 +223,7 @@ as a test case:
 
 We now have 2 test cases, one with the shell version and one with the C
 version.  After updating the pull request on GitHub, this will also get tested
-automatically on staging.  Here's some sample results:
-
-[Results for uname: «staging-mainline-20210805.0» on «minnowboard-max-E3825» (kernelci / staging-mainline)](https://staging.kernelci.org/test/plan/id/610bc171b2d76ba86d2a361e/)
+automatically on staging.
 
 > **Note** If one of the steps fails, the job will abort.  So if `apt install`
 or `wget` fails, the tests won't be run and the LAVA job status will show an

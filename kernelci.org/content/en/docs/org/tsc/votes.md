@@ -1,6 +1,6 @@
 ---
 title: "TSC Voting Records"
-date: 2023-12-01
+date: 2024-02-09
 description: "History of all KernelCI TSC votes"
 ---
 
@@ -11,6 +11,8 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-02-08](#2024-02-08) | Add TSC member: Paweł Wieczorek                                 | Approved  |
+| [2024-02-08](#2024-02-08) | Make groups.io maintainers full owners                          | Approved  |
 | [2023-12-14](#2023-12-14) | Add TSC member: Jeny                                            | Approved  |
 | [2023-12-14](#2023-12-14) | Add Denys as kernelci-project maintainer                        | Approved  |
 | [2023-12-14](#2023-12-14) | Replace Michał with Denys as Docker Hub admin                   | Approved  |
@@ -32,6 +34,22 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2024-02-08
+
+**Motion: Add TSC Member: Paweł Wieczorek**
+* Result: approved
+* Effective date: 2024-02-12
+* Voting method: TSC monthly
+* Voting members: alicef, broonie, gtucker, nuclearcat, Jeny, spbnick
+* Vote count: 6/8, 6/6 in favour
+
+**Motion: Make groups.io maintainers full owners**
+* Result: approved
+* Effective date: 2024-02-12
+* Voting method: TSC monthly
+* Voting members: alicef, broonie, gtucker, nuclearcat, Jeny, spbnick
+* Vote count: 6/8, 6/6 in favour
 
 ### 2023-12-14
 

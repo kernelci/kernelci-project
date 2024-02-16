@@ -1,6 +1,6 @@
 ---
 title: "Advisory Board"
-date: 2023-12-12
+date: 2024-02-19
 description: "Linux Foundation Project Board"
 weight: 2
 aliases:
@@ -26,7 +26,6 @@ their respective roles, email address and IRC nicknames:
 * [Don Zickus](mailto:<dzickus@redhat.com>) (Red Hat, Chair)
 * [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) (Linux Foundation) - `gregkh`
 * [Guenter Roeck](mailto:<groeck@google.com>) (Google)
-* [Guillaume Tucker](mailto:<gtucker@gtucker.io>) (TSC Chair) - `gtucker`
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) (Collabora, Project Manager) - `padovan`
 * [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) (Collabora, Marketing) - `glunardi`
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) (BayLibre, General Members Representative) - `khilman`

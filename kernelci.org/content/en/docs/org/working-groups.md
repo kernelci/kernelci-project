@@ -1,6 +1,6 @@
 ---
 title: "Working groups"
-date: 2022-03-15
+date: 2023-02-19
 description: "KernelCI Working Groups"
 weight: 4
 ---
@@ -49,7 +49,6 @@ potentially a new design from scratch using modern web technology.
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat` - Lead
 * [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
 * [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
-* [Guillaume Tucker](mailto:<gtucker@gtucker.io>) - `gtucker`
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) - `khilman`
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`

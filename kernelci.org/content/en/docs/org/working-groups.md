@@ -1,6 +1,6 @@
 ---
 title: "Working groups"
-date: 2023-02-19
+date: 2024-02-19
 description: "KernelCI Working Groups"
 weight: 4
 ---

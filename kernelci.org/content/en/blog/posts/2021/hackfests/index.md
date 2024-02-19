@@ -19,7 +19,7 @@ flavours, bringing up new types of hardware to be tested...
 
 There have been two hackfests to date. The current plan is to hold one
 every few months.  Future hackfests will be announced on the [KernelCI mailing
-list](https://groups.io/g/kernelci/topics) as well as [LKML](https://lkml.org/)
+list](https://lore.kernel.org/kernelci/) as well as [LKML](https://lkml.org/)
 and [Twitter](https://twitter.com/kernelci).  Stay tuned!
 
 

@@ -33,10 +33,12 @@ Specific instructions on how to fetch and build ChromiumOS from a manifest file 
 Direct links for each supported board in this release are provided below for convenience.
 | Board       | Kernels shipped in image | Kernels tested by KernelCI (replacing image kernels during boot) |
 |-------------|:------------:|:-------:|
+| [arcada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-sarien/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
 | [asurada](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-asurada/20231106.0/arm64) | v6.6.x<br> + panfrost | stable:linux-6.1.y <br> stable:linux-6.6.y |
 | [brya](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-brya/20231106.0/amd64) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
 | [cherry](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-cherry/20231106.0/arm64) | v6.6.x<br> + 3 display patches<br> + panfrost | stable:linux-6.6.y |
 | [coral](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-coral/20231106.0/amd64) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
+| [corsola](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-corsola/20231206.0/arm64) | linux-next 20231106<br> + mtk HW enablement patches<br> + panfrost | |
 | [dedede](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-dedede/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
 | [grunt](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-grunt/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |
 | [guybrush](https://storage.chromeos.kernelci.org/images/rootfs/chromeos/chromiumos-guybrush/20231106.0/amd64/) | default | stable:linux-6.1.y <br> stable:linux-6.6.y |

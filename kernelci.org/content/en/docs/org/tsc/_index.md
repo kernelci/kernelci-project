@@ -26,7 +26,7 @@ respective email address and IRC nicknames:
 * [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
 * [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
-* [Jeny Sadadia](mailto:jeny.sadadia@collabora.com) - `Jeny`
+* [Jeny Sadadia](mailto:jeny.sadadia@collabora.com) - `jenysadadia`
 * [Paweł Wieczorek](mailto:pawiecz@collabora.com) - `pawiecz`
 
 ## Communication

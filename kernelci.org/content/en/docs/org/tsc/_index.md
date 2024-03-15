@@ -1,6 +1,6 @@
 ---
 title: "Technical Steering Committee"
-date: 2023-12-12
+date: 2024-03-18
 description: "KernelCI core developers and maintainers"
 weight: 3
 aliases:
@@ -28,6 +28,7 @@ respective email address and IRC nicknames:
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 * [Jeny Sadadia](mailto:jeny.sadadia@collabora.com) - `jenysadadia`
 * [Paweł Wieczorek](mailto:pawiecz@collabora.com) - `pawiecz`
+* [Shuah Khan](mailto:skhan@linuxfoundation.org) - `shuah`
 
 ## Communication
 

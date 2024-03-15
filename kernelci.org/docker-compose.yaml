@@ -16,3 +16,4 @@ services:
     command:
       - 'server'
       - '-D'
+      - '-F'

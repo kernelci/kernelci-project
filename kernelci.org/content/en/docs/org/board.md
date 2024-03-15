@@ -1,6 +1,6 @@
 ---
 title: "Advisory Board"
-date: 2024-02-19
+date: 2024-04-01
 description: "Linux Foundation Project Board"
 weight: 2
 aliases:
@@ -30,6 +30,7 @@ their respective roles, email address and IRC nicknames:
 * [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) (Collabora, Marketing) - `glunardi`
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) (BayLibre, General Members Representative) - `khilman`
 * [KY Srinivasan](mailto:<kys@microsoft.com>) (Microsoft)
+* [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) (TSC Chair) - `spbnick`
 
 Learn more about the [current members](/docs/org/members) or how to join on the
 [KernelCI Linux Foundation](https://foundation.kernelci.org/) website.

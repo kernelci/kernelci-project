@@ -1,6 +1,6 @@
 ---
 title: "TSC Voting Records"
-date: 2024-02-09
+date: 2024-03-15
 description: "History of all KernelCI TSC votes"
 ---
 
@@ -11,6 +11,8 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-03-14](#2024-03-14) | Add TSC member: Shuah Khan                                      | Approved  |
+| [2024-03-14](#2024-03-14) | Elect new TSC chair                                             | Approved  |
 | [2024-02-08](#2024-02-08) | Add TSC member: Paweł Wieczorek                                 | Approved  |
 | [2024-02-08](#2024-02-08) | Make groups.io maintainers full owners                          | Approved  |
 | [2023-12-14](#2023-12-14) | Add TSC member: Jeny                                            | Approved  |
@@ -34,6 +36,24 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2024-03-14
+
+**Motion: Add TSC Member: Shuah Khan**
+* Result: approved
+* Effective date: 2024-03-18
+* Voting method: TSC monthly
+* Voting members: arisut, broonie, gtucker, nuclearcat, pawiecz, spbnick
+* Vote count: 6/6/8 in favour
+
+**Motion: Elect TSC Chair**
+* Candidates: Shuah Khan, Nikolai Kondrashov
+* Elected: Nikolai Kondrashov
+* Result: approved
+* Effective date: 2024-04-01
+* Voting method: TSC monthly
+* Voting members: arisut, broonie, gtucker, nuclearcat, pawiecz, spbnick
+* Vote count: 4/6/8 for Nikolai, 1/6/8 for Shuah, 1/6/8 abstained
 
 ### 2024-02-08
 

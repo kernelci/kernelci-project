@@ -26,7 +26,7 @@ as:
 
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan` - Lead
 * [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) - `gregkh`
-* [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) - `glunardi`
+* [Ricardo Cañuelo](mailto:<ricardo.canuelo@collabora.com>) - `hardboprobot`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 
 As KernelCI keeps growing, and based on the results of the [2020 Community

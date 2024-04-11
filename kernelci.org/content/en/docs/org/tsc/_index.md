@@ -67,17 +67,17 @@ of decisions being made.
 
 **Votes done during a live meeting** require a quorum of 50% of the TSC members
 to be present in the meeting and a majority of "yes" votes among these voting
-members to move the motion.
+members to move the motion. However, to make sure that everyone has a say,
+voting in a meeting should preferably be done only when at least 90% of the
+members are in attendance.
 
 **Votes done by email** or any other deferred channel require a majority among
 all of the TSC members as everyone is expected to be able to take part.  Votes
 by email expire after a period of two weeks: the motion will be rejected if a
 majority of "yes" votes from the whole TSC hasn't been reached by then.
 
-The preferred approach is to vote during TSC meetings.  This should always be
-considered first to encourage discussion and TSC meeting attendance.  If quorum
-is not met during a meeting then the motion can be adjourned to the next
-meeting or brought up for a vote by email.
+Because our members are spread across the world, and normally cannot attend a
+meeting all at once, the preferred approach is to vote by email.
 
 Abstentions are not counted as votes.  Effectively, they are the same as not
 attending a meeting or not replying to an email.  For example, with 7 TSC

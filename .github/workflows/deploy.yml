@@ -1,0 +1,52 @@
+name: Hugo Staging Deploy
+
+on:
+#  pull_request:
+#    types: [review_requested]
+  issue_comment:
+    types: [created]
+
+jobs:
+  deploy_staging:
+    runs-on: ubuntu-22.04
+    environment: stagingdeploy
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    if: ${{ github.event.requested_team.name == 'hackers'}}
+    if: ${{ github.event.issue.pull_request }}
+    if: contains(github.event.comment.body, '/staging')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          lfs: true         # Fetch Git LFS files
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.97.0'
+          extended: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+
+      - name: Install dependencies (postcss), bootstrap-sass
+        run: npm install --save-dev autoprefixer && npm install postcss-cli && npm install -D postcss && npm install -D postcss-preset-env && npm install -D bootstrap-sass
+
+      - name: Build
+        run: cd kernelci.org;hugo --minify -D -F -b https://static.staging.kernelci.org/
+
+      - name: Deploy via SCP
+          uses: appleboy/scp-action@v0.1.7
+          with:
+            host: ${{ secrets.WEB_STAGING_HOST }}
+            username: ${{ secrets.WEB_STAGING_USERNAME }}
+            key: ${{ secrets.WEB_STAGING_KEY }}
+            port: ${{ secrets.WEB_STAGING_PORT }}
+            source: "kernelci.org/public/"
+            target: ${{ secrets.WEB_STAGING_DIR }}

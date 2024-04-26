@@ -42,11 +42,11 @@ jobs:
         run: cd kernelci.org;hugo --minify -D -F -b https://static.staging.kernelci.org/
 
       - name: Deploy via SCP
-          uses: appleboy/scp-action@v0.1.7
-          with:
-            host: ${{ secrets.WEB_STAGING_HOST }}
-            username: ${{ secrets.WEB_STAGING_USERNAME }}
-            key: ${{ secrets.WEB_STAGING_KEY }}
-            port: ${{ secrets.WEB_STAGING_PORT }}
-            source: "kernelci.org/public/"
-            target: ${{ secrets.WEB_STAGING_DIR }}
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.WEB_STAGING_HOST }}
+          username: ${{ secrets.WEB_STAGING_USERNAME }}
+          key: ${{ secrets.WEB_STAGING_KEY }}
+          port: ${{ secrets.WEB_STAGING_PORT }}
+          source: "kernelci.org/public/"
+          target: ${{ secrets.WEB_STAGING_DIR }}

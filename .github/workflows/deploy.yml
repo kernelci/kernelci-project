@@ -17,11 +17,13 @@ jobs:
       ${{ github.event.issue.pull_request }}
       contains(github.event.comment.body, '/staging')
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
           lfs: true         # Fetch Git LFS files
+          ref: refs/pull/${{ github.event.issue.number }}/head
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

@@ -12,9 +12,10 @@ jobs:
     environment: stagingdeploy
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    if: ${{ github.event.requested_team.name == 'hackers'}}
-    if: ${{ github.event.issue.pull_request }}
-    if: contains(github.event.comment.body, '/staging')
+    if: |
+      ${{ github.event.requested_team.name == 'hackers'}} &&
+      ${{ github.event.issue.pull_request }}
+      contains(github.event.comment.body, '/staging')
     steps:
       - uses: actions/checkout@v4
         with:

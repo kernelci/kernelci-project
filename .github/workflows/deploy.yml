@@ -4,7 +4,7 @@ on:
 #  pull_request:
 #    types: [review_requested]
   issue_comment:
-    types: [created]
+    types: [created, edited]
 
 jobs:
   deploy_staging:

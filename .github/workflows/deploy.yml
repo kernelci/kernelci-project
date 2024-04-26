@@ -51,3 +51,4 @@ jobs:
           port: ${{ secrets.WEB_STAGING_PORT }}
           source: "kernelci.org/public/"
           target: ${{ secrets.WEB_STAGING_DIR }}
+          strip-components: 2

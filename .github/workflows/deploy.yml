@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy_staging:
-    if: |
+    if: >-
       ${{ github.event.issue.pull_request }} &&
       ${{ github.event.requested_team.name == 'hackers'}} &&
       contains(github.event.comment.body, '/staging')

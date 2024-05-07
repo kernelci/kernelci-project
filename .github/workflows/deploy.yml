@@ -5,13 +5,13 @@ on:
 #    types: [review_requested]
   issue_comment:
     types: [created, edited]
+
+jobs:
+  deploy_staging:
     if: |
       ${{ github.event.issue.pull_request }} &&
       ${{ github.event.requested_team.name == 'hackers'}} &&
       contains(github.event.comment.body, '/staging')
-
-jobs:
-  deploy_staging:
     runs-on: ubuntu-22.04
     environment: stagingdeploy
     concurrency:

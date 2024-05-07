@@ -5,6 +5,10 @@ on:
 #    types: [review_requested]
   issue_comment:
     types: [created, edited]
+    if: |
+      ${{ github.event.issue.pull_request }} &&
+      ${{ github.event.requested_team.name == 'hackers'}} &&
+      contains(github.event.comment.body, '/staging')
 
 jobs:
   deploy_staging:
@@ -12,10 +16,6 @@ jobs:
     environment: stagingdeploy
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    if: |
-      ${{ github.event.requested_team.name == 'hackers'}} &&
-      ${{ github.event.issue.pull_request }} &&
-      contains(github.event.comment.body, '/staging')
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v4

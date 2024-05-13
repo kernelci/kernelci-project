@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-03-14](#2024-03-14) | Remove permissions for Guillaume and Tyler (4 motions)          | Approved  |
 | [2024-03-14](#2024-03-14) | Add TSC member: Shuah Khan                                      | Approved  |
 | [2024-03-14](#2024-03-14) | Elect new TSC chair                                             | Approved  |
 | [2024-02-08](#2024-02-08) | Add TSC member: Paweł Wieczorek                                 | Approved  |
@@ -36,6 +37,36 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2024-05-13
+
+**Motion: Replace Guillaume's "Super admin" role with "Analyst", on the LinkedIn kernelci.org organization**
+* Result: approved
+* Effective date: 2024-05-20
+* Voting method: email
+* Voting members: broonie, gtucker, nuclearcat, jeny, spbnick, shuah, khilman
+* Vote count: 7/7/10 in favour
+
+**Motion: Replace Guillaume's "Owner" membership with "Member" on GitHub organization**
+* Result: approved
+* Effective date: 2024-05-20
+* Voting method: email
+* Voting members: broonie, gtucker, nuclearcat, jeny, spbnick, shuah, khilman
+* Vote count: 7/7/10 in favour
+
+**Motion: Replace Guillaume's "Workspace Admin" account type with "Regular Member" on Slack**
+* Result: approved
+* Effective date: 2024-05-20
+* Voting method: email
+* Voting members: broonie, gtucker, nuclearcat, jeny, spbnick, shuah, khilman
+* Vote count: 7/7/10 in favour
+
+**Motion: Replace Tyler's "Super admin" role with "Analyst", on the LinkedIn kernelci.org organization**
+* Result: approved
+* Effective date: 2024-05-20
+* Voting method: email
+* Voting members: broonie, gtucker, nuclearcat, jeny, spbnick, shuah, khilman
+* Vote count: 7/7/10 in favour
 
 ### 2024-03-14
 

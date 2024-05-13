@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-05-13](#2024-05-13) | Clean up admin permissions                                      | Approved  |
 | [2024-03-14](#2024-03-14) | Add TSC member: Shuah Khan                                      | Approved  |
 | [2024-03-14](#2024-03-14) | Elect new TSC chair                                             | Approved  |
 | [2024-02-08](#2024-02-08) | Add TSC member: Paweł Wieczorek                                 | Approved  |
@@ -36,6 +37,32 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2024-05-13
+
+**Motion: Cleanup admin permissions**
+
+Amend the following permissions for Guillaume Tucker, as he's relinquished his
+administrative roles:
+
+* Replace "Super admin" role with "Analyst", on the LinkedIn kernelci.org
+  organization
+* Replace "Owner" membership with "Member" on GitHub organization.
+* Replace "Workspace Admin" account type with "Regular Member" on Slack.
+
+Amend the following permissions for Tyler Baker, as he's no longer involved
+with KernelCI:
+
+* Replace "Super admin" role with "Analyst", on the LinkedIn kernelci.org
+  organization
+
+**Votes**
+
+* Result: approved
+* Effective date: 2024-05-13
+* Voting method: Maillist
+* Voting members: khilman, broonie, gtucker, spbnick, mgalka, nuclearcat, jenysadadia, shuah, arisut
+* Vote count: 9/9/10 in favour
 
 ### 2024-03-14
 

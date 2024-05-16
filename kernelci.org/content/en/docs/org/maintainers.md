@@ -40,7 +40,7 @@ removing projects, configurating workboards and updating any other general
 settings.
 
 * Organisation: https://github.com/kernelci
-* Owners: `broonie`, `khilman`, `gtucker`, `nuclearcat`
+* Owners: `broonie`, `khilman`, `nuclearcat`
 
 ### Project
 
@@ -242,7 +242,7 @@ The [KernelCI Slack channel](https://kernelci.slack.com) may be used as an
 alternative to IRC.  However, more people are using IRC so Slack is only there
 to facilitate communication when IRC is not practical.
 
-* Maintainers: `khilman`, `spbnick`, `gtucker`
+* Maintainers: `khilman`, `spbnick`
 
 ### Twitter
 

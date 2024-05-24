@@ -10,3 +10,6 @@
 [submodule "kernelci.org/external/kcidb"]
 	path = kernelci.org/external/kcidb
 	url = https://github.com/kernelci/kcidb.git
+[submodule "kernelci.org/external/kernelci-pipeline"]
+	path = kernelci.org/external/kernelci-pipeline
+	url = https://github.com/kernelci/kernelci-pipeline.git

@@ -40,15 +40,13 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.97.0'
+          hugo-version: '0.97.3'
           extended: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          #cache: 'npm'
-          #cache-dependency-path: '**/package-lock.json'
 
       - name: Install dependencies (postcss), bootstrap-sass
         run: npm install --save-dev autoprefixer && npm install postcss-cli && npm install -D postcss && npm install -D postcss-preset-env && npm install -D bootstrap-sass

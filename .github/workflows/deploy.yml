@@ -35,8 +35,18 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
           lfs: true         # Fetch Git LFS files
           ref: main
-      - name: Update submodules
-        run: git submodule update --remote --merge
+# TODO: Fix this more elegantly
+      - name: Submodules init
+        run: git submodule update --init --recursive
+      - name: Update submodule kernelci-pipeline
+        run: cd external/kernelci-pipeline;git pull origin main
+      - name: Update submodule kernelci-api
+        run: cd external/kernelci-api;git pull origin main
+      - name: Update submodule kernelci-core
+        run: cd external/kernelci-core;git pull origin main
+      - name: Update submodule kcidb
+        run: cd external/kcidb;git pull origin main
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:

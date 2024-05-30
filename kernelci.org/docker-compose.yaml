@@ -1,6 +1,7 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 #
-# Copyright (C) 2024 Collabora Limited
+# Copyright (C) 2022-2024 Collabora Limited
+# Author: Guillaume Tucker <guillaume.tucker@collabora.com>
 # Author: Denys Fedoryshchenko <denys.f@collabora.com>
 #
 # Description: builds and runs the hugo server with kernelci.org website

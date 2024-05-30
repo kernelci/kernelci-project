@@ -1,19 +1,32 @@
 # SPDX-License-Identifier: LGPL-2.1-or-later
 #
-# Copyright (C) 2022 Collabora Limited
-# Author: Guillaume Tucker <guillaume.tucker@collabora.com>
+# Copyright (C) 2024 Collabora Limited
+# Author: Denys Fedoryshchenko <denys.f@collabora.com>
+#
+# Description: builds and runs the hugo server with kernelci.org website
+# in a docker container, viewable at http://localhost:1313
+#
+# Note:
+# 1)retrieve all submodules with `git submodule update --init --recursive`
+# 2)retrieve all lfs files with `git lfs pull`
+# you might need to install git-lfs with `sudo apt install git-lfs`
+# 3)run `docker-compose up` to start the server
 
 version: '3'
 services:
-
-  kernelci.org:
-    container_name: 'kernelci.org'
-    image: 'klakegg/hugo:0.80.0-ext-debian'
+  localhugo:
+    container_name: 'localhugo'
+    image: 'hubci/hugo:0.97.3'
     volumes:
       - '.:/src'
     ports:
       - '1313:1313'
+    # chdir to the source directory
+    working_dir: '/src'
+    user: '0:0'
     command:
+      - 'hugo'
       - 'server'
       - '-D'
       - '-F'
+      - '--bind=0.0.0.0'

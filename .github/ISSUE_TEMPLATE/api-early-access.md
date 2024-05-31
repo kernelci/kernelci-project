@@ -14,7 +14,7 @@ There are still lots of incomplete or missing features with the new API & Pipeli
 
 The number of users and amount of resources available is limited, so while we'll try and provide an account for every request we can't give any guarantee.
 
-Once accepted, a user account will be created by an admin and a random password will be sent to your email address.  You can then use `kci user change_password` to set your own password, and `kci user get_token` to get an API token.  We'll also provide you with an AzureFiles share to use alongside the API, even though you may use any other storage as long as artifacts can be reached with a public HTTP URL.
+Once accepted, a user account will be created by an admin and a random password will be sent to your email address.  You can then use `kci user password update` to set your own password, `kci user verify` to verify your email address, and `kci user token` to get an API token.  We'll also provide you with an AzureFiles share to use alongside the API, even though you may use any other storage as long as artifacts can be reached with a public HTTP URL.
 
 Please provide the required information below and also replace `USER` with your name or username in the issue title:
 

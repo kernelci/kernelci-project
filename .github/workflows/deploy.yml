@@ -64,13 +64,24 @@ jobs:
       - name: Build
         run: cd kernelci.org;hugo --minify -D -F -b https://static.staging.kernelci.org/
 
-      - name: Deploy via SCP
-        uses: appleboy/scp-action@v0.1.7
+#      - name: Deploy via SCP
+#        uses: appleboy/scp-action@v0.1.7
+#        with:
+#          host: ${{ secrets.WEB_STAGING_HOST }}
+#          username: ${{ secrets.WEB_STAGING_USERNAME }}
+#          key: ${{ secrets.WEB_STAGING_KEY }}
+#          port: ${{ secrets.WEB_STAGING_PORT }}
+#          source: "kernelci.org/public/"
+#          target: ${{ secrets.WEB_STAGING_DIR }}
+#          strip_components: 2
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@7.0.1
         with:
-          host: ${{ secrets.WEB_STAGING_HOST }}
-          username: ${{ secrets.WEB_STAGING_USERNAME }}
-          key: ${{ secrets.WEB_STAGING_KEY }}
-          port: ${{ secrets.WEB_STAGING_PORT }}
-          source: "kernelci.org/public/"
-          target: ${{ secrets.WEB_STAGING_DIR }}
-          strip_components: 2
+          switches: -avzr --delete
+          path: kernelci.org/public/
+          remote_path: ${{ secrets.WEB_STAGING_DIR }}
+          remote_host: ${{ secrets.WEB_STAGING_HOST }}
+          remote_port: ${{ secrets.WEB_STAGING_PORT }}
+          remote_user: ${{ secrets.WEB_STAGING_USERNAME }}
+          remote_key: ${{ secrets.WEB_STAGING_KEY }}

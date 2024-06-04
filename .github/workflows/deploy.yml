@@ -1,4 +1,4 @@
-name: Hugo Staging Deploy
+name: Hugo Website Deploy
 
 on:
   issue_comment:
@@ -7,9 +7,12 @@ on:
     inputs:
       environment:
         description: 'Environment to deploy to'
+        type: choice
         required: true
         default: 'staging'
-
+        options:
+          - staging
+          - production
 
 jobs:
   deploy_staging:
@@ -61,21 +64,16 @@ jobs:
       - name: Install dependencies (postcss), bootstrap-sass
         run: npm install --save-dev autoprefixer && npm install postcss-cli && npm install -D postcss && npm install -D postcss-preset-env && npm install -D bootstrap-sass
 
-      - name: Build
+      - name: Build staging
+        if: github.event.inputs.environment == 'staging'
         run: cd kernelci.org;hugo --minify -D -F -b https://static.staging.kernelci.org/
 
-#      - name: Deploy via SCP
-#        uses: appleboy/scp-action@v0.1.7
-#        with:
-#          host: ${{ secrets.WEB_STAGING_HOST }}
-#          username: ${{ secrets.WEB_STAGING_USERNAME }}
-#          key: ${{ secrets.WEB_STAGING_KEY }}
-#          port: ${{ secrets.WEB_STAGING_PORT }}
-#          source: "kernelci.org/public/"
-#          target: ${{ secrets.WEB_STAGING_DIR }}
-#          strip_components: 2
+      - name: Build production
+        if: github.event.inputs.environment == 'production'
+        run: cd kernelci.org;hugo --minify -D -F -b https://kernelci.org/
 
-      - name: rsync deployments
+      - name: rsync staging deployment
+        if: github.event.inputs.environment == 'staging'
         uses: burnett01/rsync-deployments@7.0.1
         with:
           switches: -avzr --delete
@@ -85,3 +83,15 @@ jobs:
           remote_port: ${{ secrets.WEB_STAGING_PORT }}
           remote_user: ${{ secrets.WEB_STAGING_USERNAME }}
           remote_key: ${{ secrets.WEB_STAGING_KEY }}
+
+      - name: rsync production deployment
+        if: github.event.inputs.environment == 'production'
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -avzr --delete
+          path: kernelci.org/public/
+          remote_path: ${{ secrets.WEB_PRODUCTION_DIR }}
+          remote_host: ${{ secrets.WEB_PRODUCTION_HOST }}
+          remote_port: ${{ secrets.WEB_PRODUCTION_PORT }}
+          remote_user: ${{ secrets.WEB_PRODUCTION_USERNAME }}
+          remote_key: ${{ secrets.WEB_PRODUCTION_KEY }}

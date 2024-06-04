@@ -24,7 +24,7 @@ respective email address and IRC nicknames:
 * [Guillaume Tucker](mailto:<gtucker@gtucker.io>) - `gtucker`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 * [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
-* [Alice Ferrazzi](mailto:<alice.ferrazzi@miraclelinux.com>) - `alicef`
+* [Arisu Tachibana](mailto:<arisu.tachibana@miraclelinux.com>) - `arisut`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 * [Jeny Sadadia](mailto:jeny.sadadia@collabora.com) - `jenysadadia`
 * [Paweł Wieczorek](mailto:pawiecz@collabora.com) - `pawiecz`

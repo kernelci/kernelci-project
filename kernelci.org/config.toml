@@ -77,6 +77,10 @@ footer_about_disable = false
 
 [menu]
   [[menu.main]]
+    identifier = "documentation"
+    name = "Documentation"
+    url = "/"
+  [[menu.main]]
     identifier = "dashboard"
     name = "Dashboard"
     url = "https://linux.kernelci.org/job"

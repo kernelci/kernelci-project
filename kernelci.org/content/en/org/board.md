@@ -33,7 +33,7 @@ their respective roles, email address and IRC nicknames:
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) (TSC Chair) - `spbnick`
 
 Learn more about the [current members](/docs/org/members) or how to join on the
-[KernelCI Linux Foundation](https://foundation.kernelci.org/) website.
+[KernelCI Linux Foundation](https://kernelci.org/) website.
 
 ## Key Roles
 

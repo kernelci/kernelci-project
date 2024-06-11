@@ -77,6 +77,12 @@ footer_about_disable = false
 
 [menu]
   [[menu.main]]
+    identifier = "foundation"
+    name = "Home"
+    url = "https://kernelci.org"
+    weight = 1
+
+  [[menu.main]]
     identifier = "documentation"
     name = "Documentation"
     url = "/"
@@ -86,11 +92,6 @@ footer_about_disable = false
     url = "https://linux.kernelci.org/job"
 
   [[menu.main]]
-    identifier = "lf"
-    name = "Foundation"
-    url = "https://foundation.kernelci.org"
-
-  [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "https://foundation.kernelci.org/blog/"
+    url = "https://kernelci.org/blog/"

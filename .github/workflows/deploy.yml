@@ -30,6 +30,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
           lfs: true         # Fetch Git LFS files
           ref: refs/pull/${{ github.event.issue.number }}/head
+
       - name: Checkout main branch
         uses: actions/checkout@v4
         if: github.event_name == 'workflow_dispatch'
@@ -65,7 +66,7 @@ jobs:
         run: npm install --save-dev autoprefixer && npm install postcss-cli && npm install -D postcss && npm install -D postcss-preset-env && npm install -D bootstrap-sass
 
       - name: Build staging
-        if: github.event.inputs.environment == 'staging'
+        if: github.event.inputs.environment == 'staging' || github.event_name == 'issue_comment'
         run: cd kernelci.org;hugo --minify -D -F -b https://static.staging.kernelci.org/
 
       - name: Build production
@@ -73,7 +74,7 @@ jobs:
         run: cd kernelci.org;hugo --minify -D -F -b https://kernelci.org/
 
       - name: rsync staging deployment
-        if: github.event.inputs.environment == 'staging'
+        if: github.event.inputs.environment == 'staging' || github.event_name == 'issue_comment'
         uses: burnett01/rsync-deployments@7.0.1
         with:
           switches: -avzr --delete

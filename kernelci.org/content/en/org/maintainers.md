@@ -44,10 +44,9 @@ settings.
 
 ### Project
 
-The project repository contains the source code for the
-[kernelci.org](https://kernelci.org) static website as well as some encrypted
-files and other administrative documents.  Therefore it's not strictly software
-but has the same requirements from a maintainer point of view.
+The project repository contains the documentation of the project as well as
+some encrypted files and other administrative documents. Therefore it's not
+strictly software but has the same requirements from a maintainer point of view.
 
 Please note that other people not listed here might also have access to the
 encrypted files for practical resons (shared account passwords, sysadmin

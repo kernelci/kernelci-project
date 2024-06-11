@@ -83,7 +83,7 @@ footer_about_disable = false
 
   [[menu.main]]
     identifier = "lf"
-    name = "LF"
+    name = "Foundation"
     url = "https://foundation.kernelci.org"
 
   [[menu.main]]

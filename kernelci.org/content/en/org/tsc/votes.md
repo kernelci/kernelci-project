@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-06-21](#2024-06-21) | Make thelinuxfoundation a GitHub org owner                      | Approved  |
 | [2024-05-13](#2024-05-13) | Clean up admin permissions                                      | Approved  |
 | [2024-03-14](#2024-03-14) | Add TSC member: Shuah Khan                                      | Approved  |
 | [2024-03-14](#2024-03-14) | Elect new TSC chair                                             | Approved  |
@@ -37,6 +38,21 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2024-06-21
+
+**Motion: Make thelinuxfoundation a GitHub org owner**
+
+Add `thelinuxfoundation` user account as an "owner" to the KernelCI GitHub
+organization. So that we can setup their insights dashboard.
+
+**Votes**
+
+* Result: approved
+* Effective date: 2024-06-21
+* Voting method: Maillist
+* Voting members: broonie, gtucker, spbnick, nuclearcat, jenysadadia, arisut
+* Vote count: 6/6/10 in favour
 
 ### 2024-05-13
 

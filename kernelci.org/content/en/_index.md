@@ -37,4 +37,4 @@ their own tests can submit results to
 [BigQuery](https://cloud.google.com/bigquery) database to provide a unified
 kernel test reporting mechanism.  Please take a look at this blog post for a
 comprehensive description: [Introducing Common
-Reporting](https://foundation.kernelci.org/blog/2020/08/21/introducing-common-reporting/).
+Reporting](https://kernelci.org/blog/2020/08/21/introducing-common-reporting/).

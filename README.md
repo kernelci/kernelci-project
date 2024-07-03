@@ -17,10 +17,10 @@ Mission statement:
 This repository contains general documentation about the project.
 
 
-kernelci.org static website
-===========================
+Documentation website
+=====================
 
-The source code of the [kernelci.org](https://kernelci.org) static website is
+The source code of [docs.kernelci.org](https://docs.kernelci.org) static pages is
 contained in the [`kernelci.org`](kernelci.org) directory.  It uses the
 [Hugo](https://gohugo.io) framework.
 

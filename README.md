@@ -38,7 +38,7 @@ $ cd kernelci.org
 
 Then to start the server:
 ```sh
-$ docker run -v $PWD:/src -p 1313:1313 klakegg/hugo:0.80.0-ext-debian server -D
+$ docker run -v $PWD:/src -p 1313:1313 klakegg/hugo:0.97.3-ext-debian server -D
 ```
 
 Alternatively, this can be started with `docker-compose`:

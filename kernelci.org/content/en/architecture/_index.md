@@ -4,7 +4,7 @@ date: 2024-07-03
 description: "Learn the inner details behind the KernelCI systems"
 ---
 
-![architecture](/image/kernelci-architecture.png)
+![architecture](kernelci-architecture.svg)
 
 The first thing worth noting here is that there are two main parts of the
 overall KernelCI architecture:

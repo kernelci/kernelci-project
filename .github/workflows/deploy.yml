@@ -63,7 +63,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.97.3'
+          hugo-version: '0.148.2'
           extended: true
 
       - name: Setup Node.js
@@ -71,8 +71,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies (postcss), bootstrap-sass
-        run: npm install --save-dev autoprefixer && npm install postcss-cli && npm install -D postcss && npm install -D postcss-preset-env && npm install -D bootstrap-sass
+      - name: Install NPM dependencies
+        run: cd kernelci.org && npm install
 
       - name: Build staging
         if: github.event.inputs.environment == 'staging' || github.event_name == 'issue_comment'

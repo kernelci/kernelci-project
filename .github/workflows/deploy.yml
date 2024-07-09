@@ -13,12 +13,16 @@ on:
         options:
           - staging
           - production
+  push:
+    branches:
+      - main
 
 jobs:
   deploy_staging:
     if: |
       (github.event.issue.pull_request && contains('["nuclearcat","JenySadadia","a-wai","broonie","padovan", "patersonc"]', github.actor) && contains(github.event.comment.body, '/staging')) ||
-      github.event_name == 'workflow_dispatch' && contains('["nuclearcat","JenySadadia","a-wai","broonie","padovan", "patersonc"]', github.actor)
+      (github.event_name == 'workflow_dispatch' && contains('["nuclearcat","JenySadadia","a-wai","broonie","padovan", "patersonc"]', github.actor)) ||
+      (github.event_name == 'push' && github.ref == 'refs/heads/main')
     runs-on: ubuntu-22.04
     environment: stagingdeploy
     steps:
@@ -33,7 +37,7 @@ jobs:
 
       - name: Checkout main branch
         uses: actions/checkout@v4
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push'
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -70,7 +74,7 @@ jobs:
         run: cd kernelci.org;hugo --minify -D -F -b https://static.staging.kernelci.org/
 
       - name: Build production
-        if: github.event.inputs.environment == 'production'
+        if: github.event_name == 'push' || github.event.inputs.environment == 'production'
         run: cd kernelci.org;hugo --minify -D -F -b https://kernelci.org/
 
       - name: rsync staging deployment
@@ -86,7 +90,7 @@ jobs:
           remote_key: ${{ secrets.WEB_STAGING_KEY }}
 
       - name: rsync production deployment
-        if: github.event.inputs.environment == 'production'
+        if: github.event_name == 'push' || github.event.inputs.environment == 'production'
         uses: burnett01/rsync-deployments@7.0.1
         with:
           switches: -avzr --delete

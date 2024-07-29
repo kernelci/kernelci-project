@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-07-11](#2024-07-11) | Create repository for the new dashboard                         | Approved  |
 | [2024-06-21](#2024-06-21) | Make thelinuxfoundation a GitHub org owner                      | Approved  |
 | [2024-05-13](#2024-05-13) | Clean up admin permissions                                      | Approved  |
 | [2024-03-14](#2024-03-14) | Add TSC member: Shuah Khan                                      | Approved  |
@@ -38,6 +39,21 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2024-07-11
+
+**Motion: Create repository for the new dashboard**
+
+Create `dashboard` repository in the `kernelci` organization on GitHub,
+to host the code for the new web dashboard.
+
+**Votes**
+
+* Result: approved
+* Effective date: 2024-07-11
+* Voting method: Maillist
+* Voting members: pawiecz, broonie, spbnick, nuclearcat, jenysadadia, gtucker, arisut, shuah, khilman
+* Vote count: 9/9/10 in favour
 
 ### 2024-06-21
 

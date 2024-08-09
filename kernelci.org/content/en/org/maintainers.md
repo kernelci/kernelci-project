@@ -96,6 +96,13 @@ common database.
   [`kcidb-grafana`](https://github.com/kernelci/kcidb-grafana)
 * Maintainer: `spbnick`
 
+### kci-dev
+
+kci-dev is a command line tool and library for kernel developers and maintainers.
+
+* Main repositories: [`kci-dev`](https://github.com/kernelci/kci-dev)
+* Maintainer: `arisut`
+
 ### lava-docker (interim)
 
 > **Note**: The `lava-docker` repository is about to join the LAVA GitLab

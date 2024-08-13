@@ -11,6 +11,9 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-08-13](#2024-08-13) | Add kci-dev and Arisu as its maintainer to the docs             | Approved  |
+| [2024-08-13](#2024-08-13) | Give Arisu admin privileges to the moved kci-dev repo           | Approved  |
+| [2024-08-13](#2024-08-13) | Transfer the kci-dev repo from Arisu to KernelCI organization   | Approved  |
 | [2024-07-11](#2024-07-11) | Create repository for the new dashboard                         | Approved  |
 | [2024-06-21](#2024-06-21) | Make thelinuxfoundation a GitHub org owner                      | Approved  |
 | [2024-05-13](#2024-05-13) | Clean up admin permissions                                      | Approved  |
@@ -39,6 +42,29 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
 
 ## Votes
+
+### 2024-08-13
+
+**Motion: Transfer the kci-dev repo from Arisu to KernelCI organization**
+* Result: approved
+* Effective date: 2024-08-13
+* Voting method: Maillist
+* Voting members: arisut, nuclearcat, shuah, pawiecz, spbnick, jenysadadia, khilman
+* Vote count: 6/7/10 in favour, 1/7/10 abstained
+
+**Motion: Give Arisu admin privileges to the moved kci-dev repo**
+* Result: approved
+* Effective date: 2024-08-13
+* Voting method: Maillist
+* Voting members: arisut, nuclearcat, shuah, pawiecz, spbnick, jenysadadia, khilman
+* Vote count: 6/7/10 in favour, 1/7/10 abstained
+
+**Motion: Add kci-dev and Arisu as its maintainer to the docs**
+* Result: approved
+* Effective date: 2024-08-13
+* Voting method: Maillist
+* Voting members: arisut, nuclearcat, shuah, pawiecz, spbnick, jenysadadia, khilman
+* Vote count: 6/7/10 in favour, 1/7/10 abstained
 
 ### 2024-07-11
 

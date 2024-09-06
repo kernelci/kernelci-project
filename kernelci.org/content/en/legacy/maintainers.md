@@ -100,5 +100,5 @@ configurations. Currently the CIP KernelCI code is in production.
 
 * Dashboard: [cip.kernelci.org](https://cip.kernelci.org)
 * Description: [CIP](/docs/instances/cip)
-* Maintainers: `alicef`
+* Maintainers: `arisut`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)

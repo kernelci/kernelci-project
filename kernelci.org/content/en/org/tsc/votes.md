@@ -39,7 +39,7 @@ outcome and a more detailed section listing each individual vote.
 | [2022-12-08](#2022-12-08) | List of SysAdmin resources                                      | Approved  |
 | [2022-06-09](#2022-06-09) | Add TSC member: Denys                                           | Approved  |
 | [2022-02-10](#2022-02-10) | Remvove TSC member: Lakshmipathi                                | Approved  |
-| [2021-07-13](#2021-07-13) | Add TSC member: Alice                                           | Approved  |
+| [2021-07-13](#2021-07-13) | Add TSC member: Arisu                                           | Approved  |
 
 ## Votes
 
@@ -146,14 +146,14 @@ with KernelCI:
 * Result: approved
 * Effective date: 2024-02-12
 * Voting method: TSC monthly
-* Voting members: alicef, broonie, gtucker, nuclearcat, Jeny, spbnick
+* Voting members: arisut, broonie, gtucker, nuclearcat, Jeny, spbnick
 * Vote count: 6/8, 6/6 in favour
 
 **Motion: Make groups.io maintainers full owners**
 * Result: approved
 * Effective date: 2024-02-12
 * Voting method: TSC monthly
-* Voting members: alicef, broonie, gtucker, nuclearcat, Jeny, spbnick
+* Voting members: arisut, broonie, gtucker, nuclearcat, Jeny, spbnick
 * Vote count: 6/8, 6/6 in favour
 
 ### 2023-12-14
@@ -162,28 +162,28 @@ with KernelCI:
 * Result: approved
 * Effective date: 2023-12-18
 * Voting method: email
-* Voting members: alicef, broonie, gtucker, nuclearcat
+* Voting members: arisut, broonie, gtucker, nuclearcat
 * Vote count: 4/7, 4/4 in favour
 
 **Motion: Add Denys as kernelci-project maintainer**
 * Result: approved
 * Effective date: 2023-12-18
 * Voting method: email
-* Voting members: alicef, broonie, gtucker, nuclearcat
+* Voting members: arisut, broonie, gtucker, nuclearcat
 * Vote count: 4/7, 4/4 in favour
 
 **Motion: Replace Michał with Denys as Docker Hub admin**
 * Result: approved
 * Effective date: 2023-12-18
 * Voting method: email
-* Voting members: alicef, broonie, gtucker, nuclearcat
+* Voting members: arisut, broonie, gtucker, nuclearcat
 * Vote count: 4/7, 4/4 in favour
 
 **Motion: Add Denys as GitHub KernelCI organisation admin**
 * Result: approved
 * Effective date: 2023-12-18
 * Voting method: email
-* Voting members: alicef, broonie, gtucker, nuclearcat
+* Voting members: arisut, broonie, gtucker, nuclearcat
 * Vote count: 4/7, 4/4 in favour
 
 ### 2023-10-12
@@ -192,7 +192,7 @@ with KernelCI:
 * Result: approved
 * Effective date: 2023-11-17
 * Voting method: email
-* Voting members: alicef, broonie, gtucker, khilman, nuclearcat
+* Voting members: arisut, broonie, gtucker, khilman, nuclearcat
 * Vote count: 5/8, 5/5 in favour
 
 ### 2023-08-10
@@ -272,7 +272,7 @@ with KernelCI:
 * Result: approved
 * Effective date: 2023-01-23
 * Voting method: regular TSC meeting
-* Voting members: mgalka, alicef, broonie, gtucker, nuclearcat, spbnick
+* Voting members: mgalka, arisut, broonie, gtucker, nuclearcat, spbnick
 * Vote count: 6/9 voting, 6/6 in favour
 
 ### 2022-12-08
@@ -281,7 +281,7 @@ with KernelCI:
 * Result: approved
 * Effective date: 2022-12-08
 * Voting method: regular TSC meeting/Mail
-* Voting members: mgalka, nuclearcat, gtucker, spbnick, broonie, alicef, khilman
+* Voting members: mgalka, nuclearcat, gtucker, spbnick, broonie, arisut, khilman
 * Vote count: 7/9 voting, 7/7 in favour
 * Links: [Mail 2022-12-08](https://groups.io/g/kernelci-tsc/message/617)
 
@@ -289,7 +289,7 @@ with KernelCI:
 * Result: approved
 * Effective date: 2022-12-08
 * Voting method: regular TSC meeting/Mail
-* Voting members: nuclearcat, gtucker, spbnick, broonie, alicef, khilman, (mgalka abstain)
+* Voting members: nuclearcat, gtucker, spbnick, broonie, arisut, khilman, (mgalka abstain)
 * Vote count: 6/9 voting, 6/6 in favour
 * Links: [Mail 2022-12-08](https://groups.io/g/kernelci-tsc/message/617)
 
@@ -297,7 +297,7 @@ with KernelCI:
 * Result: approved
 * Effective date: 2022-12-08
 * Voting method: regular TSC meeting/Mail
-* Voting members: mgalka, nuclearcat, gtucker, spbnick, broonie, alicef, khilman
+* Voting members: mgalka, nuclearcat, gtucker, spbnick, broonie, arisut, khilman
 * Vote count: 7/9 voting, 7/7 in favour
 * Links: [Mail 2022-12-08](https://groups.io/g/kernelci-tsc/message/617)
 
@@ -307,7 +307,7 @@ with KernelCI:
 * Result: approved
 * Effective date: 2022-06-09
 * Voting method: regular TSC meeting
-* Voting members: gtucker, apereira, spbnick, broonie, alicef
+* Voting members: gtucker, apereira, spbnick, broonie, arisut
 * Vote count: 5/8 voting, 5/5 in favour
 * Links: [PR #121](https://github.com/kernelci/kernelci-project/pull/121)
 
@@ -317,12 +317,12 @@ with KernelCI:
 * Result: approved
 * Effective date: 2022-02-10
 * Voting method: regular TSC meeting
-* Voting members: alicef, apereira, spbnick, broonie, gtucker, laks (deferred)
+* Voting members: arisut, apereira, spbnick, broonie, gtucker, laks (deferred)
 * Vote count: 6/9 voting, 6/6 in favour
 * Links: [PR #100](https://github.com/kernelci/kernelci-project/pull/100)
 
 ### 2021-07-13
-**Add TSC member: Alice Ferrazzi**
+**Add TSC member: Arisu Tachibana**
 * Result: approved
 * Effective date: 2021-07-13
 * Voting method: regular TSC meeting

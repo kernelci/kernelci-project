@@ -64,7 +64,7 @@ individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
 * Maintainers: `nuclearcat`, `jeny`
-* Deputy: `alicef`
+* Deputy: `arisut`
 
 ### API
 
@@ -114,7 +114,7 @@ This project is to Simplify the installation and maintenance of a LAVA lab
 using Docker containers.
 
 * Repository: [`lava-docker`](https://github.com/kernelci/lava-docker)
-* Maintainers: `alicef`, `montjoie`
+* Maintainers: `arisut`, `montjoie`
 
 ## Service maintainers
 

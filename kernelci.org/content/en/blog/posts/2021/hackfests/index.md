@@ -77,7 +77,7 @@ Here's a summary of the first two hackfests:
 * Participants
   * More members of the [TSC](/docs/org/tsc/) took part than first hackfest
   * New contributor: Denis Efremov (floppy disk kernel maintainer)
-  * Alice from [Civil Infrastructure Platform](https://www.cip-project.org/)
+  * Arisu from [Civil Infrastructure Platform](https://www.cip-project.org/)
     (CIP) / [Cybertrust Japan](https://www.cybertrust.co.jp/english/)
   * Chris from [Civil Infrastructure Platform](https://www.cip-project.org/)
     (CIP) / [Renesas](https://www.renesas.com/eu/en)

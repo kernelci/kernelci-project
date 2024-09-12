@@ -122,7 +122,7 @@ See commit: [`config/core: enable uname test plan using Bullseye
 NFS`](https://github.com/kernelci/kernelci-core/commit/e7c1a1a0277fec215b778da3ada8885581464a16)
 
 Once the LAVA templates have been created, the next step is to enable the test
-plan in the [KernelCI YAML configuration](/docs/legacy/core/config/).
+plan in the [KernelCI YAML configuration](/legacy/core/config/).
 
 First add the `uname` test plan with the chosen rootfs (Debian Bullseye NFS in
 this case) in `test-configs.yaml`:
@@ -157,7 +157,7 @@ required at this point.
 
 These changes are enough to make an intial pull request in
 [`kernelci-core`](https://github.com/kernelci/kernelci-core), and the test will
-automatically get run on [staging](/docs/legacy/instances/staging/).  Then the
+automatically get run on [staging](/legacy/instances/staging/).  Then the
 results will appear on the [web dashboard](https://staging.kernelci.org/job/).
 
 > **Note** First-time contributors needed to be added to the [list of trusted
@@ -258,7 +258,7 @@ a more advanced feature for grouping test results together inside a test suite.
 ### Adding a rootfs variant
 
 Root file systems are built using the
-[`kci_rootfs`](/docs/legacy/core/kci_rootfs) command.  All the variants are
+[`kci_rootfs`](/legacy/core/kci_rootfs) command.  All the variants are
 defined in the
 [`config/core/rootfs-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/main/config/core/rootfs-configs.yaml)
 file with some parameters.  There are also extra dedicated files in

@@ -4,7 +4,7 @@ date: 2024-03-18
 description: "KernelCI core developers and maintainers"
 weight: 3
 aliases:
-  - "/docs/team/tsc"
+  - "/team/tsc"
 ---
 
 The Technical Steering Committee (TSC) is a team of people who are responsible
@@ -40,7 +40,7 @@ used instead.
 
 The TSC also meet monthly online to discuss current topics and make decisions
 including votes when necessary.  See the [Meetings
-section](/docs/org/#technical-steering-committee) for more details.
+section](/org/#technical-steering-committee) for more details.
 
 ## Rules
 

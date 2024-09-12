@@ -9,11 +9,11 @@ KernelCI core project is open for contributions. Contributions may consist of
 adding new builds, tests and device types as well as features and bugfixes for
 KernelCI core tools.
 The best way to contribute is to send a PR to [kernelci-core](https://github.com/kernelci/kernelci-core).
-When the PR is created, the [KernelCI staging](https://kernelci.org/docs/instances/staging)
+When the PR is created, the [KernelCI staging](https://docs.kernelci.org/instances/staging)
 instance takes care of updating the [staging.kernelci.org branch](https://github.com/kernelci/kernelci-core/tree/staging.kernelci.org).
 In general the branch is updated every 8h and a limited set of builds and tests
 are run on it. More detailed information about the logic behind staging runs can
-be found [here](https://kernelci.org/docs/instances/staging).
+be found [here](https://docs.kernelci.org/instances/staging).
 
 There are several guidelines which can facilitate the PR review process:
 
@@ -31,4 +31,4 @@ There are several guidelines which can facilitate the PR review process:
    1. When there are comments unanswered for more than 1 month the PR will be closed
 4. In case there is a need to consult the PR with KernelCI maintainers join the open hours
    1. Open hours take place every Thursday at 12:00 UTC at KernelCI [Jitsi](https://meet.kernel.social/kernelci-dev)
-5. Should you need help, you can reach KernelCI [maintainers](/docs/org/maintainers/)
+5. Should you need help, you can reach KernelCI [maintainers](/org/maintainers/)

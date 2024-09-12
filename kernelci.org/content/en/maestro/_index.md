@@ -91,7 +91,7 @@ GitHub merged together on a test integration branch.
 ### Early Access
 
 In preparation for a full production roll-out, an [Early
-Access](/docs/api_pipeline/api/early-access) instance has been deployed in the Cloud (AKS)
+Access](/api_pipeline/api/early-access) instance has been deployed in the Cloud (AKS)
 on `kernelci-api.westus3.cloudapp.azure.com`.  This is stable enough to let
 users give it a try as some form of beta-testing and is used as a candidate
 solution for an initial production deployment in the coming months.  Like

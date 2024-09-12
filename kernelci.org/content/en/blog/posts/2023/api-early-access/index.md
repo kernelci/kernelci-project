@@ -14,7 +14,7 @@ explained briefly in the [previous blog
 post](https://kernelci.org/blog/posts/2023/api-timeline/), this is to give
 everyone a chance to create a user account and start using the API for
 beta-testing purposes.  There's now an [Early
-Access](https://kernelci.org/docs/api/early-access/) documentation page with a
+Access](https://docs.kernelci.org/api/early-access/) documentation page with a
 quick guide to get started, so please go take a look there and start taking
 part.
 

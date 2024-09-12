@@ -59,7 +59,7 @@ web servers, databases and Cloud services up and running.  This does not
 include any test lab other than some Kubernetes clusters as hardware platforms
 are maintained by separate companies and individuals.  Members of the SysAdmin
 working group have admin rights on all KernelCI systems, wherever applicable.
-As per the [2022-12-08 TSC vote](/docs/org/tsc/votes/#2022-12-08), admin rights
+As per the [2022-12-08 TSC vote](/org/tsc/votes/#2022-12-08), admin rights
 cover the following items:
 
 * Machines (SSH, sudo):

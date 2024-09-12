@@ -4,7 +4,7 @@ date: 2021-09-03
 description: "KernelCI project organization"
 weight: 1
 aliases:
-  - "/docs/team/"
+  - "/team/"
 ---
 
 The KernelCI Linux Foundation project is composed of an [Advisory Board](board)
@@ -125,7 +125,7 @@ be shared during the Thursday meeting.
 
 * Every other Wednesday at 07:30 PST
 
-The [Advisory Board](/docs/org/board/) of members meet every other week to
+The [Advisory Board](/org/board/) of members meet every other week to
 discuss things that matter from the point of view of the KernelCI Linux
 Foundation project: budget, membership, work packages, internships etc.  It's a
 private meeting as only member representatives can attend.
@@ -134,7 +134,7 @@ private meeting as only member representatives can attend.
 
 * Every second Thursday of the month at 10:00 UTC
 
-The [Technical Steering Committee](/docs/org/tsc/) meet once a month to discuss
+The [Technical Steering Committee](/org/tsc/) meet once a month to discuss
 general technical topics that have a significant impact on the project.  This
 is a private meeting as only elected TSC members can attend and they
 occasionally take part in decisions made by the advisory board.

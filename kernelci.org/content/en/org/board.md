@@ -4,7 +4,7 @@ date: 2024-04-01
 description: "Linux Foundation Project Board"
 weight: 2
 aliases:
-  - "/docs/team/board"
+  - "/team/board"
 ---
 
 The Advisory Board (AB) is composed of one representative from each premium
@@ -32,7 +32,7 @@ their respective roles, email address and IRC nicknames:
 * [KY Srinivasan](mailto:<kys@microsoft.com>) (Microsoft)
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) (TSC Chair) - `spbnick`
 
-Learn more about the [current members](/docs/org/members) or how to join on the
+Learn more about the [current members](/org/members) or how to join on the
 [KernelCI Linux Foundation](https://kernelci.org/) website.
 
 ## Key Roles

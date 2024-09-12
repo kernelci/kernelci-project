@@ -230,4 +230,4 @@ e.g.
 
 Congratulations, your `kernelci-backend` instance is up and running.
 You can now build your kernel and push the artifacts with `kci_build` and `kci_data`.
-See the [`kci_build`](https://kernelci.org/docs/core/kci_build/) documentation to get you started.
+See the [`kci_build`](https://docs.kernelci.org/core/kci_build/) documentation to get you started.

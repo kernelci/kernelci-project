@@ -22,7 +22,7 @@ There are several types of maintainer roles with different responsibilities:
 [channel maintainers](#channel-maintainers)
 : in charge of the communication channels used by KernelCI
 
-Most maintainers are members of the [TSC](/docs/org/tsc) but additional people
+Most maintainers are members of the [TSC](/org/tsc) but additional people
 can be involved too.
 
 ## Software Maintainers
@@ -58,7 +58,7 @@ information etc.).
 
 ### Core tools
 
-The [core tools](/docs/core) provide the command line utilities and the
+The [core tools](/core) provide the command line utilities and the
 `kernelci` Python package used to implement a KerneLCI pipeline and run
 individual steps by hand (building kernels, scheduling tests...).
 
@@ -68,7 +68,7 @@ individual steps by hand (building kernels, scheduling tests...).
 
 ### API
 
-The new [KernelCI API](/docs/api) is a work-in-progress replacement for the
+The new [KernelCI API](/api) is a work-in-progress replacement for the
 backend currently used in production.  It also features a Pub/Sub interface to
 coordinate the pipeline services in a modular fashion.
 
@@ -77,7 +77,7 @@ coordinate the pipeline services in a modular fashion.
 
 ### Pipeline
 
-The [KernelCI pipeline](/docs/api/overview/#pipeline-design) is also a
+The [KernelCI pipeline](/api/overview/#pipeline-design) is also a
 work-in-progress based on the new API and its Pub/Sub interface.  This is
 essentially to replace the Jenkins pipeline currently used in production.
 
@@ -87,7 +87,7 @@ essentially to replace the Jenkins pipeline currently used in production.
 
 ### KCIDB
 
-[KCIDB](/docs/kcidb) provides a set of tools to submit kernel test data to a
+[KCIDB](/kcidb) provides a set of tools to submit kernel test data to a
 common database.
 
 * Main repositories: [`kcidb`](https://github.com/kernelci/kcidb),
@@ -262,7 +262,7 @@ news and, achievements.
 ### kernelci.org update emails (paused)
 
 Emails are sent regularly with a summary of the changes going into production
-and minutes from the various [TSC](/docs/org/tsc) and
-[board](/docs/org/board) meetings.
+and minutes from the various [TSC](/org/tsc) and
+[board](/org/board) meetings.
 
 * Maintainers: `gtucker`

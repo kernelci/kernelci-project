@@ -63,7 +63,7 @@ gradually more continuous as services start to get hosted in the Cloud and run
 in Docker containers.
 
 * Dashboard: [linux.kernelci.org](https://linux.kernelci.org)
-* Description: [Production](/docs/instances/production)
+* Description: [Production](/instances/production)
 * Maintainers: `mgalka`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
@@ -72,10 +72,10 @@ in Docker containers.
 All the incoming pull requests are merged into temporary integration branches
 and deployed on [staging.kernelci.org](https://staging.kernelci.org] for
 testing.  This is explained in greater detail in the
-[Staging](/docs/instances/staging) section.
+[Staging](/instances/staging) section.
 
 * Dashboard: [staging.kernelci.org](https://staging.kernelci.org)
-* Description: [Staging](/docs/instances/staging)
+* Description: [Staging](/instances/staging)
 * Maintainers: `gtucker`, `broonie`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
@@ -89,7 +89,7 @@ rebased with any extra patches that are not merged upstream, typically after
 each production update.
 
 * Dashboard: [chromeos.kernelci.org](https://chromeos.kernelci.org)
-* Description: [ChromeOS](/docs/instances/chromeos)
+* Description: [ChromeOS](/instances/chromeos)
 * Maintainers: `mgalka`, `nuclearcat`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)
 
@@ -99,6 +99,6 @@ The CIP instance is dedicated to building CIP specific kernels with CIP
 configurations. Currently the CIP KernelCI code is in production.
 
 * Dashboard: [cip.kernelci.org](https://cip.kernelci.org)
-* Description: [CIP](/docs/instances/cip)
+* Description: [CIP](/instances/cip)
 * Maintainers: `arisut`
 * Components: [`kernelci-deploy`](https://github.com/kernelci/kernelci-deploy)

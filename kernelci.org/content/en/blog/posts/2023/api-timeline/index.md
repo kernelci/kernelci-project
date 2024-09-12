@@ -126,7 +126,7 @@ legacy system _no sooner than_ announced here.
 In the meantime, we'll be posting updates as these milestones get reached or if
 any alterations need to be managed.  We'll also clarify how to use the API and
 exactly what features become available alongside the main
-[documentation](/docs/api).  Please share with us any feedback you may have, if
+[documentation](/api).  Please share with us any feedback you may have, if
 you need some clarifications or to raise any concerns.  The best way to do this
 is via the [mailing list](mailto:kernelci@lists.linux.dev) as always.  Stay
 tuned!

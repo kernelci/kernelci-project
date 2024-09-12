@@ -19,10 +19,10 @@ Remind yourself and your interlocutors of the importance of testing and the exis
 
 ## Find out more about KernelCI	
 
-Mission statement: https://kernelci.org/docs/org/
+Mission statement: https://kernelci.org/org/
 
 Interested to see your tests ran by KernelCI natively?
-Here is how to [get started](https://kernelci.org/docs/tests/howto/) with KernelCI.
+Here is how to [get started](https://docs.kernelci.org/tests/howto/) with KernelCI.
 
 You already have your own automated execution of tests and would be interested/willing to contribute your results? Please see the [KCIDB submitter guide](https://github.com/kernelci/kcidb/blob/main/doc/submitter_guide.md).
 

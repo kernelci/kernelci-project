@@ -8,7 +8,7 @@ The [`secrets`](https://github.com/kernelci/kernelci-project/tree/main/secrets)
 directory contains encrypted files using
 [`git-crypt`](https://www.agwa.name/projects/git-crypt/) with credentials used
 by the KernelCI project.  It is mostly useful to project administrators such as
-members of the [TSC](/docs/org/tsc), for example to have a common place where
+members of the [TSC](/org/tsc), for example to have a common place where
 to share passwords in a secure way.  Derivative projects based on KernelCI such
 as private instances may reuse some of the tools and documentation provided
 here.

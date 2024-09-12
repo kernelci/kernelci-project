@@ -54,5 +54,5 @@ Secrets and git-crypt
 
 The [`secrets`](https://github.com/kernelci/kernelci-project/tree/main/secrets)
 directory contains encrypted files with credentials used by the KernelCI
-project.  See the [Secrets](https://kernelci.org/docs/admin/secrets/) page for
+project.  See the [Secrets](https://docs.kernelci.org/admin/secrets/) page for
 more details about how it is used.

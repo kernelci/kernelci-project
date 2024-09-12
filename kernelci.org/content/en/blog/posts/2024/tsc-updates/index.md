@@ -20,4 +20,4 @@ Nikolai has been a longstanding contributor under the KernelCI umbrella and the 
 While at it, we thank Guillaume for his tenure as TSC Chair of the project!
 
 The detail of the motions which were voted can be found on the TSC
-[documentation](https://kernelci.org/docs/org/tsc/votes/#2024-03-14).
+[documentation](https://docs.kernelci.org/org/tsc/votes/#2024-03-14).

@@ -148,7 +148,7 @@ objects.  The underlying engine is MongoDB, and we're looking into using Atlas
 for this.  The API also features a Pub/Sub interface for events that trigger
 different stages of the testing pipeline on the client side.
 
-The [KCIDB](https://kernelci.org/docs/kcidb/) database has a different schema,
+The [KCIDB](https://docs.kernelci.org/kcidb/) database has a different schema,
 but the web dashboard wouldn't necessarily need to read data from both sources.
 That's something we still need to define, there are several ways to solve this.
 It's also something which might depend on the outcome of the UX Analysis.

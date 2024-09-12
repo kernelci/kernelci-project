@@ -43,7 +43,7 @@ test, say in kselftest.  A second participant enables the test to run in
 KernelCI, which fails in some cases and a kernel bug is found.  A third
 participant makes a fix for the bug, which can then be tested directly in
 KernelCI to confirm it works as expected.  This may even happen on the [staging
-instance](/docs/instances/staging/) before the patches for the test and the fix
+instance](/instances/staging/) before the patches for the test and the fix
 are sent to any mailing list, in which case the fix would get a `Tested-by:
 "kernelci.org bot" <bot@kernelci.org>` trailer from the start.  This scenario
 also relies on some hardware previously made available in test labs by other
@@ -75,7 +75,7 @@ Here's a summary of the first two hackfests:
 
 * Workboard: https://github.com/orgs/kernelci/projects/5
 * Participants
-  * More members of the [TSC](/docs/org/tsc/) took part than first hackfest
+  * More members of the [TSC](/org/tsc/) took part than first hackfest
   * New contributor: Denis Efremov (floppy disk kernel maintainer)
   * Arisu from [Civil Infrastructure Platform](https://www.cip-project.org/)
     (CIP) / [Cybertrust Japan](https://www.cybertrust.co.jp/english/)

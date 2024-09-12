@@ -46,4 +46,4 @@ As you can see, a lot is going on in KernelCI at the moment. The team is iterati
 
 That's all for now! Stay tuned for updates on topics discussed in this article. Likewise, as the new infrastructure stabilizes, expect a significant amount of documentation updates too.
 
-We thank all KernelCI [member organizations](https://kernelci.org/docs/org/members/) and developer community who have been investing in the project over the years. It is only because of the continued support from our community that we are making the legacy system a past story!
+We thank all KernelCI [member organizations](https://docs.kernelci.org/org/members/) and developer community who have been investing in the project over the years. It is only because of the continued support from our community that we are making the legacy system a past story!

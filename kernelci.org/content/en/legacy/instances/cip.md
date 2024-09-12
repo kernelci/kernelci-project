@@ -9,12 +9,12 @@ The [Civil Infrastructure Platform](https://www.cip-project.org/) project (CIP)
 manages a separate instance of KernelCI. In reality this "instance" is part of
 the main [linux.kernelci.org](https://linux.kernelci.org) instance but the
 configuration of what is built and tested is managed in separate configuration
-files by [maintainers](https://kernelci.org/docs/org/tsc/#cip-instance) from the
+files by [maintainers](https://kernelci.org/org/tsc/#cip-instance) from the
 CIP project.
 
 The development and production workflows are identical to the main KernelCI
 instance. Visit the
-[production documentation](https://kernelci.org/docs/instances/production/) to
+[production documentation](https://docs.kernelci.org/instances/production/) to
 learn more about the process.
 
 The CIP "instance" can be accessed at the

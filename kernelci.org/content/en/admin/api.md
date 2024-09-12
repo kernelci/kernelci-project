@@ -39,7 +39,7 @@ by mistake.
 ## Creating user accounts
 
 > **Note**: This is how things are done as part of the [Early
-> Access](/docs/api/early-access) phase.  The procedure once in production
+> Access](/api/early-access) phase.  The procedure once in production
 > might change if users can just sign up by themselves.
 
 First, create a random password and then use it with `kci user add` to create
@@ -94,7 +94,7 @@ and the associated share name is:
 Please take a look at the Early Access documentation page to update your API
 account with your own password and get started:
 
-  https://kernelci.org/docs/api/early-access/
+  https://docs.kernelci.org/api/early-access/
 
 Happy beta-testing!
 ```

@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-09-05](#2024-09-05) | Add Paweł Wieczorek to the sysadmin working group               | Approved  |
 | [2024-08-13](#2024-08-13) | Add kci-dev and Arisu as its maintainer to the docs             | Approved  |
 | [2024-08-13](#2024-08-13) | Give Arisu admin privileges to the moved kci-dev repo           | Approved  |
 | [2024-08-13](#2024-08-13) | Transfer the kci-dev repo from Arisu to KernelCI organization   | Approved  |
@@ -42,6 +43,15 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Arisu                                           | Approved  |
 
 ## Votes
+
+### 2024-09-05
+
+**Motion: Add Paweł Wieczorek to the sysadmin working group**
+* Result: approved
+* Effective date: 2024-09-05
+* Voting method: Maillist
+* Voting members: arisut, nuclearcat, shuah, pawiecz, spbnick, jenysadadia, khilman, broonie, gtucker
+* Vote count: 8/8/9 in favour
 
 ### 2024-08-13
 

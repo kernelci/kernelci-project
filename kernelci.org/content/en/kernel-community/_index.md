@@ -14,4 +14,6 @@ This section of the documentation shares instructions to:
 * [enable specific tests](../maestro/pipeline/developer-documentation/#enabling-a-new-test)
 * [visualize the results](view-results)
 
+For suggestions of device tests, see [device kselftests](device-tests).
+
 We know that the documentation above may not answer all your questions. We are working to improve it. We ask you to reach out to our mailing list at [kernelci@lists.linux.dev](mailto:kernelci@lists.linux.dev)  with questions and feedback. We are eager to hear from you!

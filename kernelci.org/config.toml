@@ -68,10 +68,10 @@ footer_about_disable = false
   desc = "Development takes place here!"
 
 [[params.links.developer]]
-  name = "Slack"
-  url = "http://kernelci.slack.com/"
-  icon = "fab fa-slack"
-  desc = "Chat with other project developers"
+  name = "Discord"
+  url = "https://discord.gg/KWbrbWEyqb"
+  icon = "fab fa-discord"
+  desc = "Chat with other developers!"
 
 # -- custom main menu --
 

@@ -242,13 +242,13 @@ price plan.
 
 * Maintainers: `broonie`, `khilman`, `padovan`
 
-### Slack
+### Discord
 
-The [KernelCI Slack channel](https://kernelci.slack.com) may be used as an
-alternative to IRC.  However, more people are using IRC so Slack is only there
+The [KernelCI Discord channel](https://discord.gg/KWbrbWEyqb) may be used as an
+alternative to IRC.  However, more people are using IRC so Discord is only there
 to facilitate communication when IRC is not practical.
 
-* Maintainers: `khilman`, `spbnick`
+* Maintainers: `khilman`, `spbnick`, `padovan`
 
 ### Twitter
 

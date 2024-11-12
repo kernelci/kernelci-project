@@ -11,6 +11,9 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2024-11-12](#2024-11-12) | Appoint Discord server administrators                           | Approved  |
+| [2024-11-12](#2024-11-12) | Host test catalog prototype repo on the GitHub organization     | Approved  |
+| [2024-11-12](#2024-11-12) | Create "logspec" repository in the GitHub organization          | Approved  |
 | [2024-10-31](#2024-10-31) | Move from Slack to Discord as our main chat system              | Approved  |
 | [2024-09-05](#2024-09-05) | Add Paweł Wieczorek to the sysadmin working group               | Approved  |
 | [2024-08-13](#2024-08-13) | Add kci-dev and Arisu as its maintainer to the docs             | Approved  |
@@ -44,6 +47,37 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Arisu                                           | Approved  |
 
 ## Votes
+
+### 2024-11-12
+
+**Motion: Appoint Discord server administrators**
+
+Appoint the following people as Discord server administrators:
+
+- Nikolai Kondrashov
+- Gustavo Padovan
+- Arisu Tachibana
+- Denys Fedoryshchenko
+
+* Result: approved
+* Effective date: 2024-11-12
+* Voting method: Maillist
+* Voting members: nuclearcat, pawiecz, spbnick, khilman, gtucker, arisut, broonie
+* Vote count: 7/7/9 in favour
+
+**Motion: Host test catalog prototype repo on the GitHub organization**
+* Result: approved
+* Effective date: 2024-11-12
+* Voting method: Maillist
+* Voting members: nuclearcat, pawiecz, spbnick, khilman, gtucker, arisut, broonie
+* Vote count: 7/7/9 in favour
+
+**Motion: Create "logspec" repository in the GitHub organization**
+* Result: approved
+* Effective date: 2024-11-12
+* Voting method: Maillist
+* Voting members: nuclearcat, pawiecz, spbnick, khilman, gtucker, arisut, broonie
+* Vote count: 7/7/9 in favour
 
 ### 2024-10-31
 

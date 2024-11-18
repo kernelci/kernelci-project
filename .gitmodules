@@ -13,3 +13,6 @@
 [submodule "kernelci.org/external/kernelci-pipeline"]
 	path = kernelci.org/external/kernelci-pipeline
 	url = https://github.com/kernelci/kernelci-pipeline.git
+[submodule "kernelci.org/external/kci-dev"]
+	path = kernelci.org/external/kci-dev
+	url = https://github.com/kernelci/kci-dev

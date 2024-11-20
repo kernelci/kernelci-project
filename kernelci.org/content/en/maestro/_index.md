@@ -89,12 +89,9 @@ is not stable, it's redeployed periodically with all open pull requests from
 GitHub merged together on a test integration branch.
 Please check [docs](/maestro/api/staging) for more details.
 
-### Early Access
+### Production
 
-In preparation for a full production roll-out, an [Early
-Access](/api_pipeline/api/early-access) instance has been deployed in the Cloud (AKS)
-on `kernelci-api.westus3.cloudapp.azure.com`.  This is stable enough to let
-users give it a try as some form of beta-testing and is used as a candidate
-solution for an initial production deployment in the coming months.  Like
+Production instance has been deployed in the Cloud (AKS)
+on `kernelci-api.westus3.cloudapp.azure.com`. This is stable instance and is being updated weekly (usually on Mondays). Like
 staging, it has an auto-generated [interactive API
 documentation](https://kernelci-api.westus3.cloudapp.azure.com/latest/docs).

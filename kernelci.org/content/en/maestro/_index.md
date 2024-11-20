@@ -87,6 +87,7 @@ pipeline.  It also provides some [interactive API
 documentation](https://staging.kernelci.org:9000/latest/docs).  This instance
 is not stable, it's redeployed periodically with all open pull requests from
 GitHub merged together on a test integration branch.
+Please check [docs](/maestro/api/staging) for more details.
 
 ### Early Access
 

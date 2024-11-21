@@ -54,6 +54,8 @@ jobs:
         run: cd kernelci.org/external/kernelci-core;git pull origin main
       - name: Update submodule kcidb
         run: cd kernelci.org/external/kcidb;git pull origin main
+      - name: Update submodule kci-dev
+        run: cd kernelci.org/external/kci-dev;git pull origin main
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

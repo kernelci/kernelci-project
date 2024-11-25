@@ -27,6 +27,7 @@ jobs:
     environment: stagingdeploy
     permissions:
       issues: write
+      pull-requests: write
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v4

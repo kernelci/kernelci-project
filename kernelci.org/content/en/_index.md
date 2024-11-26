@@ -39,6 +39,13 @@ Welcome to the KernelCI documentation website.
 
 <div class="container border border-primary rounded p-2 mt-3">
   <h2 class="text-center">
+    <a href="kci-dev">kci-dev</a>
+  </h2>
+  <p class="text-center">Start here if you want to interact with KernelCI instances programmatically.</p>
+</div>
+
+<div class="container border border-primary rounded p-2 mt-3">
+  <h2 class="text-center">
     <a href="architecture">Contributing to KernelCI</a>
   </h2>
   <p class="text-center">Start here if you want to contribute to KernelCI and learn

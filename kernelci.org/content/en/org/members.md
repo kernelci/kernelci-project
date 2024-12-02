@@ -32,3 +32,10 @@ Below are the current members of the project.
     <div class="col p-3"><a href="https://www.baylibre.com/" target="_blank"><img src="/image/baylibre-horizontal-color.svg" alt="Baylibre" title="Baylibre" /></a></div>
   </div>
 </div>
+
+## Associate Members
+<div class="container">
+  <div class="row row-cols-4">
+    <div class="col p-3"><a href="https://elisa.tech/" target="_blank"><img src="/image/elisa-horizontal-color.svg" alt="ELISA" title="ELISA" /></a></div>
+  </div>
+</div>

@@ -1,25 +1,27 @@
 ---
 title: "Maintainers"
-date: 2021-09-23
+date: 2024-12-03
 description: "KernelCI maintainers"
 weight: 5
 ---
 
+# Roles and Responsibilities of KernelCI Maintainers
+
 There are several types of maintainer roles with different responsibilities:
 
-[software maintainers](#software-maintainers)
+[Software Maintainers](#software-maintainers)
 : in charge of the KernelCI software components
 
-[service maintainers](#service-maintainers)
+[Service Maintainers](#service-maintainers)
 : in charge of the KernelCI hosted services
 
-[feature maintainers](#feature-maintainers)
+[Feature Maintainers](#feature-maintainers)
 : in charge of features that span across the whole KernelCI stack
 
-[instance maintainers](#instance-maintainers)
+[Instance Maintainers](#instance-maintainers)
 : in charge of a particular KernelCI instance (production, staging...)
 
-[channel maintainers](#channel-maintainers)
+[Channel Maintainers](#channel-maintainers)
 : in charge of the communication channels used by KernelCI
 
 Most maintainers are members of the [TSC](/org/tsc) but additional people
@@ -28,15 +30,15 @@ can be involved too.
 ## Software Maintainers
 
 At least one maintainer is assigned to each software component.  The work
-involves reviewing pull requests on GitHUb, triaging issue, updating GitHub
-settings and facilitating the development workflow.  Having “deputy”
+involves reviewing pull requests on GitHub, triaging issue, updating GitHub
+settings and facilitating the development workflow.  Assigning “deputy”
 maintainers whenever possible also helps with the continuity of the project
 when regular maintainers are not available.
 
 In addition to maintainers for each project, some GitHub administrators are
 available to make configuration changes at the organisation level.  This
 includes managing teams, permissions for each project, adding / moving /
-removing projects, configurating workboards and updating any other general
+removing projects, configuring workboards and updating any other general
 settings.
 
 * Organisation: https://github.com/kernelci
@@ -49,7 +51,7 @@ some encrypted files and other administrative documents. Therefore it's not
 strictly software but has the same requirements from a maintainer point of view.
 
 Please note that other people not listed here might also have access to the
-encrypted files for practical resons (shared account passwords, sysadmin
+encrypted files for practical reasons (shared account passwords, sysadmin
 information etc.).
 
 * Repository: [`kernelci-project`](https://github.com/kernelci/kernelci-project)
@@ -110,7 +112,7 @@ kci-dev is a command line tool and library for kernel developers and maintainers
 > discussion](https://groups.io/g/kernelci/topic/moving_lava_docker_out_of_the/93248754)
 > for more details.
 
-This project is to Simplify the installation and maintenance of a LAVA lab
+This project aims to simplify the installation and maintenance of a LAVA lab
 using Docker containers.
 
 * Repository: [`lava-docker`](https://github.com/kernelci/lava-docker)
@@ -120,7 +122,7 @@ using Docker containers.
 
 Services hosted by KernelCI all need someone to look after them and ensure they
 stay online and available.  This is essentially sysadmin work with some code
-maintannce too depending on the cases.
+maintenance too depending on the cases.
 
 ### Kubernetes
 
@@ -143,7 +145,7 @@ tools, backups...
 
 ### BigQuery
 
-KCIDB uses BigQuery as a database engine.  This requires setting up tokens and
+KCIDB uses BigQuery as a database engine.  This requires token setup and
 managing the associated Cloud resources.
 
 * Maintainers: `spbnick`, `khilman`
@@ -197,27 +199,30 @@ Just like tests, kernel builds orchestrated on kernelci.org are called the
 * Maintainers: `broonie`, `nuclearcat`
 * Components:
   [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config),
-  [`kernelci-jenkins`](https://github.com/kernelci/kernelci-jenkins)
-* Services: Pipeline / Jenkins, Kubernetes
+  [`kernelci-pipeline/config`](https://github.com/kernelci/kernelci-pipeline/tree/main/config)
 
-### Bisections
-
-For every test regression detected, an automated bisection is run whenever
-possible.  This involves building kernels, running tests and checking their
-results in a coordinated way to then send an email report when the bisection
-succeeds.
-
-* Maintainers: `gtucker`
-* Components: [`kernelci-core`](https://github.com/kernelci/kernelci-core),
-  [`bisect.jpl`](https://github.com/kernelci/kernelci-jenkins/blob/main/jobs/bisect.jpl)
-* Services: Pipeline / Jenkins
+* Services: Pipeline
 
 ## Instance maintainers
 
 As there are several KernelCI instances, it's necessary to have people
 dedicated to each of them.
 
-> ToDo: Update with new API & Pipeline deployments as they become available.
+### Production
+
+The production instance is the main one, hosted at kernelci.org.  It is used
+for the main KernelCI project and is the one most people are familiar with.
+
+* Maintainers: `nuclearcat`, `pawiecz`
+
+
+### Staging
+
+The staging instance is used for testing new features before they are deployed
+to production.  It is also used for training new users and for debugging issues
+that are hard to reproduce in production.
+
+* Maintainers: `nuclearcat`, `pawiecz`
 
 ## Channel Maintainers
 

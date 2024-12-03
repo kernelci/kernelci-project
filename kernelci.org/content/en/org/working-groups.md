@@ -1,6 +1,6 @@
 ---
 title: "Working groups"
-date: 2024-02-19
+date: 2024-12-03
 description: "KernelCI Working Groups"
 weight: 4
 ---
@@ -53,6 +53,7 @@ potentially a new design from scratch using modern web technology.
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
 * [Vince Hillier](mailto:<vince@revenni.com>) - `vince`
+* [Paweł Wieczorek](mailto:<pawiecz@collabora.com>) - `pawiecz`
 
 The KernelCI common infrastructure requires some regular maintenance to keep
 web servers, databases and Cloud services up and running.  This does not
@@ -63,19 +64,12 @@ As per the [2022-12-08 TSC vote](/org/tsc/votes/#2022-12-08), admin rights
 cover the following items:
 
 * Machines (SSH, sudo):
-  * KernelCI staging VM
-  * KernelCI production VM
-  * Jenkins runner nodes
+  * Azure VMs
   * Kubernetes nodes
+
 * Web applications:
-  * Staging Jenkins instance (admin access)
-  * Production Jenkins instance (admin access)
   * SysAdmin GitHub project board
   * Azure portal (admin access)
 * Encrypted repositories:
   * kernelci-jenkins-data
   * builder-config-data
-
-This group has a large overlap with [service
-maintainers](tsc/#service-maintainers), it's merely a way to facilitate
-operations and ensure maintenance is taking place.

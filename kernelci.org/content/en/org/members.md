@@ -1,6 +1,6 @@
 ---
 title: "Members"
-date: 2021-09-23
+date: 2024-12-03
 description: "Member companies who fund the KernelCI project"
 weight: 1
 ---

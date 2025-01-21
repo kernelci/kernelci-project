@@ -19,5 +19,6 @@ Here is a list of repos enabled in the platform:
 * [kcidb-grafana](https://github.com/kernelci/kcidb-grafana)
 * [dashboard](https://github.com/kernelci/dashboard)
 * [kci-dev](https://github.com/kernelci/kci-dev)
+* [logspec](https://github.com/kernelci/logspec)
 
 If you need to add/change the repos, contact the LF team through the Support part of the platform.

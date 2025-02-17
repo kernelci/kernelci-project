@@ -88,13 +88,8 @@ footer_about_disable = false
     url = "/"
   [[menu.main]]
     identifier = "dashboard"
-    name = "Dashboard (WIP)"
+    name = "Dashboard"
     url = "https://dashboard.kernelci.org/"
-
-    [[menu.main]]
-    identifier = "legacy"
-    name = "Legacy KernelCI"
-    url = "https://linux.kernelci.org/job"
 
   [[menu.main]]
     identifier = "blog"

@@ -1,6 +1,6 @@
 ---
 title: "TSC Voting Records"
-date: 2024-03-15
+date: 2025-02-25
 description: "History of all KernelCI TSC votes"
 ---
 
@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2025-01-22](#2025-01-22) | Archiving legacy or inactive repositories                       | Approved  |
 | [2024-11-12](#2024-11-12) | Appoint Discord server administrators                           | Approved  |
 | [2024-11-12](#2024-11-12) | Host test catalog prototype repo on the GitHub organization     | Approved  |
 | [2024-11-12](#2024-11-12) | Create "logspec" repository in the GitHub organization          | Approved  |
@@ -47,6 +48,36 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Arisu                                           | Approved  |
 
 ## Votes
+
+### 2025-01-22
+
+**Motion: Archiving legacy or inactive repositories**
+
+- kernelci-jenkins
+- lava-docker
+- kernelci-frontend
+- kernelci-backend
+- kernelci-jenkins-data
+- kernelci-backend-config
+- builder-config2
+- kernelci-frontend-config
+- builder-config-data
+- kernelci-docker
+- kernelci-tekton
+- skipgen
+- kernelci-admin
+- kernelci-core-staging
+- kernelci-doc
+- kernelci-reports-config
+- kernelci-reports
+
+
+* Result: approved
+* Effective date: 2025-02-25
+* Voting method: Maillist
+* Voting members: nuclearcat, spbnick, khilman, gtucker, arisut, broonie, pawiecz
+* Vote count: 7/7/9 in favour
+
 
 ### 2024-11-12
 

@@ -105,17 +105,12 @@ kci-dev is a command line tool and library for kernel developers and maintainers
 * Main repositories: [`kci-dev`](https://github.com/kernelci/kci-dev)
 * Maintainer: `arisut`
 
-### lava-docker (interim)
-
-> **Note**: The `lava-docker` repository is about to join the LAVA GitLab
-> organisation.  See the [email
-> discussion](https://groups.io/g/kernelci/topic/moving_lava_docker_out_of_the/93248754)
-> for more details.
+### lava-docker (BayLibre)
 
 This project aims to simplify the installation and maintenance of a LAVA lab
 using Docker containers.
 
-* Repository: [`lava-docker`](https://github.com/kernelci/lava-docker)
+* Repository: [`lava-docker`](https://github.com/BayLibre/lava-docker)
 * Maintainers: `arisut`, `montjoie`
 
 ## Service maintainers

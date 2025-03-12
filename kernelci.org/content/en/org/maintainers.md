@@ -115,9 +115,9 @@ using Docker containers.
 
 ## Service maintainers
 
-Services hosted by KernelCI all need someone to look after them and ensure they
-stay online and available.  This is essentially sysadmin work with some code
-maintenance too depending on the cases.
+Services hosted and managed by KernelCI all need someone to look after them and
+ensure they stay online and up to date.  This is essentially sysadmin work with
+some code maintenance too depending on the cases.
 
 ### Kubernetes
 
@@ -162,6 +162,16 @@ Hub](https://hub.docker.com/).  This requires some maintenance in particular to
 keep an eye on resource usage and to adjust permissions.
 
 * Maintainers: `gtucker`, `nuclearcat`
+
+### PyPI
+
+Some KernelCI Python packages are being hosted on the official [Python Package
+Index](https://pypi.org).  They all have a designated maintainer or owner to
+upload new versions and curate the meta-data and documentation shown on the
+package's page itself.
+
+* [kci-dev](https://pypi.org/project/kci-dev/): `arisut`
+* [kernelci](https://pypi.org/project/kernelci/): `nuclearcat`, `arisut`
 
 ## Feature maintainers
 

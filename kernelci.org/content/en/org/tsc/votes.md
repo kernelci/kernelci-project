@@ -11,6 +11,8 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2025-03-12](#2025-03-12) | Add Arisu Tachibana as kernelci PyPI co-maintainer              | Approved  |
+| [2025-03-12](#2025-03-12) | Set Denys Fedoryshchenko as kernelci PyPI maintainer            | Approved  |
 | [2025-01-22](#2025-01-22) | Archiving legacy or inactive repositories                       | Approved  |
 | [2024-11-12](#2024-11-12) | Appoint Discord server administrators                           | Approved  |
 | [2024-11-12](#2024-11-12) | Host test catalog prototype repo on the GitHub organization     | Approved  |
@@ -48,6 +50,24 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Arisu                                           | Approved  |
 
 ## Votes
+
+### 2025-03-12
+
+**Motion: Set Denys Fedoryshchenko as kernelci PyPI maintainer**
+* Result: approved
+* Effective date: 2025-03-17
+* Voting method: email
+* Voting members: khilman, broonie, gtucker, spbnick, arisut, nuclearcat, pawiecz, shuah
+* Vote count: 8/8/9 in favour
+* Links: [Mail 2024-03-12](https://groups.io/g/kernelci-tsc/message/1223)
+
+**Motion: Add Arisu Tachibana as kernelci PyPI co-maintainer**
+* Result: approved
+* Effective date: 2025-03-17
+* Voting method: email
+* Voting members: khilman, broonie, gtucker, spbnick, arisut, nuclearcat, pawiecz, shuah
+* Vote count: 8/8/9 in favour
+* Links: [Mail 2024-03-12](https://groups.io/g/kernelci-tsc/message/1224)
 
 ### 2025-01-22
 

@@ -20,6 +20,7 @@ Below are the current members of the project.
     <div class="col p-3"><a href="https://www.cip-project.org/" target="_blank"><img src="/image/cip-stacked-color.svg" alt="Civil Infrastructure Platform" title="Civil Infrastructure Platform" /></a></div>
     <div class="col p-3"><a href="https://www.collabora.com/" target="_blank"><img src="/image/collabora-stacked-color.svg" alt="Collabora" title="Collabora" /></a></div>
     <div class="col p-3"><a href="https://www.google.com/" target="_blank"><img src="/image/google-color.svg" alt="Google" title="Google" /></a></div>
+    <div class="col p-3"><a href="https://www.linaro.org/" target="_blank"><img src="/image/linaro-color.svg" alt="Linaro" title="Linaro" /></a></div>
     <div class="col p-3"><a href="https://www.microsoft.com/" target="_blank"><img src="/image/microsoft-color.svg" alt="Microsoft" title="Microsoft" /></a></div>
     <div class="col p-3"><a href="https://www.redhat.com/" target="_blank"><img src="/image/redhat-color.svg" alt="Red Hat" title="Red Hat" /></a></div>
     <div class="col p-3"><a href="https://ti.com/" target="_blank"><img src="/image/texas-instruments.svg" alt="Texas Instruments" title="Texas Instruments" /></a></div>

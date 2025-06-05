@@ -16,7 +16,7 @@ Maestro has a [pipeline-based](../maestro/pipeline) design and an [API](../maest
 
 ### [kci-dev](../kci-dev)
 
-[kci-dev](../kci-dev) is a stand-alone tool for Linux Kernel developers and maintainers to interact with KernelCI. There is full documentation available at [kci.dev](kci.dev) and a [PyPI package](https://pypi.org/project/kci-dev/). Source code is available on [GitHub](https://github.com/kernelci/kci-dev).
+[kci-dev](../kci-dev) is a stand-alone tool for Linux Kernel developers and maintainers to interact with KernelCI. There is full documentation available at [kci.dev](https://kci.dev) and a [PyPI package](https://pypi.org/project/kci-dev/). Source code is available on [GitHub](https://github.com/kernelci/kci-dev).
 
 ### [Web Dashboard](https://dashboard.kernelci.org/)
 

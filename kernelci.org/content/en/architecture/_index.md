@@ -4,7 +4,9 @@ date: 2024-07-03
 description: "Learn the inner details behind the KernelCI systems"
 ---
 
-[![KernelCI architecture diagram](kernelci-architecture.svg)](kernelci-architecture.svg)
+[![KernelCI architecture diagram](kernelci-architecture.jpg)](kernelci-architecture.jpg)
+
+[[download svg diagram](kernelci-architecture.svg)]
 
 ## Main Components
 
@@ -34,5 +36,5 @@ Any CI/test system can be part of KernelCI by receiving triggers from Maestro an
 
 ## Talk to us
 
-If you have doubts about our architecture, please [reach out](../contacts)
+If you have doubts about our architecture, please [reach out](../contacts).
 

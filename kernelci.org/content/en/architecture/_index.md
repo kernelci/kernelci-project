@@ -6,7 +6,7 @@ description: "Learn the inner details behind the KernelCI systems"
 
 [![KernelCI architecture diagram](kernelci-architecture.svg)](kernelci-architecture.svg)
 
-The first thing worth noting here is that there are a number of main parts of the overall KernelCI architecture:
+## Main Components
 
 ### [Maestro](../maestro)
 
@@ -24,12 +24,15 @@ A new [web dashboard](https://dashboard.kernelci.org/) has been developed to all
 
 ### [KCIDB](../kcidb)
 
-CI systems producing their own kernel builds and running their own tests can submit results to [KCIDB](../kcidb), which is a
-[BigQuery](https://cloud.google.com/bigquery) database to provide a unified
-kernel test reporting mechanism.  Please take a look at this blog post for a
+CI systems producing their own kernel builds and running their own tests can submit results to [KCIDB](../kcidb).  Please take a look at this blog post for a
 comprehensive description: [Introducing Common
 Reporting](https://kernelci.org/blog/2020/08/21/introducing-common-reporting/).
 
 ### CI Ecosystem
 
-Any CI/test system can be part of KernelCI by receiving triggers from Maestro and submitting their data to KCIDB. Receiving triggers is an optional for CI/test system, as many have their own trigger configuration already.
+Any CI/test system can be part of KernelCI by receiving triggers from Maestro and submitting their data to KCIDB. Receiving triggers is optional for CI/test system, as many have their own trigger configuration already for building and testing kernels.
+
+## Talk to us
+
+If you have doubts about our architecture, please [reach out](../contacts)
+

@@ -20,5 +20,7 @@ Here is a list of repos enabled in the platform:
 * [dashboard](https://github.com/kernelci/dashboard)
 * [kci-dev](https://github.com/kernelci/kci-dev)
 * [logspec](https://github.com/kernelci/logspec)
+* [kcidb-ng](https://github.com/kernelci/kcidb-ng)
+* [kernelci-nipa](https://github.com/kernelci/kernelci-nipa)
 
 If you need to add/change the repos, contact the LF team through the Support part of the platform.

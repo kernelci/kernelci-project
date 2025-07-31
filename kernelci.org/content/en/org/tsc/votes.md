@@ -11,6 +11,8 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2025-07-30](#2025-07-30) | Approve the new KernelCI TSC Charter                            | Approved  |
+| [2025-07-30](#2025-07-30) | Set up the Infrastructure Committee                             | Approved  |
 | [2025-03-12](#2025-03-12) | Add Arisu Tachibana as kernelci PyPI co-maintainer              | Approved  |
 | [2025-03-12](#2025-03-12) | Set Denys Fedoryshchenko as kernelci PyPI maintainer            | Approved  |
 | [2025-01-22](#2025-01-22) | Archiving legacy or inactive repositories                       | Approved  |
@@ -50,6 +52,24 @@ outcome and a more detailed section listing each individual vote.
 | [2021-07-13](#2021-07-13) | Add TSC member: Arisu                                           | Approved  |
 
 ## Votes
+
+### 2025-07-30
+
+**Motion: Approve the new KernelCI TSC Charter**
+* Result: approved
+* Effective date: 2025-07-30
+* Voting method: email
+* Voting members: khilman, broonie, gtucker, arisut, nuclearcat, jeny, shuah, mgalka
+* Vote count: 8/8/9 in favour
+* Links: [Mail 2025-07-30](https://groups.io/g/kernelci-tsc/message/1254)
+
+**Motion: Set up the Infrastructure Committee with Denys, Pawel, Arisu, Jeny, Tales, Mark Brown and Gustavo as their initial members**
+* Result: approved
+* Effective date: 2025-07-30
+* Voting method: email
+* Voting members: khilman, broonie, gtucker, arisut, nuclearcat, jeny, shuah, mgalka
+* Vote count: 8/8/9 in favour
+* Links: [Mail 2025-07-30](https://groups.io/g/kernelci-tsc/message/1254)
 
 ### 2025-03-12
 

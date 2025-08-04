@@ -83,15 +83,25 @@ footer_about_disable = false
     weight = 1
 
   [[menu.main]]
-    identifier = "documentation"
-    name = "Documentation"
-    url = "/"
-  [[menu.main]]
-    identifier = "dashboard"
-    name = "Dashboard"
-    url = "https://dashboard.kernelci.org/"
-
-  [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "https://kernelci.org/blog/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "kci-dev"
+    name = "kci-dev cli"
+    url = "https://kci.dev/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "dashboard"
+    name = "Web Dashboard"
+    url = "https://dashboard.kernelci.org/"
+    weight = 4
+
+[[menu.main]]
+    identifier = "documentation"
+    name = "Documentation"
+    url = "/"
+    weight = 5

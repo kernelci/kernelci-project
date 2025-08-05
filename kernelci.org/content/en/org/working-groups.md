@@ -25,20 +25,10 @@ as:
 **Team:**
 
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan` - Lead
-* [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) - `gregkh`
-* [Ricardo Cañuelo](mailto:<ricardo.canuelo@collabora.com>) - `hardboprobot`
-* [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
+* [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
+* [Tales Aparecida](mailto:<tales.aparecida@redhat.com>) - `tales-aparecida`
 
-As KernelCI keeps growing, and based on the results of the [2020 Community
-Survey](http://localhost:1313/blog/posts/2020/07/09/), a new web dashboard is
-necessary in order to achieve the goals set by the project.  Several attempts
-have been made in the past to replace the current one on
-[linux.kernelci.org](https://linux.kernelci.org) but none of them actually
-provided a viable alternative.  We've since started gathering ideas from a
-range of users in order to produce user stories and get a clear understanding
-of what is required.  Based on this, we'll then be looking for technical
-solutions including existing frameworks, dashboards used by other projects and
-potentially a new design from scratch using modern web technology.
+KernelCI designed a new [Web Dashboard](https://dashboard.kernelci.org/) from scratch. This working group has been driving the progress of that work since the beginning of the work with the UX analysis conducted with the community.
 
 ## SysAdmin
 

@@ -22,15 +22,16 @@ help coordinate activities with the TSC, working groups and the wider team.
 As of 2024, the Advisory Board is composed of the members listed below with
 their respective roles, email address and IRC nicknames:
 
-* [Chris Paterson](mailto:<chris.paterson2@renesas.com>) (Civil Infrastructure Platform project, Treasurer) - `patersonc`
+* [Barry Sheraw](mailto:<bsheraw@ti.com>) (Texas Instruments)
+* [Chris Paterson](mailto:<chris.paterson2@renesas.com>) (Civil Infrastructure Platform project, Treasurer)
 * [Don Zickus](mailto:<dzickus@redhat.com>) (Red Hat, Chair)
-* [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) (Linux Foundation) - `gregkh`
+* [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) (Linux Foundation)
 * [Guenter Roeck](mailto:<groeck@google.com>) (Google)
-* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) (Collabora, Project Manager) - `padovan`
-* [Guy Lunardi](mailto:<guy.lunardi@collabora.com>) (Collabora, Marketing) - `glunardi`
-* [Kevin Hilman](mailto:<khilman@baylibre.com>) (BayLibre, General Members Representative) - `khilman`
+* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) (Collabora)
+* [Kevin Hilman](mailto:<khilman@baylibre.com>) (BayLibre, General Members Representative)
 * [KY Srinivasan](mailto:<kys@microsoft.com>) (Microsoft)
-* [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) (TSC Chair) - `spbnick`
+* [Tom Gall](mailto:<tom.gall@linaro.org>) (Linaro)
+* TSC Chair - vacant
 
 Learn more about the [current members](/org/members) or how to join on the
 [KernelCI Linux Foundation](https://kernelci.org/) website.

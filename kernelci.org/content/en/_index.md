@@ -13,7 +13,7 @@ cascade:
 
 *Welcome to the KernelCI documentation website!*
 
-The KernelCI project mission is to ensure the quality, stability and long-term maintenance of the Linux kernel.
+The KernelCI project's mission is to ensure the quality, stability and long-term maintenance of the Linux kernel.
 
 To achieve that, we are building an ecosystem to foster collaboration around Linux kernel testing and validation, facilitating the process of executing tests for a given subsystem or the whole kernel and following up on the results, **helping you catch issues early and maintain kernel quality**!
 
@@ -33,7 +33,7 @@ Below, you will find starting point for the main areas of interaction with the p
     <a href="intro/platform-testing">Test your platform</a>
   </h2>
   <p class="text-center">Start here if you want to bring your platform to KernelCI.
-   Our technical architecture allows different options depending or your setup. You can connect a test lab that will be drive by us. Or run the tests yourself and then publish the only the results you can share publicly to our database.</p>
+   Our technical architecture allows different options depending or your setup. You can connect a test lab that will be driven by us. Or run the tests yourself and then publish the only the results you can share publicly to our database.</p>
 </div>
 
 <div class="container border border-primary rounded p-2 mt-3">
@@ -46,10 +46,10 @@ Below, you will find starting point for the main areas of interaction with the p
 
 <div class="container border border-primary rounded p-2 mt-3">
   <h2 class="text-center">
-    <a href="architecture">Contribute to the KernelCI codebase</a>
+    <a href="intro/architecture">Contribute to the KernelCI codebase</a>
   </h2>
   <p class="text-center">Start here if you want to contribute to KernelCI and/or learn
-  more about our <a href="architecture">technical architecture</a>.</p>
+  more about our <a href="intro/architecture">technical architecture</a>.</p>
 </div>
 
 ## Talk to us

@@ -13,7 +13,7 @@ Either you implement a lab* that is connected to directly to [Maestro](../../mae
 
 ## Option 1: Connecting your lab to Maestro
 
-If you want you allow KernelCI direct access to your test farm, you have to setup [LAVA](https://www.lavasoftware.org/) based lab and give submission tokens to the KernelCI sysadmin team. For this to work your lab should be accessible in the internet. If yours is hidden behind a firewall, this option won't work for you.
+If you want you allow KernelCI direct access to your test farm, you have to setup [LAVA](https://www.lavasoftware.org/) based lab and give submission tokens to the KernelCI sysadmin team. For this to work your lab should be accessible on the internet. If yours is hidden behind a firewall, this option won't work for you.
 
 Today, Maestro only supports LAVA as a lab runtime, but nothing prevents us from accepting contributions for other lab runtimes if there is community interest.
 
@@ -25,7 +25,7 @@ This is an option for you if you want to use LAVA as your hardware automation te
 
 ## Option 2: Joining the CI ecosystem
 
-The other option is to bring your system to the KernelCI ecosystem. That means you already have a CI/test ecosystem and want to integrate with KernelCI. Or you want to setup test for you platform but don't want to follow the lab option described in the previous section.
+The other option is to bring your system to the KernelCI ecosystem. That means you already have a CI/test ecosystem and want to integrate with KernelCI. Or you want to setup test for your platform but don't want to follow the lab option described in the previous section.
 
 Joining the KernelCI ecosystem means:
 

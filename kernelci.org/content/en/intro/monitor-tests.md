@@ -1,5 +1,5 @@
 ---
-title: "Using KernelCI services"
+title: "Monitor tests"
 date: 2024-07-03
 description: "Adding trees, tests and interacting with tests results"
 weight: 2
@@ -19,13 +19,13 @@ Before we learn how to add a tree and/or tests to KernelCI, we should check if t
 
 ### Add new trees and tests
 
-If you look at the [KernelCI Architecture](../architecture/), you see **Maestro** and the systems in the **CI ecosystem** contributing results to KCIDB. This guide will explain how to add trees and tests to [Maestro](../maestro/) as it is part of the Core KernelCI infrastructure we make available for the community. If you need to add your tests to another CI system, contact them directly.
+If you look at the [KernelCI Architecture](../../architecture/), you see **Maestro** and the systems in the **CI ecosystem** contributing results to KCIDB. This guide will explain how to add trees and tests to [Maestro](../maestro/) as it is part of the Core KernelCI infrastructure we make available for the community. If you need to add your tests to another CI system, contact them directly.
 
 This section of the documentation shares instructions to:
 * [enable kernel testing for your tree/branch](../maestro/pipeline/developer-documentation/#enabling-a-new-kernel-tree)
 * [enable specific tests](../maestro/pipeline/developer-documentation/#enabling-a-new-test)
 
-For suggestions of device tests, see [device kselftests](device-tests).
+For suggestions of tests to enable see [tests](../../tests).
 
 ## Interacting with the results
 

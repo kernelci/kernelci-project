@@ -23,7 +23,7 @@ Below, you will find starting point for the main areas of interaction with the p
 
 <div class="container border border-primary rounded p-2">
   <h2 class="text-center">
-    <a href="kernel-community">Monitor testing</a>
+    <a href="intro/monitor-tests">Monitor testing</a>
   </h2>
   <p class="text-center">Are you an upstream kernel developer? Start here if you want to use KernelCI to execute tests, follow results on our <a href="https://dashboard.kernelci.org">Web Dashboard</a> and setup notifications.</p>
 </div>

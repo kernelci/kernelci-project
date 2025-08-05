@@ -19,16 +19,11 @@ The KCIDB project, or Kernel CI Database, is a place where all kernel test
 results can be sent together and combined.  One of the main goals is to be able
 to send a single email report on behalf of the multitude of test systems that
 produced the data.  This should make maintainers' lives easier and be more
-effective.  A [web dashboard](https://kcidb.kernelci.org) is also being worked
-on for similar reasons, but with access to the full details with flexible data
-visualisation.  The KCIDB dataset may also be used to compare results from
-various systems and generate some added value.
+effective.  All the data sent to KCIDB can be visualized in our [Web Dashboard](https://dashboard.kernelci.org/).
 
-**Q: What are “native” builds and tests?**
+**Q: How to enable my platform (hardware, Cloud VM, etc) to be tested in KernelCI?**
 
-Kernel builds and tests scheduled by kernelci.org directly are called “native”,
-to help differentiate with those coming from other independent systems into
-KCIDB.
+We would love to see your platform in KernelCI. Check our [platform testing](/intro/platform-testing) guide to learn about the different possibilities.
 
 **Q: What is the relationship between KernelCI and LAVA? Does KernelCI have
 non-upstream changes to LAVA? Do LAVA people participate in KernelCI?**
@@ -51,7 +46,7 @@ written in various languages. Typically, they will require a user-space image
 with all the required packages installed to be able to run as well as the
 latest versions of some test suites built from source. This is the case with
 `v4l-utils`, `igt-gpu-tools` or `LTP`. Some are plain scripts and don’t depend
-on anything in particular, such as `bootrr`.
+on anything in particular`.
 
 When prototyping some new tests to run in LAVA, the easiest approach is to use
 nfsroot with the plain Debian Buster image provided by KernelCI and install

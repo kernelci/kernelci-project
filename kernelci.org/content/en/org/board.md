@@ -19,7 +19,7 @@ roles and budget take effect on January 1st.
 In addition to the elected roles, there is also an appointed Project Manager to
 help coordinate activities with the TSC, working groups and the wider team.
 
-As of 2024, the Advisory Board is composed of the members listed below with
+As of 2025, the Advisory Board is composed of the members listed below with
 their respective roles, email address and IRC nicknames:
 
 * [Barry Sheraw](mailto:<bsheraw@ti.com>) (Texas Instruments)

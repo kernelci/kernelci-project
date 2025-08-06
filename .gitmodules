@@ -16,3 +16,6 @@
 [submodule "kernelci.org/external/kci-dev"]
 	path = kernelci.org/external/kci-dev
 	url = https://github.com/kernelci/kci-dev
+[submodule "kernelci.org/external/kernelci-storage"]
+	path = kernelci.org/external/kernelci-storage
+	url = https://github.com/kernelci/kernelci-storage

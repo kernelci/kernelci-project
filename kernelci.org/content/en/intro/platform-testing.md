@@ -33,3 +33,7 @@ Joining the KernelCI ecosystem means:
 2. Optionally listening to [test events](https://github.com/kernelci/kernelci-pipeline/blob/main/tools/example_api_events.py) from Maestro to frequently pick up kernel artifacts to test. Maestro will pull and build a number of git trees every hour. You can listen and chose the kernels you want to test.
 
 This option gives you flexibility and control in what and how to test. It requires maintenance of your own CI/test system, so will be more costly than just maintaining a KernelCI lab. However, it might be only option for some companies with strict IT policies.
+
+## Option 3: Contract hardware lab services
+
+Some companies in the KernelCI community provide hosting services for maintaining your hardware in their labs for testing by KernelCI and other community CI systems. If you are interested ask in the community channels.

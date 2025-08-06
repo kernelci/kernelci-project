@@ -92,6 +92,4 @@ Please check [docs](/maestro/api/staging) for more details.
 ### Production
 
 Production instance has been deployed in the Cloud (AKS)
-on `kernelci-api.westus3.cloudapp.azure.com`. This is stable instance and is being updated weekly (usually on Mondays). Like
-staging, it has an auto-generated [interactive API
-documentation](https://kernelci-api.westus3.cloudapp.azure.com/latest/docs).
+on `api.kernelci.org`. This is stable instance and is being updated weekly (usually on Mondays).

@@ -70,7 +70,7 @@ individual steps by hand (building kernels, scheduling tests...).
 
 ### API
 
-The new [KernelCI API](/api) is a work-in-progress replacement for the
+The new [KernelCI API](/components/maestro/api) is a work-in-progress replacement for the
 backend currently used in production.  It also features a Pub/Sub interface to
 coordinate the pipeline services in a modular fashion.
 
@@ -79,7 +79,7 @@ coordinate the pipeline services in a modular fashion.
 
 ### Pipeline
 
-The [KernelCI pipeline](/api/overview/#pipeline-design) is also a
+The [KernelCI pipeline](/components/maestro/api/overview/#pipeline-design) is also a
 work-in-progress based on the new API and its Pub/Sub interface.  This is
 essentially to replace the Jenkins pipeline currently used in production.
 
@@ -89,7 +89,7 @@ essentially to replace the Jenkins pipeline currently used in production.
 
 ### KCIDB
 
-[KCIDB](/kcidb) provides a set of tools to submit kernel test data to a
+[KCIDB](/components/kcidb) provides a set of tools to submit kernel test data to a
 common database.
 
 * Main repositories: [`kcidb`](https://github.com/kernelci/kcidb),

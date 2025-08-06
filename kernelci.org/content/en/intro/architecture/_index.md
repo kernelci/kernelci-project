@@ -10,23 +10,23 @@ description: "Learn the inner details behind the KernelCI systems"
 
 ## Main Components
 
-### [kci-dev](/kci-dev)
+### [kci-dev](/components/kci-dev)
 
-[kci-dev](/kci-dev) is a stand-alone tool for Linux Kernel developers and maintainers to interact with KernelCI directly from their terminal. It is great for There is full documentation available at [kci.dev](https://kci.dev) and a [PyPI package](https://pypi.org/project/kci-dev/). Source code is available on [GitHub](https://github.com/kernelci/kci-dev).
+[kci-dev](/components/kci-dev) is a stand-alone tool for Linux Kernel developers and maintainers to interact with KernelCI directly from their terminal. It is great for There is full documentation available at [kci.dev](https://kci.dev) and a [PyPI package](https://pypi.org/project/kci-dev/). Source code is available on [GitHub](https://github.com/kernelci/kci-dev).
 
 ### [Web Dashboard](https://dashboard.kernelci.org/)
 
 A new [web dashboard](https://dashboard.kernelci.org/) has been developed to allow users to easily visualise results from KernelCI testing and setup email notifications. Development, issues and feature requests are all being tracked on [GitHub](https://github.com/kernelci/dashboard).
 
-### [Maestro](/maestro)
+### [Maestro](/components/maestro)
 
 The middle left box of this picture shows Maestro. While Maestro is only one software system, architecturally its flow has 2 parts: (1) triggering builds and list of tests to run on each platform and (2) driving such tests.
 
-Maestro has a [pipeline-based](/maestro/pipeline) design and an [API](/maestro/api/) that allow other systems and tools to interact with it to subscribe to events (such as new build/test triggers) or send patches to be tested by the KernelCI infrastructure.
+Maestro has a [pipeline-based](/components/maestro/pipeline) design and an [API](/components/maestro/api/) that allow other systems and tools to interact with it to subscribe to events (such as new build/test triggers) or send patches to be tested by the KernelCI infrastructure.
 
-### [KCIDB-ng](/kcidb)
+### [KCIDB-ng](/components/kcidb)
 
-KernelCI has a common database for tests results. CI systems producing their own kernel builds and running their own tests can submit results to [KCIDB-ng](/kcidb).  Please take a look at this blog post for a comprehensive description: [Introducing Common
+KernelCI has a common database for tests results. CI systems producing their own kernel builds and running their own tests can submit results to [KCIDB-ng](/components/kcidb).  Please take a look at this blog post for a comprehensive description: [Introducing Common
 Reporting](https://kernelci.org/blog/2020/08/21/introducing-common-reporting/).
 
 ### Storage

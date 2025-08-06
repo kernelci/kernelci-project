@@ -38,9 +38,9 @@ Below, you will find starting point for the main areas of interaction with the p
 
 <div class="container border border-primary rounded p-2 mt-3">
   <h2 class="text-center">
-    <a href="kcidb">Contribute test results</a>
+    <a href="/components/kcidb">Contribute test results</a>
   </h2>
-  <p class="text-center">Do you have a established CI system and want to contribute your results to the KernelCI ecosystem? You can send you data to our common results [database](kcidb) and use our dashboard and notification system to monitor results.</p>
+  <p class="text-center">Do you have a established CI system and want to contribute your results to the KernelCI ecosystem? You can send you data to our common results  <a href="/components/kcidb">database</a> and use our dashboard and notification system to monitor results.</p>
 </div>
 
 

@@ -39,7 +39,7 @@ used.
 them with KernelCI?**
 
 A section of the documentation is dedicated to [adding new test
-suites](/maestro/pipeline/developer-documentation/).
+suites](/components/maestro/pipeline/developer-documentation/).
 
 Each test is a bit different as they all have their own dependencies and are
 written in various languages. Typically, they will require a user-space image

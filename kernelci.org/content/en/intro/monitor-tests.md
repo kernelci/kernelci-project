@@ -21,6 +21,8 @@ Before we learn how to add a tree and/or tests to KernelCI, we should check if t
 
 If you look at the [KernelCI Architecture](../architecture/), you see **Maestro** and the systems in the **CI ecosystem** contributing results to KCIDB. This guide will explain how to add trees and tests to [Maestro](/components/maestro/) as it is part of the Core KernelCI infrastructure we make available for the community. If you need to add your tests to another CI system, contact them directly.
 
+Unfortunately, the process to add a new tree is a bit complex yet. We are working to improve it, but that kind of refactor takes time. If you prefer just file a Github [issue](https://github.com/kernelci/kernelci-core/issues/new?template=new-kernel-branch.md) with your request. If your request is simple we can add it for you, or we can support you through the journey of working with our pipeline configuration.
+
 This section of the documentation shares instructions to:
 * [enable kernel testing for your tree/branch](/components/maestro/pipeline/developer-documentation/#enabling-a-new-kernel-tree)
 * [enable specific tests](/components/maestro/pipeline/developer-documentation/#enabling-a-new-test)

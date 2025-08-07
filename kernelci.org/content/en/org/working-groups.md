@@ -16,6 +16,27 @@ as:
 * preparing regular meeting agendas and keeping minutes
 * sharing regular reports with the TSC, board and public mailing list
 
+
+## Infra WG
+
+Formally known as the Infrastructure Committee, this group drives the infrastructure development of KernelCI, translating community requirements to system features. This group also drives Sysadmin team.
+
+**Mailing list:** [kernelci@lists.linux.dev](mailto:<kernelci@lists.linux.dev>)
+
+**Members**
+
+* [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - Lead
+* [Arisu Tachibana](mailto:<arisu.tachibana@miraclelinux.com>)
+* [Ben Copeland](mailto:<ben.copeland@linaro.org>)
+* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>)
+* [Jeny Sadadia](mailto:jeny.sadadia@collabora.com)
+* [Mark Brown](mailto:<broonie@kernel.org>)
+* [Paweł Wieczorek](mailto:<pawiecz@collabora.com>)
+* [Tales Aparecida](mailto:<tales.aparecida@redhat.com>)
+
+The infrastructure WG is regulated by the KernelCI Technical Charter. Rules can be changed through
+TSC approval and documented in this git repo.
+
 ## Web dashboard
 
 **Workboard:** https://github.com/orgs/kernelci/projects/4

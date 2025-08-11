@@ -2,6 +2,7 @@
 title: "FAQ"
 date: 2021-03-30T22:02:52Z
 description: Frequently asked questions
+weight: 90
 ---
 
 **Q: How can I add a kernel branch to kernelci.org?**

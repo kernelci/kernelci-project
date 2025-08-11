@@ -2,6 +2,7 @@
 title: "Tests"
 date: 2021-08-04
 description: KernelCI Tests
+weight: 15
 ---
 
 The fastest and preferred way to add a test and get it run by CI systems is to

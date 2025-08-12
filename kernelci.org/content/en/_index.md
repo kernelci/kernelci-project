@@ -2,10 +2,6 @@
 title: "Documentation"
 
 cascade:
-- type: "blog"
-  toc_root: true
-  _target:
-    path: "/blog/**"
 - type: "docs"
   _target:
     path: "/**"

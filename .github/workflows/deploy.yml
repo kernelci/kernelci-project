@@ -95,7 +95,7 @@ jobs:
           remote_key: ${{ secrets.WEB_STAGING_KEY }}
 
       - name: Leave comment in issue about staging URL
-        if: github.event.inputs.environment == 'staging' || github.event_name == 'issue_comment'
+        if: github.event_name == 'issue_comment'
         run: |
           gh issue comment "$NUMBER" --body "$BODY"
         env:

@@ -12,12 +12,12 @@
 # 2)retrieve all lfs files with `git lfs pull`
 # you might need to install git-lfs with `sudo apt install git-lfs`
 # 3)run `docker-compose up` to start the server
+# Note: The site uses Hugo modules - Hugo will automatically download required modules
 
-version: '3'
 services:
   localhugo:
     container_name: 'localhugo'
-    image: 'hubci/hugo:0.97.3'
+    image: 'hugomods/hugo:exts-0.148.2'
     volumes:
       - '.:/src'
     ports:

@@ -8,3 +8,5 @@ weight: 10
 If you want to dive deep into the KernelCI world, check the detailed documentation for each of the KernelCI components.
 
 For an overview, check the [KernelCI Architecture](/intro/architecture/).
+
+For DevOps self-install documentation, check [Self-hosted KernelCI Architecture Documentation](devops.md).

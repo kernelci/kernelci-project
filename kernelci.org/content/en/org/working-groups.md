@@ -39,17 +39,35 @@ TSC approval and documented in this git repo.
 
 ## Web dashboard
 
-**Workboard:** https://github.com/orgs/kernelci/projects/4
+**Workboard:** https://github.com/orgs/kernelci/projects/28
 
 **Mailing list:** [kernelci-webdashboard@groups.io](mailto:<kernelci-webdashboard@groups.io>)
 
 **Team:**
 
-* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan` - Lead
+* [Tales Aparecida](mailto:<tales.aparecida@redhat.com>) - `tales-aparecida` - Lead
+* [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
+* [Gustavo Flores](mailto:<gustavobtflores@gmail.com>) - `gustavobtflores`
+* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan`
+* [João Bertacchi](mailto:<joaobertacchi@gmail.com>) - `joaobertacchi`
+* [Lucas Santos](mailto:<devlucassantoss@gmail.com>) - `LucasSantos27`
+* [Marcelo Robert](mailto:<4mrSantos@gmail.com>) - `MarceloRobert`
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
-* [Tales Aparecida](mailto:<tales.aparecida@redhat.com>) - `tales-aparecida`
 
-KernelCI designed a new [Web Dashboard](https://dashboard.kernelci.org/) from scratch. This working group has been driving the progress of that work since the beginning of the work with the UX analysis conducted with the community.
+The KernelCI [Dashboard] is a web platform (Django + React) which aims at providing an easy way for the community to look at the test results.
+Its API also powers [kci-dev] - our cmdline tooling - for results visualization in the terminal.
+It is still under active development, open to feedback and feature requests, all in <https://github.com/kernelci/dashboard>.
+
+[Dashboard]: https://dashboard.kernelci.org/
+[kci-dev]: https://github.com/kernelci/kci-dev/
+
+
+### Dashboard WG
+
+The KernelCI Dashboard working group meets every 2 weeks on Mondays at 14 UTC via Zoom.
+There we discuss bug reports, feature requests, and prioritization.
+
+Details to join are available in [the first invite](https://lore.kernel.org/all/CAPo4OxSPZXF+6syLrTQydnpTY-26sEHK03D7Tz=TH88F61+VHw@mail.gmail.com/).
 
 ## SysAdmin
 

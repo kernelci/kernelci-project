@@ -22,6 +22,7 @@ help coordinate activities with the TSC, working groups and the wider team.
 As of 2025, the Advisory Board is composed of the members listed below with
 their respective roles, email address and IRC nicknames:
 
+* [Andrew Wafaa](mailto:<andrew.wafaa@arm.com>) (ARM)
 * [Barry Sheraw](mailto:<bsheraw@ti.com>) (Texas Instruments)
 * [Chris Paterson](mailto:<chris.paterson2@renesas.com>) (Civil Infrastructure Platform project, Treasurer)
 * [Don Zickus](mailto:<dzickus@redhat.com>) (Red Hat, Chair)
@@ -30,7 +31,8 @@ their respective roles, email address and IRC nicknames:
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) (Collabora)
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) (BayLibre, General Members Representative)
 * [KY Srinivasan](mailto:<kys@microsoft.com>) (Microsoft)
-* [Tom Gall](mailto:<tom.gall@linaro.org>) (Linaro)
+* [Mike Holmes](mailto:<mike.holmes@linaro.org>) (Linaro)
+* [Trilok Soni](mailto:<trilok.soni@oss.qualcomm.com>) (Qualcomm)
 * TSC Chair - vacant
 
 Learn more about the [current members](/org/members) or how to join on the

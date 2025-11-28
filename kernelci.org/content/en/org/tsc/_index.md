@@ -19,28 +19,25 @@ contributing for an extended period of time may be removed.
 As of today, the committee is composed of the members listed below with their
 respective email address and IRC nicknames:
 
-* [Kevin Hilman](mailto:<khilman@baylibre.com>) - `khilman`
-* [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
-* [Guillaume Tucker](mailto:<gtucker@gtucker.io>) - `gtucker`
-* [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
-* [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
-* [Arisu Tachibana](mailto:<arisu.tachibana@miraclelinux.com>) - `arisut`
-* [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
-* [Jeny Sadadia](mailto:jeny.sadadia@collabora.com) - `jenysadadia`
-* [Paweł Wieczorek](mailto:pawiecz@collabora.com) - `pawiecz`
-* [Shuah Khan](mailto:skhan@linuxfoundation.org) - `shuah`
+* [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - (Infra Committee Lead)
+* [Greg KH](mailto:<gregkh@linuxfoundation.org>)
+* [Gustavo Padovan](mailto:<gus@collabora.com>)
+* [Mark Brown](mailto:<broonie@kernel.org>)
+* [Yogesh Lal](mailto:<yogesh.lal@oss.qualcomm.com>)
+
+
+With the exception of the Infra Committee representative the term of the current
+members lasts for an year, finishing at October 31th, 2026.
+
 
 ## Communication
 
-For general discussions, the usual IRC channel `#kernelci` on libera.chat and
-the [`kernelci@lists.linux.dev`](mailto:<kernelci@lists.linux.dev>) mailing
-list can be used.  To contact only the TSC members directly, the
+For general discussions, the usual [community channels](https://kernelci.org/community-contact/) are used. To contact only the TSC members directly, the
 [`kernelci-tsc@groups.io`](mailto:<kernelci-tsc@groups.io>) private list may be
 used instead.
 
-The TSC also meet monthly online to discuss current topics and make decisions
-including votes when necessary.  See the [Meetings
-section](/org/#technical-steering-committee) for more details.
+The TSC also meet bi-weekly online to discuss current topics and make decisions
+including votes when necessary. See the [community calendar](https://kernelci.org/calendar/) for more details.
 
 ## Rules
 

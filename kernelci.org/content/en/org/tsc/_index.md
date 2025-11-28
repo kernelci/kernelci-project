@@ -19,6 +19,7 @@ contributing for an extended period of time may be removed.
 As of today, the committee is composed of the members listed below with their
 respective email address and IRC nicknames:
 
+* [Ben Copeland](maito:<ben.copeland@linaro.org>)
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - (Infra Committee Lead)
 * [Greg KH](mailto:<gregkh@linuxfoundation.org>)
 * [Gustavo Padovan](mailto:<gus@collabora.com>)

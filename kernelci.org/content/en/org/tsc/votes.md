@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2025-11-27](#2025-11-27) | Add TSC Member: Ben Copeland                                    | Approved  |
 | [2025-11-27](#2025-11-27) | Approve adding new TSC members under new charter                | Approved  |
 | [2025-07-30](#2025-07-30) | Approve the new KernelCI TSC Charter                            | Approved  |
 | [2025-07-30](#2025-07-30) | Set up the Infrastructure Committee                             | Approved  |
@@ -55,6 +56,14 @@ outcome and a more detailed section listing each individual vote.
 ## Votes
 
 ### 2025-11-27
+
+**Motion: Add TSC Member: Ben Copeland**
+* Result: approved
+* Effective date: 2025-11-27
+* Voting method: meeting
+* Voting members: broonie, denys, gustavo, yogesh
+* Vote count: 4/4/5 in favour
+* Links: [Notes](https://docs.google.com/document/d/1z5EVstx7N57FKxQ1loY5FtVKjz1xvi-G0Wwq5qDoX8Q/edit?tab=t.0#bookmark=id.xfwu2z2jtqac)
 
 **Motion: Formally approve voting in new TSC members under the new charter**
 * Description: Current member can put a motion through suggesting new members to be added to the TSC. If elect, new members term finishes together with the community elected members. The next election will be for the number of members at the end of the TSC term (minus one because the Infrastructure Committee is appointed directly as per charter rules).

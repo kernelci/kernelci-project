@@ -24,6 +24,7 @@ respective email address and IRC nicknames:
 * [Greg KH](mailto:<gregkh@linuxfoundation.org>)
 * [Gustavo Padovan](mailto:<gus@collabora.com>)
 * [Mark Brown](mailto:<broonie@kernel.org>)
+* [Minas Hambardzumyan](mailto:<minas@ti.com>)
 * [Yogesh Lal](mailto:<yogesh.lal@oss.qualcomm.com>)
 
 

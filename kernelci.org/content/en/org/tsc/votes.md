@@ -11,6 +11,7 @@ outcome and a more detailed section listing each individual vote.
 
 | Date                      | Motion                                                          | Status    |
 |---------------------------|-----------------------------------------------------------------|-----------|
+| [2025-11-27](#2025-11-27) | Add TSC Member: Minas Hambardzumyan                             | Approved  |
 | [2025-11-27](#2025-11-27) | Add TSC Member: Ben Copeland                                    | Approved  |
 | [2025-11-27](#2025-11-27) | Approve adding new TSC members under new charter                | Approved  |
 | [2025-07-30](#2025-07-30) | Approve the new KernelCI TSC Charter                            | Approved  |
@@ -56,6 +57,14 @@ outcome and a more detailed section listing each individual vote.
 ## Votes
 
 ### 2025-11-27
+
+**Motion: Add TSC Member: Minas Hambardzumyan**
+* Result: approved
+* Effective date: 2025-11-27
+* Voting method: meeting
+* Voting members: broonie, denys, gustavo, yogesh
+* Vote count: 4/4/5 in favour
+* Links: [Notes](https://docs.google.com/document/d/1z5EVstx7N57FKxQ1loY5FtVKjz1xvi-G0Wwq5qDoX8Q/edit?tab=t.0#bookmark=id.xfwu2z2jtqac)
 
 **Motion: Add TSC Member: Ben Copeland**
 * Result: approved

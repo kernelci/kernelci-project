@@ -84,8 +84,21 @@ motion is moved.
 
 ### Members
 
+The elections for the TSC happens every year, so the members term last for
+one year (except the Infrastructure Committee Lead that is appointed by
+Charter rules).
+
 Current members of the TSC may propose to vote for new people to be added or
-removed.  This should prevent a single organisation from taking over the TSC.
+removed. The term of new members voted in directly by the TSC will last
+until the end of the term of the community-elected members.
+
+At the time new elections should happen, then numbers of spots should be
+the numbers of current TSC members minus one (to account for the Infrastructure
+Committee Lead).
+
+No more than 2 members from the same organization should be in the
+TSC.
+
 People to be considered as new TSC members should have typically played an
 important role for a significant amount of time in the project.  There is
 however no strict requirement, the only condition is the outcome of the TSC

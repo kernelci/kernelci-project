@@ -102,3 +102,17 @@ cover the following items:
 * Encrypted repositories:
   * kernelci-jenkins-data
   * builder-config-data
+
+## Lab WG
+
+**Mailing list:** [kernelci@lists.linux.dev](mailto:<kernelci@lists.linux.dev>)
+
+**Team:**
+
+* [Ben Copeland](mailto:<ben.copeland@linaro.org>) - `bhcopeland` - Lead
+* [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
+* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan`
+* [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
+* [Minas Hambardzumyan](mailto:<minas@ti.com>) - `minas_36361`
+
+The Lab working group focuses on lab integration into KernelCI. Topics include Labgrid/LAVA, the pull labs approach, LAVA updates, and lowering the burden and cost of running labs within the KernelCI project.

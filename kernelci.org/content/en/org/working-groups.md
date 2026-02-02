@@ -46,6 +46,7 @@ TSC approval and documented in this git repo.
 **Team:**
 
 * [Tales Aparecida](mailto:<tales.aparecida@redhat.com>) - `tales-aparecida` - Lead
+* [Ben Copeland](mailto:<ben.copeland@linaro.org>) - `bhcopeland`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 * [Gustavo Flores](mailto:<gustavobtflores@gmail.com>) - `gustavobtflores`
 * [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan`
@@ -76,13 +77,14 @@ Details to join are available in [the first invite](https://lore.kernel.org/all/
 **Team:**
 
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat` - Lead
-* [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
+* [Ben Copeland](mailto:<ben.copeland@linaro.org>) - `bhcopeland`
 * [Corentin Labbe](mailto:<clabbe@baylibre.com>) - `montjoie`
 * [Kevin Hilman](mailto:<khilman@baylibre.com>) - `khilman`
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
+* [Michał Gałka](mailto:<galka.michal@gmail.com>) - `mgalka`
 * [Nikolai Kondrashov](mailto:<spbnick@gmail.com>) - `spbnick`
-* [Vince Hillier](mailto:<vince@revenni.com>) - `vince`
 * [Paweł Wieczorek](mailto:<pawiecz@collabora.com>) - `pawiecz`
+* [Vince Hillier](mailto:<vince@revenni.com>) - `vince`
 
 The KernelCI common infrastructure requires some regular maintenance to keep
 web servers, databases and Cloud services up and running.  This does not

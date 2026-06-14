@@ -59,6 +59,13 @@ infrastructure, support and community engagement initiatives
 ## Project Documentation
 These are the main documents defining how the project works:
 
+### Contribution Policy
+
+The [contribution policy](contributing) defines the shared baseline for
+repository contribution workflows, including Python linting and formatting,
+AI-assisted contributions, pre-commit hooks, type checking, and exceptions for
+existing tooling.
+
 ### Funding Charter
 
 > Thank you for your interest in joining the KernelCI Initiative (the “Directed

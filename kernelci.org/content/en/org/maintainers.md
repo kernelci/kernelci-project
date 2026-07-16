@@ -60,8 +60,8 @@ information etc.).
 
 ### Core tools
 
-The [core tools](/core) provide the command line utilities and the
-`kernelci` Python package used to implement a KerneLCI pipeline and run
+The core tools provide the command line utilities and the
+`kernelci` Python package used to implement a KernelCI pipeline and run
 individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
@@ -70,18 +70,18 @@ individual steps by hand (building kernels, scheduling tests...).
 
 ### API
 
-The new [KernelCI API](/components/maestro/api) is a work-in-progress replacement for the
-backend currently used in production.  It also features a Pub/Sub interface to
-coordinate the pipeline services in a modular fashion.
+The [Maestro API](/components/maestro/api) provides the database used by the
+KernelCI pipeline and a Pub/Sub interface to coordinate the pipeline services
+in a modular fashion.
 
 * Repository: [`kernelci-api`](https://github.com/kernelci/kernelci-api)
 * Maintainers: `jeny`
 
 ### Pipeline
 
-The [KernelCI pipeline](/components/maestro/api/overview/#pipeline-design) is also a
-work-in-progress based on the new API and its Pub/Sub interface.  This is
-essentially to replace the Jenkins pipeline currently used in production.
+The [KernelCI pipeline](/components/maestro/#pipeline) is the set of
+client-side services orchestrating kernel builds and tests, based on the
+Maestro API and its Pub/Sub interface.
 
 * Repository:
   [`kernelci-pipeline`](https://github.com/kernelci/kernelci-pipeline)
@@ -92,11 +92,9 @@ essentially to replace the Jenkins pipeline currently used in production.
 [KCIDB](/components/kcidb) provides a set of tools to submit kernel test data to a
 common database.
 
-* Main repositories: [`kcidb`](https://github.com/kernelci/kcidb),
+* Main repositories: [`kcidb-ng`](https://github.com/kernelci/kcidb-ng),
   [`kcidb-io`](https://github.com/kernelci/kcidb-io)
-* Grafana dashboard:
-  [`kcidb-grafana`](https://github.com/kernelci/kcidb-grafana)
-* Maintainer: `spbnick`
+* Maintainer: `nuclearcat`
 
 ### kci-dev
 
@@ -131,29 +129,12 @@ KUnit, QEMU...).
 ### VM Servers
 
 A number of virtual machine servers are being used to host various services
-such as Jenkins and the web frontend.  They are currently all managed in Azure,
-but this may evolve over time.  They require sysadmin maintenance, monitoring
-tools, backups...
+such as the website, the KCIDB database and the staging instance.  They are
+currently all managed in Azure, but this may evolve over time.  They require
+sysadmin maintenance, monitoring tools, backups...
 
 * Maintainers: `nuclearcat`
 * Resources: Azure (VMs, Mongo DB)
-
-### BigQuery
-
-KCIDB uses BigQuery as a database engine.  This requires token setup and
-managing the associated Cloud resources.
-
-* Maintainers: `spbnick`, `khilman`
-* Resources: BigQuery, GCE
-
-### Grafana
-
-KCIDB uses a [Grafana](https://kcidb.kernelci.org) instance as a prototype web
-dashboard.  Additional instances may be set up for other use-cases, such as
-showing statistics about the KernelCI project in general.
-
-* Maintainers: `spbnick`
-* Resources: VM Servers
 
 ### Docker Hub
 
@@ -194,7 +175,7 @@ results into the database.
   [`cros-ec-tests`](https://github.com/kernelci/cros-ec-tests),
   [`buildroot`](https://github.com/kernelci/buildroot),
   [`kernelci-core/config`](https://github.com/kernelci/kernelci-core/tree/main/config)
-* Services: Jenkins
+* Services: Pipeline
 
 ### Native builds
 
@@ -238,8 +219,8 @@ available for KernelCI and each of them requires some maintenance too.
 ### IRC
 
 This is about keeping the `#kernelci` IRC channel on libera.chat updated and
-managing automated notifications sent to it (monitoring services, GitHub and
-Jenkins integration...)
+managing automated notifications sent to it (monitoring services, GitHub
+integration...)
 
 * Maintainers: `montjoie`
 
@@ -258,7 +239,7 @@ The [KernelCI Discord channel](https://discord.gg/KWbrbWEyqb) may be used as an
 alternative to IRC.  However, more people are using IRC so Discord is only there
 to facilitate communication when IRC is not practical.
 
-* Maintainers: `khilman`, `spbnick`, `padovan`
+* Maintainers: `khilman`, `padovan`
 
 ### Twitter
 

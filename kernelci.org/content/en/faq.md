@@ -54,3 +54,69 @@ nfsroot with the plain Debian image provided by KernelCI and install extra
 packages at runtime, before starting the tests. Then when this is working
 well, dependencies and any data files can be baked into a fixed rootfs image
 for performance and reproducibility.
+
+**Q: I have developed a new test suite. Should I add it to Maestro or submit
+results directly to KCIDB?**
+
+As a rule of thumb: if your tests look like the suites Maestro already runs,
+add them to Maestro; if they amount to a CI system of their own, keep running
+them yourself and send the results to KCIDB.
+
+A test suite is a good fit for Maestro when it follows the same pattern as
+kselftest, LTP or v4l-utils: the kernel is booted on a device under test
+(hardware or a VM) and the tests run from user space, so the binaries and
+their dependencies can be baked into one of the KernelCI rootfs images.
+Maestro then builds the kernels, schedules the jobs in the labs and submits
+the results to KCIDB for you.  Be aware that this integration is not free:
+it requires writing — and then maintaining — job definitions, job templates,
+platform and device names, and rootfs recipes in `kernelci-pipeline`.  See
+[adding new test suites](/components/maestro/pipeline/developer-documentation/)
+for the details.
+
+Some suites that don't need a device under test can also run in Maestro, the
+way KUnit and cvehound do: they execute on the kernel build infrastructure
+in Kubernetes.  Builder capacity is a scarce resource, paid for by the
+project or provided by sponsors and members, so enabling a new job of this
+kind incurs additional expenses and needs to be discussed with the community
+first.
+
+To see how existing tests are wired up, look at these places:
+
+* **Job definitions**:
+  [`config/jobs.yaml`](https://github.com/kernelci/kernelci-pipeline/blob/main/config/jobs.yaml)
+  in `kernelci-pipeline`.  Each test suite is an entry under `jobs` naming
+  its template, rootfs and KCIDB test suite mapping.  The `kselftest-*` and
+  `ltp-*` entries are good examples of DUT-style suites; `kunit` and
+  `cvehound` are builder-side ones.
+* **Job templates**:
+  [`config/runtime/`](https://github.com/kernelci/kernelci-pipeline/tree/main/config/runtime)
+  in `kernelci-pipeline` holds the `jinja2` templates that generate the
+  actual job definitions.  Most DUT-style suites reuse `generic.jinja2`,
+  while `kunit.jinja2` and `cvehound.jinja2` show jobs running on the build
+  infrastructure.
+* **Scheduling and platforms**:
+  [`config/scheduler.yaml`](https://github.com/kernelci/kernelci-pipeline/blob/main/config/scheduler.yaml)
+  defines which events trigger each job and in which runtime it runs, and
+  [`config/platforms.yaml`](https://github.com/kernelci/kernelci-pipeline/blob/main/config/platforms.yaml)
+  describes the device types jobs can target.
+* **Rootfs recipes**:
+  [`config/core/rootfs-configs.yaml`](https://github.com/kernelci/kernelci-core/blob/main/config/core/rootfs-configs.yaml)
+  in `kernelci-core`.  For example, the `trixie-kselftest` entry lists the
+  extra Debian packages and the build script baked into the kselftest
+  image.  The images are built with the debos recipes under
+  [`config/rootfs/debos/`](https://github.com/kernelci/kernelci-core/tree/main/config/rootfs/debos)
+  and published at
+  [storage.kernelci.org](https://storage.kernelci.org/images/rootfs/).
+
+If what you built is essentially its own CI system — a fuzzer, unit tests,
+static analysis, or a custom harness with special scheduling or
+infrastructure needs — it is usually better to keep running it on your own
+infrastructure and [submit the results directly to
+KCIDB](/components/kcidb/submitting).  You stay in full control of how and
+when the tests run, your results still appear in the common database and the
+[Web Dashboard](https://dashboard.kernelci.org/), and you can optionally
+listen to Maestro events to test the kernels KernelCI already builds.
+
+Finally, if your tests are standard but they require hardware that only you
+have, consider [connecting a lab](/intro/platform-testing) to Maestro
+instead.

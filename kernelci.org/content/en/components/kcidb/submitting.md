@@ -74,6 +74,20 @@ details and logs; for tests, the results, logs and information about the
 test environment (device type, configuration, etc.). Anything that doesn't
 fit the schema can go into the free-form `misc` field of any object.
 
+### Artifact hosting
+
+KCIDB stores metadata and links, not files. Logs, kernel images and other
+artifacts you reference in your submissions (`log_url`, `config_url`,
+`output_files`...) need to be hosted by you and **publicly available** over
+HTTP(S) — they are linked from the dashboard and downloaded for automatic
+log analysis.
+
+If you are a member of the KernelCI foundation, we will gladly assist and
+can provide file hosting for these materials on our
+[kernelci-storage](/components/kernelci-storage) infrastructure. If not,
+[reach out](/contacts) anyway — whether we can help with hosting is
+something to discuss and decide together.
+
 ### Hybrid submissions
 
 You don't have to build kernels yourself. A common setup is a lab that takes

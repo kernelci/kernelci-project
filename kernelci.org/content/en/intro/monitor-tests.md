@@ -41,10 +41,6 @@ Our [Web Dashboard](https://dashboard.kernelci.org/): The new Dashboard aims at 
 
 We created [kci-dev](https://kci.dev/) - a command-line tool for interacting with KernelCI. You can use the [kci-dev results](https://kci.dev/results/) command to pull results from the dashboard in your shell.
 
-### Grafana
-
-Our [Grafana](https://grafana.kernelci.org/) instance allow users to create specific dashboard with tailored queries and boards. Those who want to dive deeper into their data can engage with our Grafana instance.
-
 ## Setting up notifications
 
 Although still under development, the dashboard is already capable of sending notifications of two types:

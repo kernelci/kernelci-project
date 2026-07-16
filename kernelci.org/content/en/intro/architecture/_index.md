@@ -37,9 +37,9 @@ When running tests in a CI environment, the logs and other artifacts produced du
 
 The KernelCI community members hosts a few hardware labs for kernel testing. These labs are managed by independent community members. The KernelCI project does not run or manage any hardware lab.
 
-KernelCI hardware labs receives test request directly from KernelCI's Maestro, so they need to be accessible from the internet and tokens handed to KernelCI sysadmin. Today, KernelCI supports only LAVA based labs.
+KernelCI hardware labs receive test requests from KernelCI's Maestro in one of two ways. LAVA based labs get jobs pushed to them directly, so they need to be accessible from the internet and tokens handed to KernelCI sysadmin. [Pull labs](/components/maestro/pipeline/connecting-pull-lab) instead poll Maestro for jobs using only outbound connections, so they can sit behind a firewall and don't have to be LAVA based.
 
-For labs who need to be behind a firewall, the alternative option is to setup them as part of the CI Ecosystem described below. Check our [platform testing](/intro/platform-testing) page for more info.
+Labs that prefer to keep full control of their own CI system can also join the CI Ecosystem described below. Check our [platform testing](/intro/platform-testing) page for more info.
 
 ### CI Ecosystem
 

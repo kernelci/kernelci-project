@@ -9,19 +9,17 @@ Many developers or companies need to execute kernel tests on specific platforms 
 If we look at the KernelCI [architecture](../architecture), there are two main ways to connect with KernelCI.
 Either you implement a lab* that is connected to directly to [Maestro](/components/maestro). Or bring your system to be part of our ecosystem and contribute your results.
 
-\* In KernelCI terminology, a **lab** is a system that allows direct access for KernelCI's Maestro to submit the test requests (with kernel artifacts and rootfs built by KernelCI).
+\* In KernelCI terminology, a **lab** is a system that executes test requests coming from KernelCI's Maestro (with kernel artifacts and rootfs built by KernelCI).
 
 ## Option 1: Connecting your lab to Maestro
 
-If you want you allow KernelCI direct access to your test farm, you have to setup [LAVA](https://www.lavasoftware.org/) based lab and give submission tokens to the KernelCI sysadmin team. For this to work your lab should be accessible on the internet. If yours is hidden behind a firewall, this option won't work for you.
+There are two ways to connect a lab to Maestro:
 
-Today, Maestro only supports LAVA as a lab runtime, but nothing prevents us from accepting contributions for other lab runtimes if there is community interest.
+* **LAVA lab**: you setup a [LAVA](https://www.lavasoftware.org/) based lab and give submission tokens to the KernelCI sysadmin team, so Maestro can submit test jobs to it directly. For this to work your lab should be accessible on the internet. See our [Connecting a LAVA lab](/components/maestro/pipeline/connecting-lab) documentation.
 
-For detailed information, check our [Connecting a LAVA lab](/components/maestro/pipeline/connecting-lab) documentation.
+* **Pull lab**: your lab polls Maestro for test jobs and sends the results back, using only outbound connections. It doesn't need to be publicly reachable, so it works fine behind a firewall or strict IT policies, and it doesn't have to be LAVA based. See our [Connecting a pull lab](/components/maestro/pipeline/connecting-pull-lab) documentation.
 
-The LAVA lab option comes only with the cost of maintaining the LAVA lab and the hardware in it. You don't need maintain any CI system to drive the execution in this case.
-
-This is an option for you if you want to use LAVA as your hardware automation test system and is not limited by firewalls or IT policies in your organization. Some companies won't allow receiving the test requests from an external party.
+The lab option comes only with the cost of maintaining the lab and the hardware in it. You don't need to maintain any CI system to drive the execution in this case: Maestro schedules the jobs, collects the results and submits them to KCIDB for you.
 
 ## Option 2: Joining the CI ecosystem
 
@@ -32,7 +30,7 @@ Joining the KernelCI ecosystem means:
 1. Contributing your tests results to our common results [database](/components/kcidb). You will only contribute the tests results you want to make public. There is no requirement from KernelCI to share private tests you don't want to(eg. on pre-release hardware).
 2. Optionally listening to [test events](https://github.com/kernelci/kernelci-pipeline/blob/main/tools/example_api_events.py) from Maestro to frequently pick up kernel artifacts to test. Maestro will pull and build a number of git trees every hour. You can listen and chose the kernels you want to test.
 
-This option gives you flexibility and control in what and how to test. It requires maintenance of your own CI/test system, so will be more costly than just maintaining a KernelCI lab. However, it might be only option for some companies with strict IT policies.
+This option gives you flexibility and control in what and how to test. It requires maintenance of your own CI/test system, so will be more costly than just maintaining a KernelCI lab. It is the right option if you already run an established CI system for kernel testing.
 
 ## Option 3: Contract hardware lab services
 

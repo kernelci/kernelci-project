@@ -50,15 +50,15 @@ jobs:
       - name: Submodules init
         run: git submodule update --init --recursive
       - name: Update submodule kernelci-pipeline
-        run: cd kernelci.org/external/kernelci-pipeline;git pull origin main
+        run: if [ -e kernelci.org/external/kernelci-pipeline/.git ]; then git -C kernelci.org/external/kernelci-pipeline pull origin main; fi
       - name: Update submodule kernelci-api
-        run: cd kernelci.org/external/kernelci-api;git pull origin main
+        run: if [ -e kernelci.org/external/kernelci-api/.git ]; then git -C kernelci.org/external/kernelci-api pull origin main; fi
       - name: Update submodule kernelci-core
-        run: cd kernelci.org/external/kernelci-core;git pull origin main
+        run: if [ -e kernelci.org/external/kernelci-core/.git ]; then git -C kernelci.org/external/kernelci-core pull origin main; fi
       - name: Update submodule kcidb
-        run: cd kernelci.org/external/kcidb;git pull origin main
+        run: if [ -e kernelci.org/external/kcidb/.git ]; then git -C kernelci.org/external/kcidb pull origin main; fi
       - name: Update submodule kci-dev
-        run: cd kernelci.org/external/kci-dev;git pull origin main
+        run: if [ -e kernelci.org/external/kci-dev/.git ]; then git -C kernelci.org/external/kci-dev pull origin main; fi
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3

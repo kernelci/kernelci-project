@@ -1,9 +1,34 @@
 ---
 title: "Maestro"
-date: 2024-05-29
-description: "Maestro API and Pipeline"
+date: 2026-07-16
+description: "Maestro - KernelCI's build and test orchestration"
 weight: 2
 ---
+
+Maestro is KernelCI's native build and test orchestration service. It
+watches upstream kernel trees, builds kernels, schedules tests in the
+connected hardware labs and submits the results to
+[KCIDB](/components/kcidb). It is made of two parts: the
+[API](/components/maestro/api/) (database and Pub/Sub) and the
+[Pipeline](/components/maestro/pipeline) (the services doing the actual
+work).
+
+This documentation is mostly useful for two audiences:
+
+* **Lab owners** who want their hardware to run tests driven by KernelCI —
+  start with
+  [Connecting a LAVA lab](/components/maestro/pipeline/connecting-lab)
+  and see the [platform testing guide](/intro/platform-testing) for the
+  available options.
+* **Self-hosters and contributors** who want to run their own Maestro
+  instance or hack on it — see the
+  [self-hosted KernelCI documentation](/components/devops) along with the
+  [API](/components/maestro/api/) and
+  [Pipeline](/components/maestro/pipeline) sections.
+
+If you are a kernel developer looking for test results, you don't need any
+of this — head to the [Web Dashboard](https://dashboard.kernelci.org/) or
+[kci-dev](https://kci.dev/) instead.
 
 ## API Overview
 
@@ -80,13 +105,15 @@ and test results in some raw format before they were submitted to the API.
 
 ### Staging
 
-An instance has been set up on `staging.kernelci.org` for testing all pending
-changes.  The Docker logs are available in real-time via a [web
-interface](https://staging.kernelci.org:9088/) for both the API and the
-pipeline.  It also provides some [interactive API
-documentation](https://staging.kernelci.org:9000/latest/docs).  This instance
-is not stable, it's redeployed periodically with all open pull requests from
-GitHub merged together on a test integration branch.
+An instance has been set up for testing all pending changes.  It is not
+stable, it's redeployed periodically with all open pull requests from GitHub
+merged together on a test integration branch.
+
+* [staging.kernelci.org](https://staging.kernelci.org/) - staging control
+  panel
+* [staging.kernelci.org:9000/viewer](https://staging.kernelci.org:9000/viewer) -
+  node viewer
+
 Please check [docs](/components/maestro/api/staging) for more details.
 
 ### Production

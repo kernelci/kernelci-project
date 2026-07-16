@@ -8,7 +8,7 @@ weight: 2
 KernelCI core project is open for contributions. Contributions may consist of
 adding new builds, tests and device types as well as features and bugfixes for
 KernelCI core tools.
-When the PR is created, the [KernelCI staging](https://kernelci.org/docs/instances/staging)
+When the PR is created, the [KernelCI staging](/components/maestro/api/staging)
 instance takes care of updating the [staging.kernelci.org branch](https://github.com/kernelci/kernelci-core/tree/staging.kernelci.org).
 In general the branch is updated every 8h and a limited set of builds and tests
 are run on it.

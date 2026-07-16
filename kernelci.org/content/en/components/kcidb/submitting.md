@@ -114,6 +114,16 @@ Your results then show up on the dashboard right next to the build they were
 run against. The same works the other way around: you can submit builds for
 others to test.
 
+If this describes your lab, also consider connecting it to
+[Maestro](/components/maestro) directly instead of submitting to KCIDB
+yourself. Maestro supports
+[pull labs](/components/maestro/pipeline/connecting-pull-lab): your lab
+polls Maestro for jobs over outbound HTTPS, so it doesn't need to be
+publicly reachable and works fine behind a firewall. For labs testing
+Maestro kernels this is the recommended path — results submitted through
+Maestro keep its node hierarchy consistent, and Maestro takes care of
+forwarding them to KCIDB for you.
+
 ## 3. Submit it
 
 Send your report to the `/submit` endpoint with your token in the

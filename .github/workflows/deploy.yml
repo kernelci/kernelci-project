@@ -55,8 +55,6 @@ jobs:
         run: if [ -e kernelci.org/external/kernelci-api/.git ]; then git -C kernelci.org/external/kernelci-api pull origin main; fi
       - name: Update submodule kernelci-core
         run: if [ -e kernelci.org/external/kernelci-core/.git ]; then git -C kernelci.org/external/kernelci-core pull origin main; fi
-      - name: Update submodule kcidb
-        run: if [ -e kernelci.org/external/kcidb/.git ]; then git -C kernelci.org/external/kcidb pull origin main; fi
       - name: Update submodule kci-dev
         run: if [ -e kernelci.org/external/kci-dev/.git ]; then git -C kernelci.org/external/kci-dev pull origin main; fi
 

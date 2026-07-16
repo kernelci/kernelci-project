@@ -47,10 +47,10 @@ written in various languages. Typically, they will require a user-space image
 with all the required packages installed to be able to run as well as the
 latest versions of some test suites built from source. This is the case with
 `v4l-utils`, `igt-gpu-tools` or `LTP`. Some are plain scripts and don’t depend
-on anything in particular`.
+on anything in particular.
 
 When prototyping some new tests to run in LAVA, the easiest approach is to use
-nfsroot with the plain Debian Buster image provided by KernelCI and install
-extra packages at runtime, before starting the tests. Then when this is working
+nfsroot with the plain Debian image provided by KernelCI and install extra
+packages at runtime, before starting the tests. Then when this is working
 well, dependencies and any data files can be baked into a fixed rootfs image
 for performance and reproducibility.

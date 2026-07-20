@@ -1,0 +1,10 @@
+{
+  "name": "kernelci-docs",
+  "version": "1.0.0",
+  "description": "KernelCI documentation website",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "postcss-cli": "^10.1.0"
+  }
+}

@@ -1,6 +1,3 @@
-[submodule "kernelci.org/themes/docsy"]
-	path = kernelci.org/themes/docsy
-	url = https://github.com/google/docsy.git
 [submodule "kernelci.org/external/kernelci-core"]
 	path = kernelci.org/external/kernelci-core
 	url = https://github.com/kernelci/kernelci-core.git

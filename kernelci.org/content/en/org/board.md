@@ -24,6 +24,7 @@ their respective roles, email address and IRC nicknames:
 
 * [Andrew Wafaa](mailto:<andrew.wafaa@arm.com>) (ARM)
 * [Barry Sheraw](mailto:<bsheraw@ti.com>) (Texas Instruments)
+* [Ben Copeland](mailto:<ben.copeland@linaro.org>) (Linaro, TSC Chair)
 * [Chris Paterson](mailto:<chris.paterson2@renesas.com>) (Civil Infrastructure Platform project, Treasurer)
 * [Don Zickus](mailto:<dzickus@redhat.com>) (Red Hat, Chair)
 * [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) (Linux Foundation)
@@ -33,7 +34,6 @@ their respective roles, email address and IRC nicknames:
 * [KY Srinivasan](mailto:<kys@microsoft.com>) (Microsoft)
 * [Mike Holmes](mailto:<mike.holmes@linaro.org>) (Linaro)
 * [Trilok Soni](mailto:<trilok.soni@oss.qualcomm.com>) (Qualcomm)
-* TSC Chair - vacant
 
 Learn more about the [current members](/org/members) or how to join on the
 [KernelCI Linux Foundation](https://kernelci.org/) website.

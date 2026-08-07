@@ -231,7 +231,7 @@ Maintaining them includes moderating incoming messages and new subscriptions,
 keeping settings up-to-date and dealing with changes to the schemes for each
 price plan.
 
-* Maintainers: `broonie`, `khilman`, `padovan`
+* Maintainers: `bhcopeland`, `broonie`, `khilman`, `padovan`
 
 ### Discord
 
@@ -239,7 +239,7 @@ The [KernelCI Discord channel](https://discord.gg/KWbrbWEyqb) may be used as an
 alternative to IRC.  However, more people are using IRC so Discord is only there
 to facilitate communication when IRC is not practical.
 
-* Maintainers: `khilman`, `padovan`
+* Maintainers: `bhcopeland`, `khilman`, `padovan`
 
 ### Twitter
 
@@ -249,6 +249,15 @@ It is also a way for the project to quickly share updates about the project's
 news and, achievements.
 
 * Maintainers: `gtucker`, `padovan`
+
+### LinkedIn
+
+The [KernelCI LinkedIn](https://www.linkedin.com/company/18116276) organization
+page is used to share project news and reach a professional audience.  As a
+project social media account it is owned by the project as per section 6.b of
+the Technical Charter.
+
+* Maintainers: `bhcopeland`
 
 ### kernelci.org update emails (paused)
 

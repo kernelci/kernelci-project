@@ -1,0 +1,38 @@
+KernelCI project website and documentation
+==========================================
+
+This repository holds the kernelci.org website, the organizational
+documentation for the KernelCI project and the tooling used to build and
+deploy them.  It is licensed in two parts, following section 8 of the KernelCI
+Technical Charter.
+
+Documentation and website content
+---------------------------------
+
+SPDX-License-Identifier: CC-BY-4.0
+
+All documentation and website content, including everything under
+kernelci.org/content/, is made available under the Creative Commons
+Attribution 4.0 International License, as required by section 8.b.iv of the
+Charter.  The full text is in LICENSES/CC-BY-4.0.txt and is also published at
+<https://creativecommons.org/licenses/by/4.0/>.
+
+Code
+----
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+
+All code, including the Python tooling, Hugo layouts and templates, and SCSS,
+is made available under version 2.1 of the GNU Lesser General Public License,
+or (at your option) any later version.  This is the Project License defined in
+section 8.b.i of the Charter.  The full text is in
+LICENSES/LGPL-2.1-or-later.txt.
+
+Third-party components
+----------------------
+
+The directories kernelci.org/themes/ and kernelci.org/external/ are git
+submodules.  They carry their own licences and are not covered by this file.
+
+The KernelCI Technical Charter is published at
+https://kernelci.org/files/KernelCI_Project_Technical_Charter_202607.pdf

@@ -17,9 +17,18 @@ as:
 * sharing regular reports with the TSC, board and public mailing list
 
 
-## Infra WG
+## Infrastructure Committee
 
-Formally known as the Infrastructure Committee, this group drives the infrastructure development of KernelCI, translating community requirements to system features. This group also drives Sysadmin team.
+The Infrastructure Committee is a body of the project defined in section 3 of
+the [Technical Charter](/files/KernelCI_Project_Technical_Charter_202607.pdf)
+rather than an ordinary working group.  It consists of the contributors
+responsible for the development, deployment and maintenance of the software
+projects operated as KernelCI services, including but not limited to Maestro,
+KCIDB, Storage and the Web Dashboard.  It drives the infrastructure development
+of KernelCI, translating community requirements to system features.  The
+[SysAdmin](#sysadmin) team functions as a sub-team within the committee, and
+access to system administration secrets is granted to designated members of that
+sub-team as required.
 
 **Mailing list:** [kernelci@lists.linux.dev](mailto:<kernelci@lists.linux.dev>)
 
@@ -34,8 +43,30 @@ Formally known as the Infrastructure Committee, this group drives the infrastruc
 * [Paweł Wieczorek](mailto:<pawiecz@collabora.com>)
 * [Tales Aparecida](mailto:<tales.aparecida@redhat.com>)
 
-The infrastructure WG is regulated by the KernelCI Technical Charter. Rules can be changed through
-TSC approval and documented in this git repo.
+The initial membership was set by the [2025-07-30 TSC
+vote](/org/tsc/votes/#2025-07-30).
+
+The committee is responsible for:
+
+* overseeing the reliable operation, maintenance and continuous improvement of
+  the KernelCI infrastructure services
+* managing the SysAdmin sub-team and defining procedures for secure access and
+  operational best practices
+* supporting the development and deployment of new infrastructure components
+  aligned with the project's technical roadmap
+* defining and maintaining policies for secure and efficient service operation
+
+The committee may vote to add or remove members at any time by a simple majority
+vote.  Any member who has not actively contributed to the relevant
+infrastructure projects for more than six consecutive months is automatically
+removed from the committee.
+
+The voting members of the TSC and of the Infrastructure Committee together elect
+an Infrastructure Committee Lead (the "Infrastructure Lead") from among the
+voting members of the committee, to serve a two-year term.  The Infrastructure
+Lead is also a voting member of the [TSC](/org/tsc/).
+
+Rules can be changed through TSC approval and documented in this git repo.
 
 ## Web dashboard
 

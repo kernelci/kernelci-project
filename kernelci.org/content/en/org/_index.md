@@ -94,8 +94,17 @@ has been established as KernelCI Project a Series of LF Projects, LLC (the
 liability company. All Contributors to the Project must comply with the terms
 of this Charter.
 
-[KernelCI_Project_Technical_Charter_20181107.pdf
-](/files/KernelCI_Project_Technical_Charter_20181107.pdf)
+The Charter was amended in July 2026 to reset the composition of the
+[Technical Steering Committee](tsc), to establish the Infrastructure Committee
+as a body of the Project and to define the Contributor and Committer roles.
+
+[KernelCI_Project_Technical_Charter_202607.pdf
+](/files/KernelCI_Project_Technical_Charter_202607.pdf)
+
+Superseded versions are kept for reference:
+
+* [KernelCI_Project_Technical_Charter_20181107.pdf
+  ](/files/KernelCI_Project_Technical_Charter_20181107.pdf)
 
 ## Meetings
 
@@ -142,6 +151,8 @@ private meeting as only member representatives can attend.
 * Every second Thursday of the month at 10:00 UTC
 
 The [Technical Steering Committee](/org/tsc/) meet once a month to discuss
-general technical topics that have a significant impact on the project.  This
-is a private meeting as only elected TSC members can attend and they
-occasionally take part in decisions made by the advisory board.
+general technical topics that have a significant impact on the project.  As per
+the Technical Charter, TSC meetings are intended to be open to the public and
+may be conducted electronically, via teleconference or in person.  Anyone may
+attend, but only voting members take part in votes.  The TSC also occasionally
+take part in decisions made by the advisory board.

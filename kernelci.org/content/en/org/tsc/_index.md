@@ -10,7 +10,7 @@ aliases:
 The Technical Steering Committee (TSC) is a team of people who are responsible
 for keeping the KernelCI project in a good shape and driving its development.
 The [rules](#rules) are based on the LF [project
-charter](/files/KernelCI_Project_Technical_Charter_20181107.pdf).  Typically,
+charter](/files/KernelCI_Project_Technical_Charter_202607.pdf).  Typically,
 major contributors eventually become members and those who have stopped
 contributing for an extended period of time may be removed.
 
@@ -29,7 +29,12 @@ respective email address and IRC nicknames:
 
 
 With the exception of the Infra Committee representative the term of the current
-members lasts for an year, finishing at October 31th, 2026.
+members lasts for a year, finishing at October 31st, 2026.
+
+The Technical Charter as amended in July 2026 sets the TSC at three voting
+members determined by election plus the Infrastructure Lead.  The members listed
+above hold their seats until the end of the current term; the reduced
+composition takes effect from the next election.
 
 
 ## Communication
@@ -45,18 +50,25 @@ including votes when necessary. See the [community calendar](https://kernelci.or
 
 ### Votes
 
-As per paragraph *3.a TSC Voting* of the [project
-charter](/files/KernelCI_Project_Technical_Charter_20181107.pdf):
+As per paragraph *4.a Committee Voting* of the [project
+charter](/files/KernelCI_Project_Technical_Charter_202607.pdf):
 
-> While the Project aims to operate as a consensus based community, if any TSC
-> decision requires a vote to move the Project forward, the voting members of
-> the TSC will vote on a one vote per voting member basis.
+> While the Project aims to operate as a consensus based community, if any
+> committee decision requires a vote to move the Project forward, the voting
+> members of the applicable committee will vote on a one vote per voting member
+> basis.
 
 Decisions that always require a vote are:
 * adding or removing TSC members
+* electing or replacing the TSC Chair
 * making changes to the TSC rules
 * granting or removing any kind of admin rights to individuals
 * making proposals to the LF project board
+* amending the Technical Charter
+
+Replacing the TSC Chair requires a two-thirds vote of the TSC.  Amending the
+Technical Charter requires a two-thirds vote of the entire TSC and is subject to
+approval by LF Projects.
 
 Votes are made on motions with a yes/no choice and have to be proposed by a TSC
 member.  The result of each vote should be shared on the mailing list and added
@@ -78,6 +90,9 @@ majority of "yes" votes from the whole TSC hasn't been reached by then.
 Because our members are spread across the world, and normally cannot attend a
 meeting all at once, the preferred approach is to vote by email.
 
+If a vote cannot be resolved by the TSC, any voting member may refer the matter
+to the LF Projects Series Manager for assistance in reaching a resolution.
+
 Abstentions are not counted as votes.  Effectively, they are the same as not
 attending a meeting or not replying to an email.  For example, with 7 TSC
 members in a meeting, if 3 are abstaining, 3 vote "yes" and 1 votes "no", we
@@ -86,20 +101,23 @@ motion is moved.
 
 ### Members
 
+The voting members of the TSC are three members determined by election plus the
+Infrastructure Lead.  The Infrastructure Lead is elected jointly by the voting
+members of the TSC and of the [Infrastructure
+Committee](/org/working-groups/#infrastructure-committee) for a two-year term.
+
 The elections for the TSC happens every year, so the members term last for
-one year (except the Infrastructure Committee Lead that is appointed by
-Charter rules).
+one year (except the Infrastructure Lead, whose term is set by Charter rules).
+A TSC member may run for re-election and serve successive terms.
 
 Current members of the TSC may propose to vote for new people to be added or
 removed. The term of new members voted in directly by the TSC will last
 until the end of the term of the community-elected members.
 
-At the time new elections should happen, then numbers of spots should be
-the numbers of current TSC members minus one (to account for the Infrastructure
-Committee Lead).
-
-No more than 2 members from the same organization should be in the
-TSC.
+Each TSC member has one vote.  Where two or more members are employed by the
+same company or group of related companies, those members are limited to one
+vote between them, and the TSC will promptly hold elections to fill the
+resulting vacancy.
 
 People to be considered as new TSC members should have typically played an
 important role for a significant amount of time in the project.  There is
@@ -115,6 +133,22 @@ The criteria for removing a member aren't strictly defined either, in the end
 it's up to the TSC to vote and judge whether a member should be removed due to
 inactivity.  Members who commit acts that pose a threat to the stability of the
 project may also be removed following a TSC vote.
+
+### Chair
+
+The TSC elects a Chair from among its own voting members.  The Chair presides
+over meetings of the TSC and serves for a period of one year, or until their
+resignation or replacement by the TSC.
+
+The Chair, or any other TSC member so designated by the TSC, is the primary
+communication contact between the Project and the KernelCI Initiative Fund of
+The Linux Foundation, and holds the TSC seat on the [Advisory
+Board](/org/board/).
+
+The Charter does not state in so many words that the Chair must be a TSC
+member, but paragraph *2.i* refers to "the TSC Chair, or any other TSC member
+so designated by the TSC", which only reads sensibly if the Chair is one of
+them.
 
 ### Duties
 

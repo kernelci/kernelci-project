@@ -231,7 +231,7 @@ Maintaining them includes moderating incoming messages and new subscriptions,
 keeping settings up-to-date and dealing with changes to the schemes for each
 price plan.
 
-* Maintainers: `bhcopeland`, `broonie`, `khilman`, `padovan`
+* Maintainers: `bhcopeland`, `broonie`, `khilman`
 
 ### Discord
 
@@ -239,7 +239,7 @@ The [KernelCI Discord channel](https://discord.gg/KWbrbWEyqb) may be used as an
 alternative to IRC.  However, more people are using IRC so Discord is only there
 to facilitate communication when IRC is not practical.
 
-* Maintainers: `bhcopeland`, `khilman`, `padovan`
+* Maintainers: `bhcopeland`, `khilman`
 
 ### Twitter
 
@@ -248,7 +248,7 @@ with a wider public audience: events, kernel developers, other test systems...
 It is also a way for the project to quickly share updates about the project's
 news and, achievements.
 
-* Maintainers: `gtucker`, `padovan`
+* Maintainers: `gtucker`
 
 ### LinkedIn
 

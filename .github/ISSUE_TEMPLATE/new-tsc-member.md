@@ -2,7 +2,7 @@
 name: New TSC member
 about: Checklist to add a new TSC member
 title: "Add TSC member: FULL NAME"
-assignees: 'padovan'
+assignees: 'bhcopeland'
 ---
 
 Please go through all the checklist below to add @_USERNAME_ (_FULL NAME_) as a member of the [TSC](https://docs.kernelci.org/org/tsc/):

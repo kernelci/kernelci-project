@@ -37,7 +37,6 @@ sub-team as required.
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - Lead
 * [Arisu Tachibana](mailto:<arisu.tachibana@miraclelinux.com>)
 * [Ben Copeland](mailto:<ben.copeland@linaro.org>)
-* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>)
 * [Jeny Sadadia](mailto:jeny.sadadia@collabora.com)
 * [Mark Brown](mailto:<broonie@kernel.org>)
 * [Paweł Wieczorek](mailto:<pawiecz@collabora.com>)
@@ -80,7 +79,6 @@ Rules can be changed through TSC approval and documented in this git repo.
 * [Ben Copeland](mailto:<ben.copeland@linaro.org>) - `bhcopeland`
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
 * [Gustavo Flores](mailto:<gustavobtflores@gmail.com>) - `gustavobtflores`
-* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan`
 * [João Bertacchi](mailto:<joaobertacchi@gmail.com>) - `joaobertacchi`
 * [Lucas Santos](mailto:<devlucassantoss@gmail.com>) - `LucasSantos27`
 * [Marcelo Robert](mailto:<4mrSantos@gmail.com>) - `MarceloRobert`
@@ -144,7 +142,6 @@ cover the following items:
 
 * [Ben Copeland](mailto:<ben.copeland@linaro.org>) - `bhcopeland` - Lead
 * [Denys Fedoryshchenko](mailto:<denys.f@collabora.com>) - `nuclearcat`
-* [Gustavo Padovan](mailto:<gustavo.padovan@collabora.com>) - `padovan`
 * [Mark Brown](mailto:<broonie@kernel.org>) - `broonie`
 * [Minas Hambardzumyan](mailto:<minas@ti.com>) - `minas_36361`
 

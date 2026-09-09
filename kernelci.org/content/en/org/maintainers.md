@@ -75,7 +75,7 @@ KernelCI pipeline and a Pub/Sub interface to coordinate the pipeline services
 in a modular fashion.
 
 * Repository: [`kernelci-api`](https://github.com/kernelci/kernelci-api)
-* Maintainers: `bhcopeland`, `jeny`
+* Maintainers: `bhcopeland`, `jeny`, `nuclearcat`
 
 ### Pipeline
 
@@ -85,7 +85,7 @@ Maestro API and its Pub/Sub interface.
 
 * Repository:
   [`kernelci-pipeline`](https://github.com/kernelci/kernelci-pipeline)
-* Maintainers: `bhcopeland`, `jeny`
+* Maintainers: `bhcopeland`, `jeny`, `nuclearcat`
 
 ### KCIDB
 
@@ -101,7 +101,7 @@ common database.
 kci-dev is a command line tool and library for kernel developers and maintainers.
 
 * Main repositories: [`kci-dev`](https://github.com/kernelci/kci-dev)
-* Maintainers: `arisut`, `bhcopeland`
+* Maintainers: `arisut`, `bhcopeland`, `nuclearcat`
 
 ### Tux tools
 

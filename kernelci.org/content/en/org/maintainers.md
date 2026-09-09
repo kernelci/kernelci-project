@@ -170,7 +170,6 @@ results into the database.
 
 * Maintainers: `nuclearcat`
 * Components:
-  [`test-definitions`](https://github.com/kernelci/test-definitions),
   [`bootrr`](https://github.com/kernelci/bootrr),
   [`cros-ec-tests`](https://github.com/kernelci/cros-ec-tests),
   [`buildroot`](https://github.com/kernelci/buildroot),

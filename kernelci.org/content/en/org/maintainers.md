@@ -257,11 +257,3 @@ project social media account it is owned by the project as per section 6.b of
 the Technical Charter.
 
 * Maintainers: `bhcopeland`
-
-### kernelci.org update emails (paused)
-
-Emails are sent regularly with a summary of the changes going into production
-and minutes from the various [TSC](/org/tsc) and
-[board](/org/board) meetings.
-
-* Maintainers: `gtucker`

@@ -55,7 +55,7 @@ encrypted files for practical reasons (shared account passwords, sysadmin
 information etc.).
 
 * Repository: [`kernelci-project`](https://github.com/kernelci/kernelci-project)
-* Maintainers: `gtucker`, `nuclearcat`
+* Maintainers: `nuclearcat`
 * Deputy: `patersonc`
 
 ### Core tools
@@ -142,7 +142,7 @@ All the Docker images used by KernelCI are pushed to the [Docker
 Hub](https://hub.docker.com/).  This requires some maintenance in particular to
 keep an eye on resource usage and to adjust permissions.
 
-* Maintainers: `gtucker`, `nuclearcat`
+* Maintainers: `nuclearcat`
 
 ### PyPI
 

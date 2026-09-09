@@ -55,7 +55,7 @@ encrypted files for practical reasons (shared account passwords, sysadmin
 information etc.).
 
 * Repository: [`kernelci-project`](https://github.com/kernelci/kernelci-project)
-* Maintainers: `nuclearcat`
+* Maintainers: `bhcopeland`, `nuclearcat`
 * Deputy: `patersonc`
 
 ### Core tools
@@ -65,7 +65,7 @@ The core tools provide the command line utilities and the
 individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainers: `jeny`, `nuclearcat`
+* Maintainers: `bhcopeland`, `jeny`, `nuclearcat`
 * Deputy: `arisut`
 
 ### API
@@ -75,7 +75,7 @@ KernelCI pipeline and a Pub/Sub interface to coordinate the pipeline services
 in a modular fashion.
 
 * Repository: [`kernelci-api`](https://github.com/kernelci/kernelci-api)
-* Maintainers: `jeny`
+* Maintainers: `bhcopeland`, `jeny`
 
 ### Pipeline
 
@@ -85,7 +85,7 @@ Maestro API and its Pub/Sub interface.
 
 * Repository:
   [`kernelci-pipeline`](https://github.com/kernelci/kernelci-pipeline)
-* Maintainers: `jeny`
+* Maintainers: `bhcopeland`, `jeny`
 
 ### KCIDB
 
@@ -94,14 +94,14 @@ common database.
 
 * Main repositories: [`kcidb-ng`](https://github.com/kernelci/kcidb-ng),
   [`kcidb-io`](https://github.com/kernelci/kcidb-io)
-* Maintainer: `nuclearcat`
+* Maintainers: `bhcopeland`, `nuclearcat`
 
 ### kci-dev
 
 kci-dev is a command line tool and library for kernel developers and maintainers.
 
 * Main repositories: [`kci-dev`](https://github.com/kernelci/kci-dev)
-* Maintainer: `arisut`
+* Maintainers: `arisut`, `bhcopeland`
 
 ### Tux tools
 
@@ -210,7 +210,7 @@ dedicated to each of them.
 The production instance is the main one, hosted at kernelci.org.  It is used
 for the main KernelCI project and is the one most people are familiar with.
 
-* Maintainers: `nuclearcat`, `pawiecz`
+* Maintainers: `bhcopeland`, `nuclearcat`
 
 
 ### Staging
@@ -219,7 +219,7 @@ The staging instance is used for testing new features before they are deployed
 to production.  It is also used for training new users and for debugging issues
 that are hard to reproduce in production.
 
-* Maintainers: `nuclearcat`, `pawiecz`
+* Maintainers: `bhcopeland`, `nuclearcat`
 
 ## Channel Maintainers
 

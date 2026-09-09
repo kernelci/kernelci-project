@@ -103,6 +103,18 @@ kci-dev is a command line tool and library for kernel developers and maintainers
 * Main repositories: [`kci-dev`](https://github.com/kernelci/kci-dev)
 * Maintainer: `arisut`
 
+### Tux tools
+
+TuxMake, TuxRun and TuxLAVA, originally developed by Linaro as part of
+TuxSuite, are now hosted under the KernelCI organisation.  TuxMake provides
+portable and repeatable kernel builds, TuxRun runs tests on virtual devices,
+and TuxLAVA generates LAVA job definitions.
+
+* Repositories: [`tuxmake`](https://github.com/kernelci/tuxmake),
+  [`tuxrun`](https://github.com/kernelci/tuxrun),
+  [`tuxlava`](https://github.com/kernelci/tuxlava)
+* Maintainers: `bhcopeland`, `roxell`
+
 ### lava-docker (BayLibre)
 
 This project aims to simplify the installation and maintenance of a LAVA lab

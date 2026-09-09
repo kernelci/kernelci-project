@@ -65,7 +65,7 @@ The core tools provide the command line utilities and the
 individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainers: `nuclearcat`, `jeny`
+* Maintainers: `jeny`, `nuclearcat`
 * Deputy: `arisut`
 
 ### API
@@ -123,7 +123,7 @@ Several Kubernetes clusters are used by KernelCI, to build kernels and run
 platform-independent tasks or kernel tests in containers (static analysis,
 KUnit, QEMU...).
 
-* Maintainers: `khilman`, `broonie`
+* Maintainers: `broonie`, `khilman`
 * Resources: Azure, GCE
 
 ### VM Servers
@@ -152,7 +152,7 @@ upload new versions and curate the meta-data and documentation shown on the
 package's page itself.
 
 * [kci-dev](https://pypi.org/project/kci-dev/): `arisut`
-* [kernelci](https://pypi.org/project/kernelci/): `nuclearcat`, `arisut`
+* [kernelci](https://pypi.org/project/kernelci/): `arisut`, `nuclearcat`
 
 ## Feature maintainers
 

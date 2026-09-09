@@ -65,7 +65,7 @@ The core tools provide the command line utilities and the
 individual steps by hand (building kernels, scheduling tests...).
 
 * Repository: [`kernelci-core`](https://github.com/kernelci/kernelci-core)
-* Maintainers: `bhcopeland`, `jeny`, `nuclearcat`
+* Maintainers: `bhcopeland`, `nuclearcat`
 * Deputy: `arisut`
 
 ### API
@@ -75,7 +75,7 @@ KernelCI pipeline and a Pub/Sub interface to coordinate the pipeline services
 in a modular fashion.
 
 * Repository: [`kernelci-api`](https://github.com/kernelci/kernelci-api)
-* Maintainers: `bhcopeland`, `jeny`, `nuclearcat`
+* Maintainers: `bhcopeland`, `nuclearcat`
 
 ### Pipeline
 
@@ -85,7 +85,7 @@ Maestro API and its Pub/Sub interface.
 
 * Repository:
   [`kernelci-pipeline`](https://github.com/kernelci/kernelci-pipeline)
-* Maintainers: `bhcopeland`, `jeny`, `nuclearcat`
+* Maintainers: `bhcopeland`, `nuclearcat`
 
 ### KCIDB
 

@@ -101,7 +101,7 @@ common database.
 kci-dev is a command line tool and library for kernel developers and maintainers.
 
 * Main repositories: [`kci-dev`](https://github.com/kernelci/kci-dev)
-* Maintainers: `arisut`, `bhcopeland`, `nuclearcat`
+* Maintainer: `arisut`
 
 ### Tux tools
 

@@ -19,7 +19,7 @@ services:
     container_name: 'localhugo'
     image: 'hubci/hugo:0.97.3'
     volumes:
-      - '.:/src'
+      - '.:/src:z'
     ports:
       - '1313:1313'
     # chdir to the source directory

@@ -1,6 +1,6 @@
 ---
 title: "Advisory Board"
-date: 2024-04-01
+date: 2026-09-28
 description: "Linux Foundation Project Board"
 weight: 2
 aliases:
@@ -25,7 +25,7 @@ their respective roles, email address and IRC nicknames:
 * [Andrew Wafaa](mailto:<andrew.wafaa@arm.com>) (ARM)
 * [Barry Sheraw](mailto:<bsheraw@ti.com>) (Texas Instruments)
 * [Ben Copeland](mailto:<ben.copeland@linaro.org>) (Linaro, TSC Chair)
-* [Chris Paterson](mailto:<chris.paterson2@renesas.com>) (Civil Infrastructure Platform project, Treasurer)
+* [Chris Paterson](mailto:<chris.paterson2@renesas.com>) (Civil Infrastructure Platform project)
 * [Don Zickus](mailto:<dzickus@redhat.com>) (Red Hat, Chair)
 * [Greg Kroah-Hartman](mailto:<gregkh@linuxfoundation.org>) (Linux Foundation)
 * [Guenter Roeck](mailto:<groeck@google.com>) (Google)

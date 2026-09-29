@@ -114,7 +114,8 @@ merged together on a test integration branch.
 * [staging.kernelci.org:9000/viewer](https://staging.kernelci.org:9000/viewer) -
   node viewer
 
-Please check [docs](/components/maestro/api/staging) for more details.
+Please check the [staging](/components/maestro/staging) page for how it works
+and the [staging API](/components/maestro/api/staging) page for using it.
 
 ### Production
 
